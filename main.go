@@ -18,11 +18,12 @@ import (
 )
 
 type linter struct {
-	token  string
-	user   string
-	repos  []string
-	ctx    context.Context
-	client *github.Client
+	token   string
+	user    string
+	repos   []string
+	ctx     context.Context
+	client  *github.Client
+	verbose bool
 
 	tmpfiles []string
 }
@@ -122,6 +123,8 @@ func (l *linter) readToken() error {
 func (l *linter) parseFlags() error {
 	flag.StringVar(&l.user, "user", "",
 		`github user/organization name`)
+	flag.BoolVar(&l.verbose, "v", false,
+		`verbose mode that turns on additional debug output`)
 
 	flag.Parse()
 
@@ -160,6 +163,9 @@ func (l *linter) getReposList() error {
 			return fmt.Errorf("list repos (page=%d): %v", opts.Page, err)
 		}
 
+		if l.verbose {
+			log.Printf("\tdebug: fetched %d repo names\n", len(repos))
+		}
 		for _, repo := range repos {
 			l.repos = append(l.repos, *repo.Name)
 		}
