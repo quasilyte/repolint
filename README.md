@@ -48,3 +48,9 @@ Most issues are very simple and are agnostic to the repository programming langu
 * Typos in some common files like readme and contributing guidelines.
 * Broken links.
 * Commited files that should be removed (like Emacs autosave and backup files).
+
+## Dependencies
+
+* [liche](https://github.com/raviqqe/liche) - link checker.
+* [misspell](https://github.com/client9/misspell/) - spelling checker.
+* [travis-lint](https://github.com/travis-ci/travis-lint) - `.travis.yml` linter (`gem install travis-lint`).
