@@ -7,6 +7,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"log"
+	"math"
 	"os"
 	"os/exec"
 	"regexp"
@@ -141,17 +142,20 @@ func (l *linter) initClient() error {
 	return nil
 }
 
+func newRepositoryListOptions() *github.RepositoryListOptions {
+	// Use some high value, github will limit it anyway,
+	// but we're interested in getting more data per one request.
+	return &github.RepositoryListOptions{
+		ListOptions: github.ListOptions{PerPage: math.MaxInt32},
+	}
+}
+
 func (l *linter) getReposList() error {
 	// TODO: collect only repos that were updated at least 6 months ago?
 
-	const pageLimit = 100
-
-	var opts github.RepositoryListOptions
-	opts.Page = 1
-	opts.PerPage = pageLimit
-
+	opts := newRepositoryListOptions()
 	for {
-		repos, _, err := l.client.Repositories.List(l.ctx, l.user, &opts)
+		repos, resp, err := l.client.Repositories.List(l.ctx, l.user, opts)
 		if err != nil {
 			return fmt.Errorf("list repos (page=%d): %v", opts.Page, err)
 		}
@@ -160,10 +164,10 @@ func (l *linter) getReposList() error {
 			l.repos = append(l.repos, *repo.Name)
 		}
 
-		if len(repos) < pageLimit {
+		if resp.NextPage == 0 {
 			break
 		}
-		opts.Page++
+		opts.Page = resp.NextPage
 	}
 
 	return nil
