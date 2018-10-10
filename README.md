@@ -30,12 +30,11 @@ There are 2 ways to pass token to the `repolint`:
 1. Use environment variable `TOKEN`.
 2. Place `token` file that contains the token in the current working directory.
 
-Suppose your token is `xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx`:
-
 Code below runs `repolint` over all [Microsoft](https://github.com/Microsoft) organization
 repositories. Note that it can take a lot of time to complete:
 
 ```bash
+# Suppose your token is `xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx`.
 export TOKEN=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 repolint -v -user=Microsoft
 ```
