@@ -32,9 +32,27 @@ type fileChecker interface {
 	CheckFile(filename string) []error
 }
 
+type travisYmlChecker struct{}
+
 type brokenLinksChecker struct{}
 
 type misspellChecker struct{}
+
+func (c *travisYmlChecker) CheckFile(filename string) []error {
+	out, err := exec.Command("travis-lint", filename).CombinedOutput()
+	if err != nil {
+		lines := strings.Split(string(out), "\n")
+		var errs []error
+		for _, l := range lines {
+			if l == "" {
+				continue
+			}
+			errs = append(errs, errors.New(strings.TrimLeft(l, "- ")))
+		}
+		return errs
+	}
+	return nil
+}
 
 func (c *misspellChecker) CheckFile(filename string) []error {
 	out, err := exec.Command("misspell", "-error", "true", filename).CombinedOutput()
