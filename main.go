@@ -9,6 +9,7 @@ import (
 	"log"
 	"os"
 	"os/exec"
+	"regexp"
 	"strings"
 
 	"github.com/google/go-github/github"
@@ -169,7 +170,6 @@ func (l *linter) getReposList() error {
 }
 
 func (l *linter) lintRepos() error {
-	// l.repos = []string{"go-critic"}
 	for _, repo := range l.repos {
 		log.Printf("\tchecking %s/%s...", l.user, repo)
 		l.lintRepo(repo)
@@ -179,6 +179,38 @@ func (l *linter) lintRepos() error {
 
 func (l *linter) lintRepo(repo string) {
 	l.lintReadme(repo)
+	l.lintFiles(repo)
+}
+
+func (l *linter) lintFilenames(repo string, list []*github.RepositoryContent) {
+	// TODO: don't compile regular expressions for every call of lintFilenames.
+	patterns := []struct {
+		name string
+		re   *regexp.Regexp
+	}{
+		{"Vim swap", regexp.MustCompile(`^.*\.swp$`)},
+		{"Emacs autosave", regexp.MustCompile(`^#.*#$`)},
+		{"Emacs backup", regexp.MustCompile(`^.*~$`)},
+	}
+
+	for _, f := range list {
+		for _, pat := range patterns {
+			if pat.re.MatchString(*f.Name) {
+				log.Printf("%s: remove %s file: %s", repo, pat.name, *f.Name)
+				break // Can't match more than 1 kind
+			}
+		}
+	}
+}
+
+func (l *linter) lintFiles(repo string) {
+	// TODO: recurse into sub-directories.
+	// TODO: do multi-request if there is more files than github returns per 1 req.
+	_, list, _, err := l.client.Repositories.GetContents(l.ctx, l.user, repo, "/", nil)
+	if err != nil {
+		panic(fmt.Sprintf("%s: list directory: %v", repo, err))
+	}
+	l.lintFilenames(repo, list)
 }
 
 func (l *linter) lintReadme(repo string) {
