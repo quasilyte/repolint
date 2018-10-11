@@ -226,8 +226,9 @@ func (l *linter) getReposList() error {
 }
 
 func (l *linter) lintRepos() error {
-	for _, repo := range l.repos {
-		log.Printf("\tchecking %s/%s...", l.user, repo)
+	for i, repo := range l.repos {
+		log.Printf("\tchecking %s/%s (%d/%d)...",
+			l.user, repo, i+1, len(l.repos))
 		l.lintRepo(repo)
 	}
 	return nil
