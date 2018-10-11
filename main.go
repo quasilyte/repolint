@@ -206,6 +206,7 @@ func (l *linter) lintRepos() error {
 }
 
 func (l *linter) lintRepo(repo string) {
+	// TODO: merge readme and other files linting?
 	l.lintReadme(repo)
 	l.lintFiles(repo)
 }
