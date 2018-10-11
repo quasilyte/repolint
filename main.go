@@ -33,11 +33,20 @@ type fileChecker interface {
 	CheckFile(filename string) []error
 }
 
+type documentationChecker struct{}
+
 type travisYmlChecker struct{}
 
 type brokenLinksChecker struct{}
 
 type misspellChecker struct{}
+
+func (c *documentationChecker) CheckFile(filename string) []error {
+	var errs []error
+	errs = append(errs, (&brokenLinksChecker{}).CheckFile(filename)...)
+	errs = append(errs, (&misspellChecker{}).CheckFile(filename)...)
+	return errs
+}
 
 func (c *travisYmlChecker) CheckFile(filename string) []error {
 	out, err := exec.Command("travis-lint", filename).CombinedOutput()
@@ -250,7 +259,9 @@ func (l *linter) lintFiles(repo string) {
 	}
 	l.lintFilenames(repo, list)
 	var checkers = map[string]fileChecker{
-		".travis.yml": &travisYmlChecker{},
+		".travis.yml":     &travisYmlChecker{},
+		"CONTRIBUTING.md": &documentationChecker{},
+		"CONTRIBUTING":    &documentationChecker{},
 	}
 	for _, f := range list {
 		c := checkers[*f.Name]
