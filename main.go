@@ -238,6 +238,8 @@ func (l *linter) lintFilenames(repo string, list []*github.RepositoryContent) {
 		{"Vim swap", regexp.MustCompile(`^.*\.swp$`)},
 		{"Emacs autosave", regexp.MustCompile(`^#.*#$`)},
 		{"Emacs backup", regexp.MustCompile(`^.*~$`)},
+		{"Mac OS sys file", regexp.MustCompile(`^\.DS_STORE$`)},
+		{"Windows sys file", regexp.MustCompile(`^Thumbs\.db$`)},
 	}
 
 	for _, f := range list {
