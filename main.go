@@ -19,12 +19,14 @@ import (
 )
 
 type linter struct {
-	token   string
-	user    string
-	repos   []string
-	ctx     context.Context
-	client  *github.Client
-	verbose bool
+	token  string
+	user   string
+	repos  []string
+	ctx    context.Context
+	client *github.Client
+
+	verbose   bool
+	skipForks bool
 
 	tempDir string
 }
@@ -161,6 +163,8 @@ func (l *linter) parseFlags() error {
 		`github user/organization name`)
 	flag.BoolVar(&l.verbose, "v", false,
 		`verbose mode that turns on additional debug output`)
+	flag.BoolVar(&l.skipForks, `skipForks`, true,
+		`whether to skip repositories that are forks`)
 
 	flag.Parse()
 
@@ -203,6 +207,12 @@ func (l *linter) getReposList() error {
 			log.Printf("\tdebug: fetched %d repo names\n", len(repos))
 		}
 		for _, repo := range repos {
+			if l.skipForks && *repo.Fork {
+				if l.verbose {
+					log.Printf("\tdebug: skip %s fork repo\n", *repo.Name)
+				}
+				continue
+			}
 			l.repos = append(l.repos, *repo.Name)
 		}
 

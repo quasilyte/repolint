@@ -41,6 +41,8 @@ repolint -v -user=Microsoft
 
 `-v` flag is used to get more debug output from the `repolint`. It's optional.
 
+By default, it skips all fork repositories. `-skipForks=false` will enable forked repositories checks.
+
 ## What repolint can find
 
 Most issues are very simple and are agnostic to the repository programming language.
