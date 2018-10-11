@@ -54,3 +54,24 @@ Most issues are very simple and are agnostic to the repository programming langu
 * [liche](https://github.com/raviqqe/liche) - link checker.
 * [misspell](https://github.com/client9/misspell/) - spelling checker.
 * [travis-lint](https://github.com/travis-ci/travis-lint) - `.travis.yml` linter (`gem install travis-lint`).
+
+## Example
+
+For [bad-repo](https://github.com/Quasilyte/bad-repo) it can output something like:
+
+```
+	checking Quasilyte/bad-repo...
+bad-repo: can't access README
+bad-repo: remove Emacs autosave file: #autosave.txt#
+bad-repo: remove Mac OS sys file file: .DS_STORE
+bad-repo: remove Vim swap file: .foo.swp
+bad-repo: remove Windows sys file file: Thumbs.db
+bad-repo: remove Emacs backup file: backup.txt~
+bad-repo: .travis.yml: missing key "language", defaulting to "ruby"
+bad-repo: .travis.yml: unexpected key "foo", dropping
+bad-repo: CONTRIBUTING: CONTRIBUTING:1:0: "existance" is a misspelling of "existence"
+bad-repo: CONTRIBUTING.md: CONTRIBUTING.md:1:0: "existance" is a misspelling of "existence"
+```
+
+Note that this example output may be outdated and the `bad-repo`
+itself can change over time. It's only a demonstration.
