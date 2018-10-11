@@ -56,7 +56,6 @@ Most issues are very simple and are agnostic to the repository programming langu
 
 * [liche](https://github.com/raviqqe/liche) - link checker.
 * [misspell](https://github.com/client9/misspell/) - spelling checker.
-* [travis-lint](https://github.com/travis-ci/travis-lint) - `.travis.yml` linter (`gem install travis-lint`).
 
 ## Example
 
@@ -70,8 +69,6 @@ bad-repo: remove Mac OS sys file file: .DS_STORE
 bad-repo: remove Vim swap file: .foo.swp
 bad-repo: remove Windows sys file file: Thumbs.db
 bad-repo: remove Emacs backup file: backup.txt~
-bad-repo: .travis.yml: missing key "language", defaulting to "ruby"
-bad-repo: .travis.yml: unexpected key "foo", dropping
 bad-repo: CONTRIBUTING: CONTRIBUTING:1:0: "existance" is a misspelling of "existence"
 bad-repo: CONTRIBUTING.md: CONTRIBUTING.md:1:0: "existance" is a misspelling of "existence"
 ```
