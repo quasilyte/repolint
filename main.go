@@ -10,6 +10,7 @@ import (
 	"math"
 	"os"
 	"os/exec"
+	"path/filepath"
 	"regexp"
 	"strings"
 
@@ -25,7 +26,7 @@ type linter struct {
 	client  *github.Client
 	verbose bool
 
-	tmpfiles []string
+	tempDir string
 }
 
 type fileChecker interface {
@@ -101,8 +102,9 @@ func main() {
 	var l linter
 
 	defer func() {
-		for _, f := range l.tmpfiles {
-			_ = os.Remove(f)
+		err := os.RemoveAll(l.tempDir)
+		if err != nil {
+			log.Printf("cleanup before exit: %v", err)
 		}
 	}()
 
@@ -110,6 +112,7 @@ func main() {
 		name string
 		fn   func() error
 	}{
+		{"init temp dir", l.initTempDir},
 		{"parse flags", l.parseFlags},
 		{"read token", l.readToken},
 		{"init client", l.initClient},
@@ -122,6 +125,12 @@ func main() {
 			log.Fatalf("%s: %v", step.name, err)
 		}
 	}
+}
+
+func (l *linter) initTempDir() error {
+	tempDir, err := ioutil.TempDir("", "repolint")
+	l.tempDir = tempDir
+	return err
 }
 
 func (l *linter) readToken() error {
@@ -240,6 +249,34 @@ func (l *linter) lintFiles(repo string) {
 		panic(fmt.Sprintf("%s: list directory: %v", repo, err))
 	}
 	l.lintFilenames(repo, list)
+	var checkers = map[string]fileChecker{
+		".travis.yml": &travisYmlChecker{},
+	}
+	for _, f := range list {
+		c := checkers[*f.Name]
+		if c != nil {
+			// To get file contents, another request must be performed.
+			f, _, _, err := l.client.Repositories.GetContents(l.ctx, l.user, repo, "/"+*f.Name, nil)
+			if err != nil {
+				panic(fmt.Sprintf("can't fetch listed file: %v", err))
+			}
+			for _, err := range c.CheckFile(l.tempFile(f)) {
+				log.Printf("%s: %s: %v", repo, *f.Name, err)
+			}
+		}
+	}
+}
+
+func (l *linter) tempFile(f *github.RepositoryContent) string {
+	filename := filepath.Join(l.tempDir, *f.Name)
+	data, err := f.GetContent()
+	if err != nil {
+		panic(fmt.Sprintf("get %s contents: %v", *f.Name, err))
+	}
+	if err := ioutil.WriteFile(filename, []byte(data), 0644); err != nil {
+		panic(fmt.Sprintf("write %s: %v", *f.Name, err))
+	}
+	return filename
 }
 
 func (l *linter) lintReadme(repo string) {
@@ -256,29 +293,12 @@ func (l *linter) lintReadme(repo string) {
 		log.Printf("%s: can't access README", repo)
 		return
 	}
-	readme, err := f.GetContent()
-	if err != nil {
-		log.Fatalf("get content: %v", err)
-	}
-	tmp := l.newTmpFile("README*.md", []byte(readme))
+	tmp := l.tempFile(f)
 
 	for _, c := range checks {
-		for _, err := range c.checker.CheckFile(tmp.Name()) {
+		for _, err := range c.checker.CheckFile(tmp) {
 			log.Printf("%s: %s: %v", repo, c.name, err)
 		}
 	}
 
-}
-
-func (l *linter) newTmpFile(pattern string, data []byte) *os.File {
-	f, err := ioutil.TempFile("", pattern)
-	if err != nil {
-		panic(fmt.Errorf("create temp file: %v", err))
-	}
-	_, err = f.Write(data)
-	if err != nil {
-		panic(fmt.Errorf("write to temp file (%s): %v", err, f.Name()))
-	}
-	l.tmpfiles = append(l.tmpfiles, f.Name())
-	return f
 }
