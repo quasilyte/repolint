@@ -225,7 +225,7 @@ func newAcronymChecker() *acronymChecker {
 
 	parts := make([]string, 0, len(fromTo))
 	for from := range fromTo {
-		parts = append(parts, `\b`+from+`\b`)
+		parts = append(parts, `(?:^|\s)`+from+`(?:$|\s)`)
 	}
 
 	re := regexp.MustCompile(strings.Join(parts, "|"))
