@@ -45,13 +45,10 @@ func (c *checkerBase) filenameReplacer() *strings.Replacer {
 	return strings.NewReplacer(oldnew...)
 }
 
+var docFileRE = regexp.MustCompile(`(?:README|CONTRIBUTING)[^.]*?(?:\.md|\.txt|$)`)
+
 func isDocumentationFile(filename string) bool {
-	switch filename {
-	case "README", "README.md", "README.txt",
-		"CONTRIBUTING", "CONTRIBUTING.md", "CONTRIBUTING.txt":
-		return true
-	}
-	return false
+	return docFileRE.MatchString(filename)
 }
 
 type misspellChecker struct{ checkerBase }
