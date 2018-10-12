@@ -58,6 +58,7 @@ type linter struct {
 	verbose      bool
 	skipForks    bool
 	skipInactive bool
+	skipVendor   bool
 
 	checkers map[string]fileChecker
 
@@ -86,6 +87,8 @@ func (l *linter) parseFlags() error {
 		`whether to skip repositories that are forks`)
 	flag.BoolVar(&l.skipInactive, `skipInactive`, true,
 		`whether to skip repositories with latest push dated more than 1 year ago`)
+	flag.BoolVar(&l.skipVendor, `skipVendor`, true,
+		`whether to skip vendor folders and their contents`)
 
 	flag.Parse()
 
@@ -187,7 +190,7 @@ type repoFile struct {
 }
 
 func (l *linter) lintRepo(repo string) {
-	files := l.collectDirFiles(repo, "/")
+	files := l.collectRepoFiles(repo)
 
 	for name, c := range l.checkers {
 		c.Reset()
@@ -203,7 +206,7 @@ func (l *linter) lintRepo(repo string) {
 	}
 }
 
-func (l *linter) collectDirFiles(repo, dir string) []*repoFile {
+func (l *linter) collectRepoFiles(repo string) []*repoFile {
 	tree, _, err := l.client.Git.GetTree(l.ctx, l.user, repo, "master", true)
 	if err != nil {
 		panic(fmt.Sprintf("get tree: %v", err))
@@ -215,6 +218,9 @@ func (l *linter) collectDirFiles(repo, dir string) []*repoFile {
 	var files []*repoFile
 	for _, entry := range tree.Entries {
 		if entry.Path == nil {
+			continue
+		}
+		if l.skipVendor && strings.Contains(f.origName, "vendor/") {
 			continue
 		}
 		files = append(files, &repoFile{
