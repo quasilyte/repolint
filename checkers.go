@@ -267,6 +267,7 @@ func newVarTypoChecker() *varTypoChecker {
 		// TODO: more of these.
 
 		"PAHT": "PATH",
+		"HOEM": "HOME",
 
 		"GOPAHT": "GOPATH",
 
