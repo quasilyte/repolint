@@ -60,6 +60,8 @@ type linter struct {
 	skipInactive bool
 	skipVendor   bool
 
+	requests int
+
 	checkers map[string]fileChecker
 
 	tempDir string
@@ -127,6 +129,7 @@ func (l *linter) getReposList() error {
 	opts := newRepositoryListOptions()
 	for {
 		repos, resp, err := l.client.Repositories.List(l.ctx, l.user, opts)
+		l.requests++
 		if err != nil {
 			return fmt.Errorf("list repos (page=%d): %v", opts.Page, err)
 		}
@@ -165,8 +168,8 @@ func (l *linter) getReposList() error {
 
 func (l *linter) lintRepos() error {
 	for i, repo := range l.repos {
-		log.Printf("\tchecking %s/%s (%d/%d) ...",
-			l.user, repo, i+1, len(l.repos))
+		log.Printf("\tchecking %s/%s (%d/%d, made %d requests so far) ...",
+			l.user, repo, i+1, len(l.repos), l.requests)
 		l.lintRepo(repo)
 	}
 	return nil
@@ -207,6 +210,7 @@ func (l *linter) lintRepo(repo string) {
 
 func (l *linter) collectRepoFiles(repo string) []*repoFile {
 	tree, _, err := l.client.Git.GetTree(l.ctx, l.user, repo, "master", true)
+	l.requests++
 	if err != nil {
 		panic(fmt.Sprintf("get tree: %v", err))
 	}
@@ -249,6 +253,7 @@ func (l *linter) createLocalCopy(repo string, f *repoFile) {
 
 func (l *linter) getContents(repo, path string) string {
 	f, _, _, err := l.client.Repositories.GetContents(l.ctx, l.user, repo, path, nil)
+	l.requests++
 	if err != nil {
 		panic(fmt.Sprintf("get %s contents: %v", path, err))
 	}
