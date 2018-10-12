@@ -65,7 +65,6 @@ For [bad-repo](https://github.com/Quasilyte/bad-repo) it can output something li
 	checking Quasilyte/bad-repo...
 bad-repo: misspell: dir/README.md:1:0: "oversimplificiation" is a misspelling of "oversimplification"
 bad-repo: misspell: CONTRIBUTING.md:1:0: "existance" is a misspelling of "existence"
-bad-repo: misspell: CONTRIBUTING:1:0: "existance" is a misspelling of "existence"
 bad-repo: unwanted file: remove Emacs autosave file: #autosave.txt#
 bad-repo: unwanted file: remove Emacs lock file file: .#lockfile.txt
 bad-repo: unwanted file: remove Mac OS sys file file: .DS_STORE
