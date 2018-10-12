@@ -90,7 +90,9 @@ func (c *brokenLinkChecker) PushFile(f *repoFile) {
 }
 
 func (c *brokenLinkChecker) CheckFiles() (warnings []string) {
-	out, err := exec.Command("liche", c.tempFilenames()...).CombinedOutput()
+	args := []string{"-t", "10"}
+	args = append(args, c.tempFilenames()...)
+	out, err := exec.Command("liche", args...).CombinedOutput()
 	if err != nil {
 		replacer := c.filenameReplacer()
 		lines := strings.Split(string(out), "\n")
