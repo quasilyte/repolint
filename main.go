@@ -10,6 +10,7 @@ import (
 	"math"
 	"os"
 	"path/filepath"
+	"regexp"
 	"strings"
 	"time"
 
@@ -209,6 +210,12 @@ func (l *linter) lintRepo(repo string) {
 }
 
 func (l *linter) collectRepoFiles(repo string) []*repoFile {
+	vendorDirs := []string{
+		`/?vendor/`,
+		`/?node_modules/`,
+		`/?cargo-vendor/`,
+	}
+	vendorRE := regexp.MustCompile(strings.Join(vendorDirs, "|"))
 	tree, _, err := l.client.Git.GetTree(l.ctx, l.user, repo, "master", true)
 	l.requests++
 	if err != nil {
@@ -223,7 +230,7 @@ func (l *linter) collectRepoFiles(repo string) []*repoFile {
 		if entry.Path == nil {
 			continue
 		}
-		if l.skipVendor && strings.Contains(*entry.Path, "vendor/") {
+		if l.skipVendor && vendorRE.MatchString(*entry.Path) {
 			continue
 		}
 		files = append(files, &repoFile{
