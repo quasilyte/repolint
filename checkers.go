@@ -170,40 +170,10 @@ type sloppyCopyrightChecker struct {
 }
 
 func newSloppyCopyrightChecker() *sloppyCopyrightChecker {
-	templates := []string{
-		`Copyright $year,?\s*$author`,
-		`Copyright \(c\)\s*$year,?\s*$author`,
-		`Copyright ©\s*$year,?\s*$author`,
-	}
-	years := []string{
-		`\[yyyy\]`,
-		`\\\[yyyy\\\]`,
-		`<year>`,
-		`\\<year\\>`,
-		`\$\{year\}`,
-	}
-	authors := []string{
-		`\[name of copyright owner\]`,
-		`\\\[name of copyright owner\\\]`,
-		`<author>`,
-		`\\<author\\>`,
-		`<name of author>`,
-		`\\<name of author\\>`,
-		`\$\{author\}`,
-	}
-
-	var alternatives []string
-	for _, tmpl := range templates {
-		var alts []string
-		for _, year := range years {
-			for _, author := range authors {
-				alt := tmpl
-				alt = strings.Replace(alt, "$year", year, 1)
-				alt = strings.Replace(alt, "$author", author, 1)
-				alts = append(alts, alt)
-			}
-		}
-		alternatives = append(alternatives, alts...)
+	alternatives := []string{
+		`copyright year,?\s*fullname`,
+		`copyright \(c\)\s*year,?\s*fullname`,
+		`copyright ©\s*year,?\s*fullname`,
 	}
 
 	pattern := `(?i)` + strings.Join(alternatives, "|")
