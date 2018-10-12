@@ -255,3 +255,62 @@ func (c *acronymChecker) CheckFiles() (warnings []string) {
 	}
 	return warnings
 }
+
+type varTypoChecker struct {
+	checkerBase
+	varsRE  *regexp.Regexp
+	varsMap map[string]string
+}
+
+func newVarTypoChecker() *varTypoChecker {
+	typos := map[string]string{
+		// TODO: more of these.
+
+		"PAHT": "PATH",
+
+		"GOPAHT": "GOPATH",
+
+		"JAAV_HOME": "JAVA_HOME",
+		"JAVA_HOEM": "JAVA_HOME",
+		"JAVE_HOME": "JAVA_HOME",
+
+		"CLASSPAHT": "CLASSPATH",
+		"CLASPATH":  "CLASSPATH",
+	}
+
+	fromTo := make(map[string]string)
+	parts := make([]string, 0, len(fromTo))
+	for typo, corrected := range typos {
+		parts = append(parts, `\$`+typo+`\b`)
+		fromTo[`$`+typo] = corrected
+		parts = append(parts, `\$\{`+typo+`\}`)
+		fromTo[`${`+typo+`}`] = corrected
+	}
+
+	re := regexp.MustCompile(strings.Join(parts, "|"))
+	return &varTypoChecker{
+		varsMap: fromTo,
+		varsRE:  re,
+	}
+}
+
+func (c *varTypoChecker) PushFile(f *repoFile) {
+	if isDocumentationFile(f.baseName) {
+		f.require.contents = true
+		c.acceptFile(f)
+	}
+}
+
+func (c *varTypoChecker) CheckFiles() (warnings []string) {
+	for _, f := range c.files {
+		lines := strings.Split(f.contents, "\n")
+		for i, l := range lines {
+			for _, m := range c.varsRE.FindAllString(l, -1) {
+				w := fmt.Sprintf("%s:%d: %s could be a misspelling of %s",
+					f.origName, i+1, m, c.varsMap[m])
+				warnings = append(warnings, w)
+			}
+		}
+	}
+	return warnings
+}

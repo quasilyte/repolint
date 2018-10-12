@@ -25,6 +25,7 @@ func main() {
 		checkers: map[string]fileChecker{
 			"broken link":      &brokenLinkChecker{},
 			"misspell":         &misspellChecker{},
+			"var name typo":    newVarTypoChecker(),
 			"unwanted file":    newUnwantedFileChecker(),
 			"sloppy copyright": newSloppyCopyrightChecker(),
 			"acronym":          newAcronymChecker(),
