@@ -87,7 +87,7 @@ func (c *brokenLinkChecker) PushFile(f *repoFile) {
 }
 
 func (c *brokenLinkChecker) CheckFiles() (warnings []string) {
-	args := []string{"-t", "30", "-x", `/release|/download|localhost|example\.com`}
+	args := []string{"-t", "30", "-x", `/release|/download|localhost|127\.[01]\.[01]\.[01]|example\.com`}
 	args = append(args, c.tempFilenames()...)
 	out, err := exec.Command("liche", args...).CombinedOutput()
 	if err != nil {
