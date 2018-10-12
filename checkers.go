@@ -199,3 +199,59 @@ func (c *sloppyCopyrightChecker) CheckFiles() (warnings []string) {
 	}
 	return warnings
 }
+
+type acronymChecker struct {
+	checkerBase
+	acronymRE  *regexp.Regexp
+	acronymMap map[string]string
+}
+
+func newAcronymChecker() *acronymChecker {
+	fromTo := map[string]string{
+		// TODO: more of these.
+
+		"gcc":  "GCC",
+		"gnu":  "GNU",
+		"sql":  "SQL",
+		"dsl":  "DSL",
+		"ansi": "ANSI",
+		"bios": "BIOS",
+		"cgi":  "CGI",
+		"ssa":  "SSA",
+		"dpi":  "DPI",
+		"gui":  "GUI",
+		"oop":  "OOP",
+	}
+
+	parts := make([]string, 0, len(fromTo))
+	for from := range fromTo {
+		parts = append(parts, `\b`+from+`\b`)
+	}
+
+	re := regexp.MustCompile(strings.Join(parts, "|"))
+	return &acronymChecker{
+		acronymMap: fromTo,
+		acronymRE:  re,
+	}
+}
+
+func (c *acronymChecker) PushFile(f *repoFile) {
+	if isDocumentationFile(f.baseName) {
+		f.require.contents = true
+		c.acceptFile(f)
+	}
+}
+
+func (c *acronymChecker) CheckFiles() (warnings []string) {
+	for _, f := range c.files {
+		lines := strings.Split(f.contents, "\n")
+		for i, l := range lines {
+			for _, m := range c.acronymRE.FindAllString(l, -1) {
+				w := fmt.Sprintf("%s:%d: replace %s with %s",
+					f.origName, i+1, m, c.acronymMap[m])
+				warnings = append(warnings, w)
+			}
+		}
+	}
+	return warnings
+}

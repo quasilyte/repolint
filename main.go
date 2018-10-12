@@ -27,6 +27,7 @@ func main() {
 			"misspell":         &misspellChecker{},
 			"unwanted file":    newUnwantedFileChecker(),
 			"sloppy copyright": newSloppyCopyrightChecker(),
+			"acronym":          newAcronymChecker(),
 		},
 	}
 
@@ -200,14 +201,16 @@ type repoFile struct {
 func (l *linter) lintRepo(repo string) {
 	files := l.collectRepoFiles(repo)
 
-	for name, c := range l.checkers {
+	for _, c := range l.checkers {
 		c.Reset()
-		// Let it accept files it is interested in.
 		for _, f := range files {
 			c.PushFile(f)
-			l.resolveRequirements(repo, f)
 		}
-		// Now run check over all accepted files.
+	}
+	for _, f := range files {
+		l.resolveRequirements(repo, f)
+	}
+	for name, c := range l.checkers {
 		for _, warning := range c.CheckFiles() {
 			log.Printf("%s: %s: %s", repo, name, warning)
 		}
