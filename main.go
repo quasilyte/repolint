@@ -23,9 +23,10 @@ func main() {
 
 	l := linter{
 		checkers: map[string]fileChecker{
-			"broken link":   &brokenLinkChecker{},
-			"misspell":      &misspellChecker{},
-			"unwanted file": newUnwantedFileChecker(),
+			"broken link":      &brokenLinkChecker{},
+			"misspell":         &misspellChecker{},
+			"unwanted file":    newUnwantedFileChecker(),
+			"sloppy copyright": newSloppyCopyrightChecker(),
 		},
 	}
 
@@ -187,8 +188,12 @@ type repoFile struct {
 	// If empty, no local file is associated.
 	tempName string
 
+	// contents is a local file copy contents.
+	contents string
+
 	require struct {
 		localCopy bool
+		contents  bool
 	}
 }
 
@@ -243,6 +248,10 @@ func (l *linter) collectRepoFiles(repo string) []*repoFile {
 }
 
 func (l *linter) resolveRequirements(repo string, f *repoFile) {
+	if f.require.contents {
+		f.require.localCopy = true
+	}
+
 	if f.require.localCopy && f.tempName == "" {
 		l.createLocalCopy(repo, f)
 	}
@@ -252,6 +261,9 @@ func (l *linter) createLocalCopy(repo string, f *repoFile) {
 	flatPath := strings.Replace(f.origName, "/", "_(slash)_", -1)
 	filename := filepath.Join(l.tempDir, flatPath)
 	data := l.getContents(repo, f.origName)
+	if f.require.contents {
+		f.contents = data
+	}
 	if err := ioutil.WriteFile(filename, []byte(data), 0644); err != nil {
 		panic(fmt.Sprintf("write %s: %v", f.origName, err))
 	}

@@ -163,3 +163,69 @@ func (c *unwantedFileChecker) CheckFiles() (warnings []string) {
 	}
 	return warnings
 }
+
+type sloppyCopyrightChecker struct {
+	checkerBase
+	copyrightRE *regexp.Regexp
+}
+
+func newSloppyCopyrightChecker() *sloppyCopyrightChecker {
+	templates := []string{
+		`Copyright $year,?\s*$author`,
+		`Copyright \(c\)\s*$year,?\s*$author`,
+		`Copyright ©\s*$year,?\s*$author`,
+	}
+	years := []string{
+		`\[yyyy\]`,
+		`\\\[yyyy\\\]`,
+		`<year>`,
+		`\\<year\\>`,
+		`\$\{year\}`,
+	}
+	authors := []string{
+		`\[name of copyright owner\]`,
+		`\\\[name of copyright owner\\\]`,
+		`<author>`,
+		`\\<author\\>`,
+		`<name of author>`,
+		`\\<name of author\\>`,
+		`\$\{author\}`,
+	}
+
+	var alternatives []string
+	for _, tmpl := range templates {
+		var alts []string
+		for _, year := range years {
+			for _, author := range authors {
+				alt := tmpl
+				alt = strings.Replace(alt, "$year", year, 1)
+				alt = strings.Replace(alt, "$author", author, 1)
+				alts = append(alts, alt)
+			}
+		}
+		alternatives = append(alternatives, alts...)
+	}
+
+	pattern := `(?i)` + strings.Join(alternatives, "|")
+	re := regexp.MustCompile(pattern)
+	return &sloppyCopyrightChecker{copyrightRE: re}
+}
+
+func (c *sloppyCopyrightChecker) PushFile(f *repoFile) {
+	// Only check root files.
+	switch f.origName {
+	case "LICENSE", "LICENSE.md", "LICENSE.txt":
+		f.require.contents = true
+		c.acceptFile(f)
+	}
+}
+
+func (c *sloppyCopyrightChecker) CheckFiles() (warnings []string) {
+	for _, f := range c.files {
+		if c.copyrightRE.MatchString(f.contents) {
+			w := fmt.Sprintf("%s: license contains sloppy copyright", f.origName)
+			warnings = append(warnings, w)
+		}
+	}
+	return warnings
+}
