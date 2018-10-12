@@ -275,7 +275,8 @@ func (l *linter) getContents(repo, path string) string {
 	f, _, _, err := l.client.Repositories.GetContents(l.ctx, l.user, repo, path, nil)
 	l.requests++
 	if err != nil {
-		panic(fmt.Sprintf("get %s contents: %v", path, err))
+		log.Printf("\terror: get %s/%s contents: %v", repo, path, err)
+		return ""
 	}
 	s, err := f.GetContent()
 	if err != nil {
