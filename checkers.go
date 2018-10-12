@@ -112,13 +112,18 @@ func (c *brokenLinkChecker) CheckFiles() (warnings []string) {
 			// Next line contains error info.
 			url := strings.TrimLeft(l, "\t ERROR")
 			i++
-			l = lines[i]
+			l = strings.TrimSpace(lines[i])
+			if l == "Timeout" {
+				// Reporting timeouts can lead to a lots of false positives.
+				// Better to skip them silently.
+				continue
+			}
 			if strings.Contains(l, "no such file") || strings.Contains(l, "root directory is not specified") {
 				// Not interested in file lookups, since we're
 				// not doing real git cloning.
 				continue
 			}
-			w := fmt.Sprintf("%s: %s: %s", filename, url, strings.TrimSpace(l))
+			w := fmt.Sprintf("%s: %s: %s", filename, url, l)
 			warnings = append(warnings, w)
 		}
 	}
