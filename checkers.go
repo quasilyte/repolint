@@ -135,10 +135,17 @@ type unwantedFileChecker struct {
 func newUnwantedFileChecker() *unwantedFileChecker {
 	return &unwantedFileChecker{
 		patterns: map[string]*regexp.Regexp{
-			"Vim swap":         regexp.MustCompile(`^.*\.swp$`),
-			"Emacs autosave":   regexp.MustCompile(`^#.*#$`),
-			"Emacs backup":     regexp.MustCompile(`^.*~$`),
-			"Mac OS sys file":  regexp.MustCompile(`^\.DS_STORE$`),
+			// -> foo.txt.swp
+			"Vim swap": regexp.MustCompile(`^.*\.swp$`),
+			// -> #foo.txt#
+			"Emacs autosave": regexp.MustCompile(`^#.*#$`),
+			// -> foo.txt~
+			"Emacs backup": regexp.MustCompile(`^.*~$`),
+			// -> .#foo.txt
+			"Emacs lock file": regexp.MustCompile(`^\.#.*$`),
+			// -> .DS_STORE
+			"Mac OS sys file": regexp.MustCompile(`^\.DS_STORE$`),
+			// -> Thumbs.db
 			"Windows sys file": regexp.MustCompile(`^Thumbs\.db$`),
 		},
 	}
