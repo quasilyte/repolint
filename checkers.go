@@ -45,7 +45,7 @@ func (c *checkerBase) filenameReplacer() *strings.Replacer {
 	return strings.NewReplacer(oldnew...)
 }
 
-var docFileRE = regexp.MustCompile(`(?:README|CONTRIBUTING)[^.]*?(?:\.md|\.txt|$)`)
+var docFileRE = regexp.MustCompile(`^(?:README|CONTRIBUTING|TODO)[^.]*?(?:\.md|\.txt|$)`)
 
 func isDocumentationFile(filename string) bool {
 	return docFileRE.MatchString(filename)
