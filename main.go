@@ -224,7 +224,8 @@ func (l *linter) collectRepoFiles(repo string) []*repoFile {
 	tree, _, err := l.client.Git.GetTree(l.ctx, l.user, repo, "master", true)
 	l.requests++
 	if err != nil {
-		panic(fmt.Sprintf("get tree: %v", err))
+		log.Printf("\terror: get %s tree: %v", repo, err)
+		return nil
 	}
 	if l.verbose && *tree.Truncated {
 		log.Printf("\t\tdebug: %s tree is truncated", repo)
