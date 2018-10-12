@@ -63,14 +63,19 @@ For [bad-repo](https://github.com/Quasilyte/bad-repo) it can output something li
 
 ```
 	checking Quasilyte/bad-repo...
-bad-repo: can't access README
-bad-repo: remove Emacs autosave file: #autosave.txt#
-bad-repo: remove Mac OS sys file file: .DS_STORE
-bad-repo: remove Vim swap file: .foo.swp
-bad-repo: remove Windows sys file file: Thumbs.db
-bad-repo: remove Emacs backup file: backup.txt~
-bad-repo: CONTRIBUTING: CONTRIBUTING:1:0: "existance" is a misspelling of "existence"
-bad-repo: CONTRIBUTING.md: CONTRIBUTING.md:1:0: "existance" is a misspelling of "existence"
+bad-repo: misspell: dir/README.md:1:0: "oversimplificiation" is a misspelling of "oversimplification"
+bad-repo: misspell: CONTRIBUTING.md:1:0: "existance" is a misspelling of "existence"
+bad-repo: misspell: CONTRIBUTING:1:0: "existance" is a misspelling of "existence"
+bad-repo: unwanted file: remove Emacs autosave file: #autosave.txt#
+bad-repo: unwanted file: remove Emacs lock file file: .#lockfile.txt
+bad-repo: unwanted file: remove Mac OS sys file file: .DS_STORE
+bad-repo: unwanted file: remove Vim swap file: .foo.swp
+bad-repo: unwanted file: remove Windows sys file file: Thumbs.db
+bad-repo: unwanted file: remove Emacs backup file: backup.txt~
+bad-repo: sloppy copyright: LICENSE: license contains sloppy copyright
+bad-repo: broken link: dir/README.md: http://non-existing.link.ever/ok: Lookup non-existing.link.ever on 127.0.1.1:53: no such host
+bad-repo: broken link: dir/README.md: http://this-url.doesnotexist.ru/: Lookup this-url.doesnotexist.ru on 127.0.1.1:53: no such host
+bad-repo: broken link: dir/README.md: https://link.foo-and-bar.bar: Lookup link.foo-and-bar.bar on 127.0.1.1:53: no such host
 ```
 
 Note that this example output may be outdated and the `bad-repo`
