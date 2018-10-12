@@ -220,7 +220,7 @@ func (l *linter) collectRepoFiles(repo string) []*repoFile {
 		if entry.Path == nil {
 			continue
 		}
-		if l.skipVendor && strings.Contains(f.origName, "vendor/") {
+		if l.skipVendor && strings.Contains(*entry.Path, "vendor/") {
 			continue
 		}
 		files = append(files, &repoFile{
