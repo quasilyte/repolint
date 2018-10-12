@@ -63,8 +63,15 @@ For [bad-repo](https://github.com/Quasilyte/bad-repo) it can output something li
 
 ```
 	checking Quasilyte/bad-repo...
-bad-repo: misspell: dir/README.md:1:0: "oversimplificiation" is a misspelling of "oversimplification"
+bad-repo: broken link: dir/README.md: http://non-existing.link.ever/ok: Lookup non-existing.link.ever on 127.0.1.1:53: no such host
+bad-repo: broken link: dir/README.md: http://this-url.doesnotexist.ru/: Lookup this-url.doesnotexist.ru on 127.0.1.1:53: no such host
+bad-repo: broken link: dir/README.md: https://link.foo-and-bar.bar: Lookup link.foo-and-bar.bar on 127.0.1.1:53: no such host
 bad-repo: misspell: CONTRIBUTING.md:1:0: "existance" is a misspelling of "existence"
+bad-repo: misspell: CONTRIBUTING:1:0: "existance" is a misspelling of "existence"
+bad-repo: misspell: README.rst:11:0: "excelent" is a misspelling of "excellent"
+bad-repo: misspell: dir/README.md:1:0: "oversimplificiation" is a misspelling of "oversimplification"
+bad-repo: var name typo: README.rst:19: $CLASSPAHT could be a misspelling of CLASSPATH
+bad-repo: var name typo: README.rst:20: ${GOPAHT} could be a misspelling of GOPATH
 bad-repo: unwanted file: remove Emacs autosave file: #autosave.txt#
 bad-repo: unwanted file: remove Emacs lock file file: .#lockfile.txt
 bad-repo: unwanted file: remove Mac OS sys file file: .DS_STORE
@@ -72,9 +79,9 @@ bad-repo: unwanted file: remove Vim swap file: .foo.swp
 bad-repo: unwanted file: remove Windows sys file file: Thumbs.db
 bad-repo: unwanted file: remove Emacs backup file: backup.txt~
 bad-repo: sloppy copyright: LICENSE: license contains sloppy copyright
-bad-repo: broken link: dir/README.md: http://non-existing.link.ever/ok: Lookup non-existing.link.ever on 127.0.1.1:53: no such host
-bad-repo: broken link: dir/README.md: http://this-url.doesnotexist.ru/: Lookup this-url.doesnotexist.ru on 127.0.1.1:53: no such host
-bad-repo: broken link: dir/README.md: https://link.foo-and-bar.bar: Lookup link.foo-and-bar.bar on 127.0.1.1:53: no such host
+bad-repo: acronym: README.rst:13: replace sql with SQL
+bad-repo: acronym: README.rst:14: replace gcc with GCC
+bad-repo: acronym: README.rst:15: replace gnu with GNU
 ```
 
 Note that this example output may be outdated and the `bad-repo`
