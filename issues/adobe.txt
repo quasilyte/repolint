@@ -1,24 +1,3 @@
-		debug: fetched 100 repo names
-		debug: skip angle.js inactive repo
-		debug: skip argo fork repo
-		debug: skip argo-ui fork repo
-		debug: skip avmplus inactive repo
-		debug: skip brackets-edge-web-fonts inactive repo
-		debug: skip chromium inactive repo
-		debug: skip cla-assistant fork repo
-		debug: skip dds2atf inactive repo
-		debug: skip GLS3D inactive repo
-		debug: skip glsl2agal fork repo
-		debug: skip luacov fork repo
-		debug: skip nodegit fork repo
-		debug: skip osgi-example-kubernetes fork repo
-		debug: skip preact-compat fork repo
-		debug: skip PushProx fork repo
-		debug: skip server.adobe.github.com fork repo
-		debug: fetched 26 repo names
-		debug: skip telemetry-utils fork repo
-		debug: skip WebkitAIR inactive repo
-		debug: skip websocketpp fork repo
 	checking adobe/acp-data-services-dsw-reference (1/107, made 2 requests so far) ...
 	checking adobe/acp-data-services-etl-reference (2/107, made 11 requests so far) ...
 	checking adobe/Adobe-Developer-Site (3/107, made 15 requests so far) ...
