@@ -282,6 +282,10 @@ func (l *linter) getContents(repo, path string) string {
 		log.Printf("\terror: get %s/%s contents: %v", repo, path, err)
 		return ""
 	}
+	if f == nil {
+		log.Printf("\terror: %s/%s contents is nil", repo, path)
+		return ""
+	}
 	s, err := f.GetContent()
 	if err != nil {
 		panic(fmt.Sprintf("get %s contents: %v", path, err))
