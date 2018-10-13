@@ -63,6 +63,7 @@ type linter struct {
 	skipForks    bool
 	skipInactive bool
 	skipVendor   bool
+	offset       int
 
 	requests int
 
@@ -89,12 +90,14 @@ func (l *linter) parseFlags() error {
 		`github user/organization name`)
 	flag.BoolVar(&l.verbose, "v", false,
 		`verbose mode that turns on additional debug output`)
-	flag.BoolVar(&l.skipForks, `skipForks`, true,
+	flag.BoolVar(&l.skipForks, "skipForks", true,
 		`whether to skip repositories that are forks`)
-	flag.BoolVar(&l.skipInactive, `skipInactive`, true,
+	flag.BoolVar(&l.skipInactive, "skipInactive", true,
 		`whether to skip repositories with latest push dated more than 1 year ago`)
-	flag.BoolVar(&l.skipVendor, `skipVendor`, true,
+	flag.BoolVar(&l.skipVendor, "skipVendor", true,
 		`whether to skip vendor folders and their contents`)
+	flag.IntVar(&l.offset, "offset", 0,
+		`how many repositories to skip`)
 
 	flag.Parse()
 
@@ -171,7 +174,8 @@ func (l *linter) getReposList() error {
 }
 
 func (l *linter) lintRepos() error {
-	for i, repo := range l.repos {
+	for i := l.offset; i < len(l.repos); i++ {
+		repo := l.repos[i]
 		log.Printf("\tchecking %s/%s (%d/%d, made %d requests so far) ...",
 			l.user, repo, i+1, len(l.repos), l.requests)
 		l.lintRepo(repo)
