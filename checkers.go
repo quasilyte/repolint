@@ -210,7 +210,6 @@ func newAcronymChecker() *acronymChecker {
 	fromTo := map[string]string{
 		// TODO: more of these.
 
-		"gcc":  "GCC",
 		"gnu":  "GNU",
 		"sql":  "SQL",
 		"dsl":  "DSL",
@@ -247,6 +246,7 @@ func (c *acronymChecker) CheckFiles() (warnings []string) {
 		lines := strings.Split(f.contents, "\n")
 		for i, l := range lines {
 			for _, m := range c.acronymRE.FindAllString(l, -1) {
+				m = strings.TrimSpace(m)
 				w := fmt.Sprintf("%s:%d: replace %s with %s",
 					f.origName, i+1, m, c.acronymMap[m])
 				warnings = append(warnings, w)
