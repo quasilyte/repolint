@@ -1,0 +1,427 @@
+    checking oracle/accelerators (1/110, made 2 requests so far) ...
+accelerators: broken link: casemgmt/ebs/cx/projects/Accelerator.EBS.ReportTablesAddIn/README.md: http://rws3220164.us.oracle.com:8055/","username":"ebusiness","password":"welcome","cfContactPartyID":268,"incidentsByContactReportID":101036,"ext_services":{"service_request_list":{"read":{"service_name":"CS_SERVICEREQUEST_PUB","soap_action":"GET_SRINFO_BYCONTACT","relative_path":"webservices/SOAProvider/plsql/cs_servicerequest_pub/"}},"service_request_detail":{"read":{"service_name":"CS_SERVICEREQUEST_PUB","soap_action":"GET_SR_INFO","relative_path":"webservices/SOAProvider/plsql/cs_servicerequest_pub/": Lookup rws3220164.us.oracle.com on 127.0.1.1:53: no such host
+	checking oracle/adf-samples (2/110, made 13 requests so far) ...
+adf-samples: misspell: README.md:71:1231: "defintion" is a misspelling of "definition"
+adf-samples: misspell: README.md:148:2776: "defintion" is a misspelling of "definition"
+adf-samples: misspell: README.md:225:2243: "Busines" is a misspelling of "Business"
+adf-samples: misspell: README.md:237:3287: "optmizations" is a misspelling of "optimizations"
+adf-samples: misspell: README.md:321:305: "overriden" is a misspelling of "overridden"
+adf-samples: misspell: README.md:357:48: "achive" is a misspelling of "achieve"
+adf-samples: misspell: README.md:365:270: "Deparments" is a misspelling of "Departments"
+	checking oracle/apiplatform-mgmtscripts-sample (3/110, made 24 requests so far) ...
+apiplatform-mgmtscripts-sample: misspell: README.md:89:20: "infomation" is a misspelling of "information"
+	checking oracle/atg-commerce-iaas (4/110, made 27 requests so far) ...
+atg-commerce-iaas: acronym: webui/README.md:7: replace cgi with CGI
+atg-commerce-iaas: acronym: webui/README.md:15: replace cgi with CGI
+atg-commerce-iaas: acronym: webui/README.md:18: replace cgi with CGI
+	checking oracle/big-data-lite (5/110, made 44 requests so far) ...
+big-data-lite: acronym: samples/c2hadoop/README.txt:15: replace sql with SQL
+big-data-lite: misspell: movie/moviedemo/nosqldb/scripts/README.txt:4:9: "succesfully" is a misspelling of "successfully"
+big-data-lite: unwanted file: remove Vim swap file: Blogs/BDSG_Barcode/TessText/.Tess.java.swp
+big-data-lite: unwanted file: remove Windows sys file file: movie/moviedemo/nosqldb/bigdatademo/UI/public_html/images/Thumbs.db
+big-data-lite: unwanted file: remove Emacs backup file: movie/moviework/odi/ddl/hive_ddl_movie_updates.sql~
+big-data-lite: unwanted file: remove Emacs backup file: movie/moviework/odi/ddl/orcl_ddl_odi_movie_rating.sql~
+	checking oracle/bosh-oracle-cpi (6/110, made 52 requests so far) ...
+	checking oracle/bosh-oracle-cpi-release (7/110, made 55 requests so far) ...
+bosh-oracle-cpi-release: misspell: README.md:7:16: "Availabilty" is a misspelling of "Availability"
+bosh-oracle-cpi-release: misspell: ci/README.md:25:69: "maintan" is a misspelling of "maintain"
+bosh-oracle-cpi-release: misspell: ci/README.md:71:67: "maintan" is a misspelling of "maintain"
+	checking oracle/bots-node-sdk (8/110, made 59 requests so far) ...
+bots-node-sdk: misspell: README.md:245:59: "stuctured" is a misspelling of "structured"
+	checking oracle/cloud-asset-hcm-dataloading-using-soacs-samples (9/110, made 73 requests so far) ...
+	checking oracle/cloud-asset-taleo-icstoebsintegration-samples (10/110, made 74 requests so far) ...
+	checking oracle/cloud-native-devops-workshop (11/110, made 75 requests so far) ...
+cloud-native-devops-workshop: misspell: cloud-utils/README.md:29:48: "conatiners" is a misspelling of "containers"
+cloud-native-devops-workshop: misspell: containers/nodejs-rolling-router-wercker/README.md:98:106: "succesful" is a misspelling of "successful"
+cloud-native-devops-workshop: misspell: containers/nodejs-rolling-router-wercker/README.md:102:17: "unsuccesful" is a misspelling of "unsuccessful"
+cloud-native-devops-workshop: misspell: containers/nodejs-rolling-router-wercker/README.md:120:270: "succesful" is a misspelling of "successful"
+cloud-native-devops-workshop: misspell: containers/nodejs-rolling-router-wercker/README.md:277:5: "backgroud" is a misspelling of "background"
+cloud-native-devops-workshop: misspell: containers/nodejs-rolling-router-wercker/README.md:381:45: "succesful" is a misspelling of "successful"
+cloud-native-devops-workshop: broken link: containers/nodejs-rolling-router-wercker/README.md: http://140.86.1.96: Dialing to the given TCP address timed out
+	checking oracle/cloudnative (12/110, made 87 requests so far) ...
+	checking oracle/cluster-manager (13/110, made 90 requests so far) ...
+	checking oracle/container-images (14/110, made 95 requests so far) ...
+container-images: broken link: README.md: https://linux.oracle.com: Too many redirects detected when doing the request
+	checking oracle/cordova-plugin-emm-app-config (15/110, made 99 requests so far) ...
+	checking oracle/cordova-plugin-oracle-idm-auth (16/110, made 103 requests so far) ...
+	checking oracle/cordova-plugin-wkwebview-file-xhr (17/110, made 107 requests so far) ...
+	checking oracle/crashcart (18/110, made 112 requests so far) ...
+	checking oracle/data-warehouse-etl-offload-samples (19/110, made 116 requests so far) ...
+	checking oracle/db-sample-schemas (20/110, made 119 requests so far) ...
+	checking oracle/db-sharding (21/110, made 124 requests so far) ...
+	checking oracle/dino-date (22/110, made 127 requests so far) ...
+dino-date: misspell: README.md:21:43: "improvments" is a misspelling of "improvements"
+	checking oracle/docker-images (23/110, made 135 requests so far) ...
+docker-images: acronym: OracleDatabase/SingleInstance/samples/customdb/README.md:28: replace sql with SQL
+docker-images: acronym: OracleDatabase/SingleInstance/samples/customscripts/README.md:77: replace sql with SQL
+docker-images: acronym: OracleDatabase/SingleInstance/samples/plugpdb/README.md:48: replace sql with SQL
+docker-images: acronym: OracleDatabase/SingleInstance/samples/plugpdb/README.md:73: replace sql with SQL
+docker-images: acronym: OracleDatabase/SingleInstance/samples/startersetcontainer/README.md:23: replace sql with SQL
+docker-images: acronym: OracleDatabase/SingleInstance/samples/startersetcontainer/README.md:27: replace sql with SQL
+docker-images: acronym: OracleDatabase/SingleInstance/samples/unplugpdb/README.md:26: replace sql with SQL
+docker-images: broken link: ContainerCloud/stacks/nginx-lb-to-nginx/README.md: http://mesh-leader:8885: Lookup mesh-leader on 127.0.1.1:53: no such host
+docker-images: broken link: ContainerCloud/stacks/haproxy-lb-to-apache/README.md: http://mesh-leader:1936/haproxy?stats: Lookup mesh-leader on 127.0.1.1:53: no such host
+docker-images: broken link: ContainerCloud/stacks/haproxy-lb-to-apache/README.md: http://mesh-leader:8886: Lookup mesh-leader on 127.0.1.1:53: no such host
+docker-images: broken link: ContainerCloud/stacks/prometheus/README.md: http://mesh-leader:8081: Lookup mesh-leader on 127.0.1.1:53: no such host
+docker-images: broken link: ContainerCloud/stacks/prometheus/README.md: http://mesh-leader:8081/metrics: Lookup mesh-leader on 127.0.1.1:53: no such host
+docker-images: broken link: ContainerCloud/stacks/prometheus/README.md: http://mesh-leader:9090: Lookup mesh-leader on 127.0.1.1:53: no such host
+docker-images: broken link: ContainerCloud/stacks/prometheus/README.md: http://mesh-leader:9090/graph: Lookup mesh-leader on 127.0.1.1:53: no such host
+docker-images: broken link: ContainerCloud/stacks/haproxy-lb-to-nginx/README.md: http://mesh-leader:1936/haproxy?stats: Lookup mesh-leader on 127.0.1.1:53: no such host
+docker-images: broken link: ContainerCloud/stacks/haproxy-lb-to-nginx/README.md: http://mesh-leader:8886: Lookup mesh-leader on 127.0.1.1:53: no such host
+docker-images: broken link: ContainerCloud/stacks/nginx-lb-to-apache/README.md: http://mesh-leader:8885: Lookup mesh-leader on 127.0.1.1:53: no such host
+docker-images: broken link: ContainerCloud/stacks/elk/README.md: http://mesh-leader:5601: Lookup mesh-leader on 127.0.1.1:53: no such host
+docker-images: broken link: ContainerCloud/images/kibana/README.md: http://mesh-host:5601: Lookup mesh-host on 127.0.1.1:53: no such host
+docker-images: broken link: ContainerCloud/images/haproxy/README.md: http://mesh-host:1936/haproxy?stats: Lookup mesh-host on 127.0.1.1:53: no such host
+docker-images: broken link: ContainerCloud/images/haproxy/README.md: http://mesh-host:8000: Lookup mesh-host on 127.0.1.1:53: no such host
+docker-images: broken link: ContainerCloud/images/nginx-lb/README.md: http://mesh-host:8000: Lookup mesh-host on 127.0.1.1:53: no such host
+docker-images: broken link: ContainerCloud/README.md: http://PUBLIC_IP:8886: Lookup public_ip on 127.0.1.1:53: no such host
+docker-images: broken link: ContainerCloud/images/prometheus/README.md: http://mesh-host:9090: Lookup mesh-host on 127.0.1.1:53: no such host
+docker-images: broken link: ContainerCloud/images/rolling-router/README.md: http://mgr:8000: Lookup mgr on 127.0.1.1:53: no such host
+docker-images: broken link: ContainerCloud/images/blue-green-router/README.md: http://mgr:8000: Lookup mgr on 127.0.1.1:53: no such host
+docker-images: broken link: OracleWebCenterSites/README.md: http://DOCKER_HOST:7001/console: Lookup docker_host on 127.0.1.1:53: read udp 127.0.0.1:45352->127.0.1.1:53: i/o timeout
+docker-images: broken link: OracleWebCenterSites/README.md: http://DOCKER_HOST:7002/sites: Lookup docker_host on 127.0.1.1:53: read udp 127.0.0.1:45352->127.0.1.1:53: i/o timeout
+docker-images: broken link: ContainerCloud/images/rolling-router-sticky-sessions/README.md: http://mgr:8000: Lookup mgr on 127.0.1.1:53: no such host
+docker-images: broken link: ContainerCloud/images/rolling-router-sticky-sessions/README.md: http://mgr:8080: Lookup mgr on 127.0.1.1:53: no such host
+docker-images: broken link: ContainerCloud/images/rolling-router-sticky-sessions/README.md: https://bitbucket.org/nginx-goodies/nginx-sticky-module-ng: Lookup bitbucket.org on 127.0.1.1:53: read udp 127.0.0.1:58855->127.0.1.1:53: i/o timeout
+docker-images: broken link: OracleTuxedo/tsam/README.md: https://cloud.oracle.com/container: Couldn't find DNS entries for the given domain. Try using DialDualStack
+docker-images: broken link: OracleCloudInfrastructure/terraform-oci/README.md: http://yum.oracle.com: Lookup yum.oracle.com on 127.0.1.1:53: read udp 127.0.0.1:53723->127.0.1.1:53: i/o timeout
+docker-images: broken link: OracleCloudInfrastructure/terraform-oci/README.md: http://yum.oracle.com/repo/OracleLinux/OL7/developer/x86_64/index.html: Lookup yum.oracle.com on 127.0.1.1:53: read udp 127.0.0.1:53723->127.0.1.1:53: i/o timeout
+docker-images: broken link: OracleCloudInfrastructure/terraform-oci/README.md: https://www.terraform.io/: Couldn't find DNS entries for the given domain. Try using DialDualStack
+docker-images: broken link: OracleUnifiedDirectory/README.md: http://www.oradba.ch/2018/03/smaller-oracle-docker-images/: Lookup www.oradba.ch on 127.0.1.1:53: read udp 127.0.0.1:39462->127.0.1.1:53: i/o timeout
+docker-images: broken link: OracleUnifiedDirectory/README.md: http://www.oradba.ch/category/oudbase/: Lookup www.oradba.ch on 127.0.1.1:53: read udp 127.0.0.1:39462->127.0.1.1:53: i/o timeout
+docker-images: broken link: OracleUnifiedDirectory/README.md: https://updates.oracle.com/ARULink/PatchDetails/process_form?patch_num=26270957: Lookup updates.oracle.com on 127.0.1.1:53: read udp 127.0.0.1:37738->127.0.1.1:53: i/o timeout
+docker-images: broken link: GraalVM/CE/1.0.0-rc7/README.md: https://opensource.org/licenses/UPL: Lookup opensource.org on 127.0.1.1:53: read udp 127.0.0.1:59004->127.0.1.1:53: i/o timeout
+docker-images: broken link: GraalVM/CE/1.0.0-rc7/README.md: https://www.graalvm.org: Lookup www.graalvm.org on 127.0.1.1:53: read udp 127.0.0.1:37615->127.0.1.1:53: i/o timeout
+docker-images: broken link: OracleWebLogic/workshops/multihost/README.md: http://192.168.99.101:80/sample: Dialing to the given TCP address timed out
+docker-images: broken link: OracleWebLogic/workshops/multihost/README.md: http://192.168.99.101:8001/consolee: Dialing to the given TCP address timed out
+docker-images: misspell: ContainerCloud/images/confd/README.md:18:104: "extention" is a misspelling of "extension"
+docker-images: misspell: ContainerCloud/images/blue-green-router/README.md:42:229: "configuraiton" is a misspelling of "configuration"
+docker-images: misspell: ContainerCloud/images/blue-green-router/README.md:61:4: "proces" is a misspelling of "process"
+docker-images: misspell: OracleCloudInfrastructure/terraform-oci/README.md:30:36: "inital" is a misspelling of "initial"
+docker-images: misspell: OracleCloudInfrastructure/terraform-oci/README.md:30:49: "seperator" is a misspelling of "separator"
+docker-images: misspell: ContainerCloud/images/rolling-router/README.md:41:229: "configuraiton" is a misspelling of "configuration"
+docker-images: misspell: ContainerCloud/images/rolling-router-sticky-sessions/README.md:54:229: "configuraiton" is a misspelling of "configuration"
+docker-images: misspell: OracleDatabase/RAC/OracleRACStorageServer/README.md:9:98: "enviornment" is a misspelling of "environment"
+docker-images: misspell: OracleDatabase/RAC/OracleRACStorageServer/README.md:13:208: "prefered" is a misspelling of "preferred"
+docker-images: misspell: OracleDatabase/RAC/OracleRACStorageServer/README.md:19:55: "folowing" is a misspelling of "following"
+docker-images: misspell: OracleBI/README.md:11:64: "Buisness" is a misspelling of "Business"
+docker-images: misspell: OracleDatabase/RAC/OracleConnectionManager/README.md:12:108: "enviornment" is a misspelling of "environment"
+docker-images: misspell: OracleDatabase/RAC/OracleConnectionManager/README.md:17:208: "prefered" is a misspelling of "preferred"
+docker-images: misspell: OracleDatabase/RAC/OracleConnectionManager/README.md:22:54: "folowing" is a misspelling of "following"
+docker-images: misspell: OracleDatabase/SingleInstance/samples/customdb/README.md:6:72: "substitue" is a misspelling of "substitute"
+docker-images: misspell: OracleDatabase/RAC/README.md:4:59: "enviornment" is a misspelling of "environment"
+docker-images: misspell: OracleDatabase/RAC/README.md:11:68: "enviornment" is a misspelling of "environment"
+docker-images: misspell: OracleDatabase/SingleInstance/samples/plugpdb/README.md:12:9: "substitue" is a misspelling of "substitute"
+docker-images: misspell: OracleDatabase/SingleInstance/samples/unplugpdb/README.md:11:9: "substitue" is a misspelling of "substitute"
+docker-images: misspell: OracleDatabase/SingleInstance/README.md:13:206: "prefered" is a misspelling of "preferred"
+docker-images: misspell: OracleFMWInfrastructure/samples/12212-patch/README.md:6:26: "runing" is a misspelling of "running"
+docker-images: misspell: OracleHTTPServer/README.md:50:44: "conatiner" is a misspelling of "container"
+docker-images: misspell: OracleRestDataServices/README.md:10:206: "prefered" is a misspelling of "preferred"
+docker-images: misspell: OracleRestDataServices/README.md:36:80: "wich" is a misspelling of "which"
+docker-images: misspell: OracleFMWInfrastructure/README.md:10:187: "prefered" is a misspelling of "preferred"
+docker-images: misspell: OracleTuxedo/core/README.md:16:202: "prefered" is a misspelling of "preferred"
+docker-images: misspell: OracleDatabase/RAC/OracleRealApplicationClusters/README.md:117:208: "prefered" is a misspelling of "preferred"
+docker-images: misspell: OracleDatabase/RAC/OracleRealApplicationClusters/README.md:216:32: "asign" is a misspelling of "assign"
+docker-images: misspell: OracleDatabase/RAC/OracleRealApplicationClusters/README.md:409:158: "enviornment" is a misspelling of "environment"
+docker-images: misspell: OracleSOASuite/dockerfiles/README.md:76:82: "Infrastrucure" is a misspelling of "Infrastructure"
+docker-images: misspell: OracleWebLogic/samples/1221-domain-with-resources/README.md:21:26: "Persistance" is a misspelling of "Persistence"
+docker-images: misspell: OracleWebLogic/samples/1221-domain/README.md:22:187: "enviornment" is a misspelling of "environment"
+docker-images: misspell: OracleWebLogic/dockerfiles/12.2.1.1/README.md:12:201: "prefered" is a misspelling of "preferred"
+docker-images: misspell: OracleWebLogic/dockerfiles/12.2.1.2/README.md:12:201: "prefered" is a misspelling of "preferred"
+docker-images: misspell: OracleWebLogic/dockerfiles/12.2.1.3/README.md:12:201: "prefered" is a misspelling of "preferred"
+docker-images: misspell: OracleWebLogic/samples/12211-patch/README.md:22:33: "Adminsitration" is a misspelling of "Administration"
+docker-images: misspell: OracleWebLogic/README.md:14:201: "prefered" is a misspelling of "preferred"
+docker-images: misspell: OracleWebLogic/samples/12212-domain/README.md:23:164: "enviromental" is a misspelling of "environmental"
+docker-images: misspell: OracleWebLogic/samples/12212-domain/README.md:69:187: "enviornment" is a misspelling of "environment"
+docker-images: misspell: OracleWebLogic/samples/12212-msiserver/README.md:203:73: "reponse" is a misspelling of "response"
+	checking oracle/dotnet-db-samples (24/110, made 254 requests so far) ...
+dotnet-db-samples: misspell: README.md:3:28: "Respository" is a misspelling of "Repository"
+	checking oracle/dtrace-utils (25/110, made 261 requests so far) ...
+	checking oracle/eslint-config-oraclejet (26/110, made 270 requests so far) ...
+	checking oracle/fastr (27/110, made 274 requests so far) ...
+	checking oracle/federated-ingress-controller (28/110, made 280 requests so far) ...
+federated-ingress-controller: misspell: deploy/README.md:43:17: "respository" is a misspelling of "repository"
+federated-ingress-controller: misspell: deploy/README.md:99:135: "defualt" is a misspelling of "default"
+	checking oracle/fmw-chef-cookbook (29/110, made 285 requests so far) ...
+fmw-chef-cookbook: misspell: README.md:51:55: "enviroments" is a misspelling of "environments"
+	checking oracle/font-apex (30/110, made 296 requests so far) ...
+font-apex: broken link: README.md: https://opensource.org/licenses/MIT: Read tcp4 192.168.0.4:50094->159.65.34.8:443: read: connection reset by peer
+	checking oracle/generator-oraclejet (31/110, made 299 requests so far) ...
+	checking oracle/graal (32/110, made 304 requests so far) ...
+graal: misspell: truffle/docs/splitting/README.md:20:32: "apporach" is a misspelling of "approach"
+graal: misspell: sulong/README.md:178:13: "specifed" is a misspelling of "specified"
+	checking oracle/graphpipe (33/110, made 322 requests so far) ...
+	checking oracle/graphpipe-go (34/110, made 327 requests so far) ...
+graphpipe-go: broken link: README.md: https://opensource.org/licenses/UPL: Read tcp4 192.168.0.4:50316->159.65.34.8:443: read: connection reset by peer
+	checking oracle/graphpipe-py (35/110, made 334 requests so far) ...
+	checking oracle/graphpipe-tf-py (36/110, made 340 requests so far) ...
+graphpipe-tf-py: misspell: README.md:9:0: "Additionaly" is a misspelling of "Additionally"
+	checking oracle/grunt-oraclejet (37/110, made 345 requests so far) ...
+	checking oracle/helidon (38/110, made 349 requests so far) ...
+helidon: misspell: examples/archetypes/README.md:38:22: "wierd" is a misspelling of "weird"
+	checking oracle/helidon-build-tools (39/110, made 372 requests so far) ...
+	checking oracle/helidon-site (40/110, made 375 requests so far) ...
+	checking oracle/idm-samples (41/110, made 378 requests so far) ...
+idm-samples: broken link: salesinsight/README.md: https://opensource.org/licenses/UPL: Read tcp4 192.168.0.4:50682->159.65.34.8:443: read: connection reset by peer
+idm-samples: broken link: cquotes/README.md: https://opensource.org/licenses/UPL: Read tcp4 192.168.0.4:50688->159.65.34.8:443: read: connection reset by peer
+idm-samples: broken link: idcs-authn-api-signin-app/README.md: https://opensource.org/licenses/UPL: Read tcp4 192.168.0.4:50680->159.65.34.8:443: read: connection reset by peer
+idm-samples: broken link: idcs-sdk-sample-apps/android/README.md: https://opensource.org/licenses/UPL: Read tcp4 192.168.0.4:50692->159.65.34.8:443: read: connection reset by peer
+idm-samples: broken link: idcs-sdk-sample-apps/ios/README.md: https://MYTENANT.identity.oraclecloud.com/.well-known/idcs-configuration: Lookup mytenant.identity.oraclecloud.com on 127.0.1.1:53: no such host
+idm-samples: broken link: idcs-sdk-sample-apps/ios/README.md: https://opensource.org/licenses/UPL: Read tcp4 192.168.0.4:50670->159.65.34.8:443: read: connection reset by peer
+idm-samples: broken link: edashboard/README.md: https://opensource.org/licenses/UPL: Read tcp4 192.168.0.4:50690->159.65.34.8:443: read: connection reset by peer
+idm-samples: broken link: idcs-rest-clients/README.md: https://opensource.org/licenses/UPL: Read tcp4 192.168.0.4:50684->159.65.34.8:443: read: connection reset by peer
+idm-samples: broken link: idcs-sdk-sample-apps/java/README.md: https://opensource.org/licenses/UPL: Read tcp4 192.168.0.4:50678->159.65.34.8:443: read: connection reset by peer
+idm-samples: broken link: idcs-sdk-sample-apps/python/README.md: https://apexapps.oracle.com/pls/apex/f?p=44785:112:0::::P112_CONTENT_ID:22662: Too many redirects detected when doing the request
+idm-samples: broken link: idcs-sdk-sample-apps/python/README.md: https://opensource.org/licenses/UPL: Read tcp4 192.168.0.4:50668->159.65.34.8:443: read: connection reset by peer
+idm-samples: broken link: idcs-sdk-sample-apps/nodejs/README.md: https://apexapps.oracle.com/pls/apex/f?p=44785:112:0::::P112_CONTENT_ID:22661: Too many redirects detected when doing the request
+idm-samples: broken link: idcs-sdk-sample-apps/nodejs/README.md: https://opensource.org/licenses/UPL: Read tcp4 192.168.0.4:50672->159.65.34.8:443: read: connection reset by peer
+idm-samples: broken link: idcs-sdk-sample-apps/README.md: https://apexapps.oracle.com/pls/apex/f?p=44785:112:0::::P112_CONTENT_ID:22661: Too many redirects detected when doing the request
+idm-samples: broken link: idcs-sdk-sample-apps/README.md: https://apexapps.oracle.com/pls/apex/f?p=44785:112:0::::P112_CONTENT_ID:22662: Too many redirects detected when doing the request
+idm-samples: broken link: idcs-sdk-sample-apps/README.md: https://opensource.org/licenses/UPL: Read tcp4 192.168.0.4:50666->159.65.34.8:443: read: connection reset by peer
+idm-samples: misspell: idcs-sdk-sample-apps/java/README.md:83:37: "recomends" is a misspelling of "recommends"
+idm-samples: misspell: idcs-sdk-sample-apps/java/README.md:85:108: "recomends" is a misspelling of "recommends"
+idm-samples: misspell: idcs-sdk-sample-apps/java/README.md:91:25: "successfull" is a misspelling of "successful"
+idm-samples: misspell: idcs-sdk-sample-apps/python/README.md:50:26: "recomends" is a misspelling of "recommends"
+idm-samples: misspell: idcs-sdk-sample-apps/python/README.md:57:25: "successfull" is a misspelling of "successful"
+idm-samples: misspell: idcs-sdk-sample-apps/python/README.md:68:42: "atributes" is a misspelling of "attributes"
+idm-samples: misspell: idcs-sdk-sample-apps/nodejs/README.md:57:26: "recomends" is a misspelling of "recommends"
+idm-samples: misspell: idcs-sdk-sample-apps/nodejs/README.md:64:25: "successfull" is a misspelling of "successful"
+	checking oracle/infinity-iot-football (42/110, made 394 requests so far) ...
+infinity-iot-football: misspell: README.md:8:9: "infomation" is a misspelling of "information"
+	checking oracle/json-in-db (43/110, made 398 requests so far) ...
+json-in-db: misspell: README.md:3:172: "independantly" is a misspelling of "independently"
+json-in-db: acronym: Python-Demo-App/README.markdown:50: replace sql with SQL
+	checking oracle/ktf (44/110, made 403 requests so far) ...
+	checking oracle/kubernetes-vault-kms-plugin (45/110, made 405 requests so far) ...
+	checking oracle/learning-library (46/110, made 409 requests so far) ...
+learning-library: broken link: workshops/nodejs-rolling-router-wercker/nodejs-rolling-router-wercker/README.md: http://140.86.1.96: Dialing to the given TCP address timed out
+learning-library: broken link: workshops/chefjenkins-devops/README.md: http://launch.oracle.com/?sdlc: Dialing to the given TCP address timed out
+learning-library: broken link: ziplabs/occs-service/README.md: http://apexapps.oracle.com/pls/apex/f?p=44785:112:0::::P112_CONTENT_ID:17462: Dialing to the given TCP address timed out
+learning-library: broken link: workshops/api-platform/compose/ticketService/README.md: http://oc-129-158-107-171.compute.oraclecloud.com:5000/tickets: Lookup oc-129-158-107-171.compute.oraclecloud.com on 127.0.1.1:53: read udp 127.0.0.1:41378->127.0.1.1:53: i/o timeout
+learning-library: broken link: workshops/security-cloud-day/services/sma/README.md: https://myservices.us2.oraclecloud.com/mycloud/cloudportal/dashboard: Lookup myservices.us2.oraclecloud.com on 127.0.1.1:53: read udp 127.0.0.1:41369->127.0.1.1:53: i/o timeout
+learning-library: broken link: workshops/api-platform/tutorials/manage/apis/policies/REST2SOAP/README.md: http://www.dneonline.com/calculator.asmx: Lookup www.dneonline.com on 127.0.1.1:53: read udp 127.0.0.1:34861->127.0.1.1:53: i/o timeout
+learning-library: broken link: workshops/journey3-data-science/README.md: https://www.r-project.org/: Lookup www.r-project.org on 127.0.1.1:53: read udp 127.0.0.1:33828->127.0.1.1:53: i/o timeout
+learning-library: broken link: ziplabs/2018-account/README.md: https://oracle.com/oow18trial: Lookup oracle.com on 127.0.1.1:53: read udp 127.0.0.1:34235->127.0.1.1:53: i/o timeout
+learning-library: broken link: workshops/cloud-native-devops-workshop/accs-tomcat/README.md: http://archive.apache.org/dist/tomcat/tomcat-8/v8.5.6/bin/apache-tomcat-8.5.6.tar.gz: Lookup archive.apache.org on 127.0.1.1:53: read udp 127.0.0.1:53854->127.0.1.1:53: i/o timeout
+learning-library: broken link: workshops/cloud-native-devops-workshop/accs-tomcat/README.md: https://tomcat.apache.org/: Lookup tomcat.apache.org on 127.0.1.1:53: read udp 127.0.0.1:53113->127.0.1.1:53: i/o timeout
+learning-library: broken link: workshops/cloud-native-devops-workshop/containers/node-cassandra-stack/README.md: https://cloud.docker.com: Lookup cloud.docker.com on 127.0.1.1:53: read udp 127.0.0.1:49570->127.0.1.1:53: i/o timeout
+learning-library: broken link: workshops/cloud-native-devops-workshop/containers/node-cassandra-stack/README.md: https://cloud.docker.com/: Lookup cloud.docker.com on 127.0.1.1:53: read udp 127.0.0.1:49570->127.0.1.1:53: i/o timeout
+learning-library: broken link: articles/solution-engineering-natd/README.md: http://Oracle.com/cloud: Lookup oracle.com on 127.0.1.1:53: read udp 127.0.0.1:34235->127.0.1.1:53: i/o timeout
+learning-library: broken link: articles/solution-engineering-natd/README.md: https://sblack4.github.io/learning-library/articles/solution-engineering-natd/: Lookup sblack4.github.io on 127.0.1.1:53: read udp 127.0.0.1:41804->127.0.1.1:53: i/o timeout
+learning-library: broken link: ziplabs/python-mysql-accs/README.md: https://apexapps.oracle.com/pls/apex/f?p=44785:112:16396753825687::::P112_CONTENT_ID:20165: Too many redirects detected when doing the request
+learning-library: broken link: workshops/cloud-native-devops-workshop/containers/nodejs-mongodb-stack/README.md: https://cloud.docker.com: Lookup cloud.docker.com on 127.0.1.1:53: read udp 127.0.0.1:49570->127.0.1.1:53: i/o timeout
+learning-library: broken link: workshops/cloud-native-devops-workshop/containers/nodejs-mongodb-stack/README.md: https://cloud.docker.com/: Lookup cloud.docker.com on 127.0.1.1:53: read udp 127.0.0.1:49570->127.0.1.1:53: i/o timeout
+learning-library: misspell: workshops/adwc-trialcampaigns/README.md:53:2: "Documenation" is a misspelling of "Documentation"
+learning-library: misspell: workshops/api-platform/tutorials/manage/apis/policies/REST2SOAP/README.md:50:49: "Managment" is a misspelling of "Management"
+learning-library: misspell: workshops/api-platform/tutorials/manage/apis/policies/oauth/README.md:255:76: "Occured" is a misspelling of "Occurred"
+learning-library: misspell: workshops/api-platform/tutorials/manage/apis/policies/oauth/README.md:269:76: "Occured" is a misspelling of "Occurred"
+learning-library: misspell: articles/solution-engineering-natd/README.md:24:112: "relevence" is a misspelling of "relevance"
+learning-library: misspell: articles/solution-engineering-natd/README.md:190:2: "Congradulations" is a misspelling of "Congratulations"
+learning-library: misspell: articles/solution-engineering-natd/README.md:194:43: "recieve" is a misspelling of "receive"
+learning-library: misspell: workshops/cloud-native-devops-workshop/accs-tomcat/README.md:209:178: "usefull" is a misspelling of "useful"
+learning-library: misspell: workshops/cloud-native-devops-workshop/containers/node-cassandra-stack/README.md:66:107: "continous" is a misspelling of "continuous"
+learning-library: misspell: workshops/cloud-native-devops-workshop/containers/node-cassandra-stack/README.md:104:10: "successfull" is a misspelling of "successful"
+learning-library: misspell: workshops/cloud-native-devops-workshop/containers/node-cassandra-stack/README.md:115:312: "successfull" is a misspelling of "successful"
+learning-library: misspell: workshops/cloud-native-devops-workshop/containers/node-cassandra-stack/README.md:199:118: "previos" is a misspelling of "previous"
+learning-library: misspell: workshops/cloud-native-devops-workshop/containers/nodejs-mongodb-stack/README.md:66:107: "continous" is a misspelling of "continuous"
+learning-library: misspell: workshops/cloud-native-devops-workshop/containers/nodejs-mongodb-stack/README.md:102:10: "successfull" is a misspelling of "successful"
+learning-library: misspell: workshops/cloud-native-devops-workshop/containers/nodejs-mongodb-stack/README.md:128:189: "successfull" is a misspelling of "successful"
+learning-library: misspell: workshops/cloud-native-devops-workshop/containers/nodejs-mongodb-stack/README.md:236:118: "previos" is a misspelling of "previous"
+learning-library: misspell: workshops/cloud-native-devops-workshop/jcs-deploy/README.md:106:69: "adminsitrator" is a misspelling of "administrator"
+learning-library: misspell: workshops/cloud-native-devops-workshop/jcs-create/README.md:60:194: "choosen" is a misspelling of "chosen"
+learning-library: misspell: workshops/cloud-native-devops-workshop/devops-bind/README.md:326:28: "successfull" is a misspelling of "successful"
+learning-library: misspell: workshops/cloud-native-devops-workshop/monitor-tune/README.md:19:2: "Retreive" is a misspelling of "Retrieve"
+learning-library: misspell: workshops/cloud-native-devops-workshop/monitor-tune/README.md:20:13: "retreive" is a misspelling of "retrieve"
+learning-library: misspell: workshops/cloud-native-devops-workshop/monitor-tune/README.md:30:5: "Retreive" is a misspelling of "Retrieve"
+learning-library: misspell: workshops/cloud-native-devops-workshop/app-2-cloud/README.md:8:596: "achive" is a misspelling of "achieve"
+learning-library: misspell: workshops/dbcs-in-memory/README.md:21:2: "Documenation" is a misspelling of "Documentation"
+learning-library: misspell: workshops/cloud-native-devops-workshop/app-2-cloud/README.md:348:178: "conatiner" is a misspelling of "container"
+learning-library: misspell: workshops/cloud-native-devops-workshop/springboot-sample/README.md:124:85: "successfull" is a misspelling of "successful"
+learning-library: misspell: workshops/jcs-devops/README.md:32:2: "Documenation" is a misspelling of "Documentation"
+learning-library: misspell: workshops/jcs-devops/README.md:42:2: "Documenation" is a misspelling of "Documentation"
+learning-library: misspell: workshops/jcs-devops/README.md:54:2: "Documenation" is a misspelling of "Documentation"
+learning-library: misspell: workshops/jcs-devops/README.md:66:2: "Documenation" is a misspelling of "Documentation"
+learning-library: misspell: workshops/jcs-devops/README_SS.md:31:2: "Documenation" is a misspelling of "Documentation"
+learning-library: misspell: workshops/jcs-devops/README_SS.md:41:2: "Documenation" is a misspelling of "Documentation"
+learning-library: misspell: workshops/jcs-devops/README_SS.md:53:2: "Documenation" is a misspelling of "Documentation"
+learning-library: misspell: workshops/jcs-devops/README_SS.md:65:2: "Documenation" is a misspelling of "Documentation"
+learning-library: misspell: workshops/journey1-self-service-bi/README.md.old:55:2: "Documenation" is a misspelling of "Documentation"
+learning-library: misspell: workshops/journey1-self-service-bi/README.md.old:70:2: "Documenation" is a misspelling of "Documentation"
+learning-library: misspell: workshops/journey1-self-service-bi/README.md.old:81:2: "Documenation" is a misspelling of "Documentation"
+learning-library: misspell: workshops/docker/jumpstart/README.md:150:144: "implicity" is a misspelling of "implicitly"
+learning-library: misspell: workshops/security-cloud-day/services/idcs/README.md.full:11:177: "avaialble" is a misspelling of "available"
+learning-library: misspell: workshops/security-cloud-day/services/idcs/README.md.full:13:94: "Adminstrator" is a misspelling of "Administrator"
+learning-library: misspell: workshops/security-cloud-day/services/idcs/README.md.full:31:4: "Arbitary" is a misspelling of "Arbitrary"
+learning-library: misspell: workshops/security-cloud-day/services/prereq/README.md:89:71: "aganist" is a misspelling of "against"
+learning-library: misspell: workshops/ttc-ics-dev-workshop/README.md:22:2: "Documenation" is a misspelling of "Documentation"
+learning-library: misspell: workshops/ttc-quote-to-order/README.md:22:2: "Documenation" is a misspelling of "Documentation"
+learning-library: misspell: workshops/ttc-ics-dev-workshop/README.md:31:2: "Documenation" is a misspelling of "Documentation"
+learning-library: misspell: workshops/ttc-quote-to-order/README.md:33:2: "Documenation" is a misspelling of "Documentation"
+learning-library: misspell: workshops/ttc-ics-dev-workshop/README.md:41:2: "Documenation" is a misspelling of "Documentation"
+learning-library: misspell: ziplabs/2018-account/README.md:28:125: "recieve" is a misspelling of "receive"
+learning-library: misspell: ziplabs/2018-account/README.md:32:40: "recieve" is a misspelling of "receive"
+learning-library: misspell: ziplabs/adw-machine-learning/README.md:60:16: "recieve" is a misspelling of "receive"
+learning-library: misspell: workshops/nodejs-rolling-router-wercker/nodejs-rolling-router-wercker/README.md:98:106: "succesful" is a misspelling of "successful"
+learning-library: misspell: workshops/nodejs-rolling-router-wercker/nodejs-rolling-router-wercker/README.md:102:17: "unsuccesful" is a misspelling of "unsuccessful"
+learning-library: misspell: workshops/nodejs-rolling-router-wercker/nodejs-rolling-router-wercker/README.md:120:270: "succesful" is a misspelling of "successful"
+learning-library: misspell: workshops/nodejs-rolling-router-wercker/nodejs-rolling-router-wercker/README.md:277:5: "backgroud" is a misspelling of "background"
+learning-library: misspell: workshops/nodejs-rolling-router-wercker/nodejs-rolling-router-wercker/README.md:381:45: "succesful" is a misspelling of "successful"
+learning-library: misspell: workshops/security-cloud-day/services/casb/README.md:83:100: "recieve" is a misspelling of "receive"
+learning-library: misspell: workshops/security-cloud-day/services/casb/README.md:83:319: "recieved" is a misspelling of "received"
+learning-library: misspell: workshops/security-cloud-day/services/casb/README.md:204:281: "recieved" is a misspelling of "received"
+	checking oracle/libdtrace-ctf (47/110, made 518 requests so far) ...
+	checking oracle/linux-uek (48/110, made 524 requests so far) ...
+	checking oracle/mysql-operator (49/110, made 527 requests so far) ...
+	checking oracle/navarkos (50/110, made 532 requests so far) ...
+navarkos: misspell: deploy/README.md:54:38: "respository" is a misspelling of "repository"
+	checking oracle/node-oracledb (51/110, made 539 requests so far) ...
+	checking oracle/nosql-examples (52/110, made 546 requests so far) ...
+nosql-examples: misspell: README.md:7:36: "repositiory" is a misspelling of "repository"
+nosql-examples: misspell: QuotesJson/README.md:14:39: "seperated" is a misspelling of "separated"
+nosql-examples: misspell: QuotesJson/README.md:52:21: "successfull" is a misspelling of "successful"
+nosql-examples: misspell: FileStorage/README.md:41:21: "successfull" is a misspelling of "successful"
+	checking oracle/oci-ansible-modules (53/110, made 555 requests so far) ...
+	checking oracle/oci-cli (54/110, made 573 requests so far) ...
+	checking oracle/oci-cloud-controller-manager (55/110, made 577 requests so far) ...
+	checking oracle/oci-compute-classic-jenkins-plugin (56/110, made 582 requests so far) ...
+	checking oracle/oci-compute-jenkins-plugin (57/110, made 585 requests so far) ...
+	checking oracle/oci-flexvolume-driver (58/110, made 589 requests so far) ...
+	checking oracle/oci-go-sdk (59/110, made 595 requests so far) ...
+	checking oracle/oci-hdfs-connector (60/110, made 599 requests so far) ...
+	checking oracle/oci-java-sdk (61/110, made 603 requests so far) ...
+	checking oracle/oci-python-sdk (62/110, made 609 requests so far) ...
+	checking oracle/oci-ruby-sdk (63/110, made 614 requests so far) ...
+oci-ruby-sdk: misspell: README.md:560:0: "Addtional" is a misspelling of "Additional"
+	checking oracle/oci-volume-provisioner (64/110, made 619 requests so far) ...
+	checking oracle/odpi (65/110, made 625 requests so far) ...
+	checking oracle/offline-persistence-toolkit (66/110, made 633 requests so far) ...
+	checking oracle/ojet-cli (67/110, made 637 requests so far) ...
+	checking oracle/opengrok (68/110, made 641 requests so far) ...
+opengrok: unwanted file: remove Emacs lock file file: testdata/repositories/cvs_test/cvsroot/CVSROOT/.#checkoutlist
+opengrok: unwanted file: remove Emacs lock file file: testdata/repositories/cvs_test/cvsroot/CVSROOT/.#commitinfo
+opengrok: unwanted file: remove Emacs lock file file: testdata/repositories/cvs_test/cvsroot/CVSROOT/.#config
+opengrok: unwanted file: remove Emacs lock file file: testdata/repositories/cvs_test/cvsroot/CVSROOT/.#cvswrappers
+opengrok: unwanted file: remove Emacs lock file file: testdata/repositories/cvs_test/cvsroot/CVSROOT/.#loginfo
+opengrok: unwanted file: remove Emacs lock file file: testdata/repositories/cvs_test/cvsroot/CVSROOT/.#modules
+opengrok: unwanted file: remove Emacs lock file file: testdata/repositories/cvs_test/cvsroot/CVSROOT/.#notify
+opengrok: unwanted file: remove Emacs lock file file: testdata/repositories/cvs_test/cvsroot/CVSROOT/.#postadmin
+opengrok: unwanted file: remove Emacs lock file file: testdata/repositories/cvs_test/cvsroot/CVSROOT/.#postproxy
+opengrok: unwanted file: remove Emacs lock file file: testdata/repositories/cvs_test/cvsroot/CVSROOT/.#posttag
+opengrok: unwanted file: remove Emacs lock file file: testdata/repositories/cvs_test/cvsroot/CVSROOT/.#postwatch
+opengrok: unwanted file: remove Emacs lock file file: testdata/repositories/cvs_test/cvsroot/CVSROOT/.#preproxy
+opengrok: unwanted file: remove Emacs lock file file: testdata/repositories/cvs_test/cvsroot/CVSROOT/.#rcsinfo
+opengrok: unwanted file: remove Emacs lock file file: testdata/repositories/cvs_test/cvsroot/CVSROOT/.#taginfo
+opengrok: unwanted file: remove Emacs lock file file: testdata/repositories/cvs_test/cvsroot/CVSROOT/.#verifymsg
+opengrok: broken link: README.md: https://opensource.org/licenses/CDDL-1.0: Read tcp4 192.168.0.4:52696->159.65.34.8:443: read: connection reset by peer
+	checking oracle/oracle-db-examples (69/110, made 653 requests so far) ...
+oracle-db-examples: acronym: optimizer/autonomous/README.md:6: replace sql with SQL
+oracle-db-examples: misspell: java/ojvm/README.md:10:12: "sligthly" is a misspelling of "slightly"
+oracle-db-examples: misspell: javascript/nashorn/README.md:3:96: "embeded" is a misspelling of "embedded"
+oracle-db-examples: misspell: dotnet/README.md:1:28: "Respository" is a misspelling of "Repository"
+oracle-db-examples: misspell: optimizer/db_load/README.md:3:422: "accomodate" is a misspelling of "accommodate"
+oracle-db-examples: misspell: optimizer/spm/README.md:5:67: "comming" is a misspelling of "coming"
+	checking oracle/oracle-db-tools (70/110, made 731 requests so far) ...
+oracle-db-tools: acronym: sqlcl/README.md:19: replace sql with SQL
+	checking oracle/oracle-timesten-samples (71/110, made 738 requests so far) ...
+oracle-timesten-samples: misspell: quickstart/classic/sample_code/oci/README.md:128:76: "transation" is a misspelling of "transition"
+oracle-timesten-samples: misspell: quickstart/scaleout/sample_config/database/README.md:9:129: "independantly" is a misspelling of "independently"
+	checking oracle/oraclejet (72/110, made 781 requests so far) ...
+	checking oracle/oraclejet-tooling (73/110, made 786 requests so far) ...
+	checking oracle/paradox-publisher (74/110, made 790 requests so far) ...
+	checking oracle/paradox-tester (75/110, made 793 requests so far) ...
+	checking oracle/pgql-lang (76/110, made 796 requests so far) ...
+	checking oracle/python-cx_Oracle (77/110, made 800 requests so far) ...
+	checking oracle/railcar (78/110, made 808 requests so far) ...
+	checking oracle/rds-tools (79/110, made 812 requests so far) ...
+	checking oracle/sales-cloud-with-paas-samples (80/110, made 816 requests so far) ...
+sales-cloud-with-paas-samples: broken link: sales-prep-insight-sso/README.md: https://your_sales_cloud_URL/AccountDetails: Lookup your_sales_cloud_url on 127.0.1.1:53: no such host
+sales-cloud-with-paas-samples: broken link: credit-health-score-soap-saml/README.md: https://jcs-host/chs/CreditHealthScorePort?WSDL: Lookup jcs-host on 127.0.1.1:53: no such host
+sales-cloud-with-paas-samples: broken link: lead-capture-sys-sso/README.md: https://your_jcs-sx_url/LeadCaptureSys-ViewLCS-context-root: Lookup your_jcs-sx_url on 127.0.1.1:53: no such host
+sales-cloud-with-paas-samples: broken link: dealer-feedback-sys-sso/README.md: https://jcs-sx-url/dealer-feedback: Lookup jcs-sx-url on 127.0.1.1:53: no such host
+sales-cloud-with-paas-samples: broken link: dealer-feedback-sys-sso/README.md: https://jcs-sx-url/dealer-feedback/: Lookup jcs-sx-url on 127.0.1.1:53: no such host
+sales-cloud-with-paas-samples: broken link: sales-merch-tracker-soap-saml/README.md: https://your_sales_cloud_URL/crmCommonSalesParties/SalesPartyService?WSDL: Lookup your_sales_cloud_url on 127.0.1.1:53: no such host
+sales-cloud-with-paas-samples: misspell: PaaS-SaaS_CTIConnector/README.md:62:165: "Intereaction" is a misspelling of "Intersection"
+sales-cloud-with-paas-samples: misspell: sales-prep-insight-sso/README.html:144:236: "Additionaly" is a misspelling of "Additionally"
+sales-cloud-with-paas-samples: misspell: sales-prep-insight-sso/README.md:141:214: "Additionaly" is a misspelling of "Additionally"
+sales-cloud-with-paas-samples: unwanted file: remove Windows sys file file: lead-capture-sys-sso/JCS-SX/ViewLCS/public_html/images/Thumbs.db
+sales-cloud-with-paas-samples: unwanted file: remove Windows sys file file: sales-prep-insight-sso/JCS-SX/AccountDetails/ViewController/public_html/images/Thumbs.db
+	checking oracle/smith (81/110, made 829 requests so far) ...
+	checking oracle/soda-for-java (82/110, made 834 requests so far) ...
+	checking oracle/solaris-chef-cookbook (83/110, made 839 requests so far) ...
+	checking oracle/solaris-ips (84/110, made 851 requests so far) ...
+solaris-ips: broken link: src/util/log-scripts/README: http://www.opensolaris.org/os/licensing: Lookup www.opensolaris.org on 127.0.1.1:53: no such host
+	checking oracle/solaris-openssl-fips (85/110, made 864 requests so far) ...
+	checking oracle/solaris-userland (86/110, made 866 requests so far) ...
+solaris-userland: broken link: components/emacs/README: http://www.opensolaris.org/os/licensing: Lookup www.opensolaris.org on 127.0.1.1:53: no such host
+solaris-userland: broken link: components/jansson/doc/README: http://www.opensolaris.org/os/licensing: Lookup www.opensolaris.org on 127.0.1.1:53: no such host
+solaris-userland: broken link: components/cyrus-sasl/Solaris/README: http://www.opensolaris.org/os/licensing: Lookup www.opensolaris.org on 127.0.1.1:53: no such host
+solaris-userland: broken link: components/openssl/README: http://www.opensolaris.org/os/licensing: Lookup www.opensolaris.org on 127.0.1.1:53: no such host
+solaris-userland: broken link: components/cyrus-sasl/test/README.test: http://www.opensolaris.org/os/licensing: Lookup www.opensolaris.org on 127.0.1.1:53: no such host
+solaris-userland: broken link: components/gnuplot/README: http://www.opensolaris.org/os/licensing: Lookup www.opensolaris.org on 127.0.1.1:53: no such host
+solaris-userland: broken link: components/x11/xserver/xorg/sun-src/os/solaris/mdb/README: http://hub.opensolaris.org/bin/view/Community+Group+mdb/: Lookup hub.opensolaris.org on 127.0.1.1:53: no such host
+solaris-userland: broken link: components/cackey/patches/README: http://www.opensolaris.org/os/licensing: Lookup www.opensolaris.org on 127.0.1.1:53: no such host
+solaris-userland: broken link: components/quagga/Solaris/README.Solaris: http://www.opensolaris.org/os/licensing: Lookup www.opensolaris.org on 127.0.1.1:53: no such host
+solaris-userland: broken link: components/cups/README.trustext: http://www.opensolaris.org/os/licensing: Lookup www.opensolaris.org on 127.0.1.1:53: no such host
+solaris-userland: misspell: components/libusb/wrapper/src/README:79:11: "responsibe" is a misspelling of "responsive"
+solaris-userland: misspell: components/x11/app/gfx-utils/sun-src/fbconf_xorg/README:33:54: "varient" is a misspelling of "variant"
+solaris-userland: misspell: components/x11/app/gfx-utils/sun-src/fbconf_xorg/README:35:25: "varient" is a misspelling of "variant"
+	checking oracle/solaris-xorg (87/110, made 910 requests so far) ...
+solaris-xorg: broken link: open-src/xserver/xorg/sun-src/os/solaris/mdb/README: http://hub.opensolaris.org/bin/view/Community+Group+mdb/: Lookup hub.opensolaris.org on 127.0.1.1:53: no such host
+solaris-xorg: misspell: open-src/app/gfx-utils/sun-src/fbconf_xorg/README:33:54: "varient" is a misspelling of "variant"
+solaris-xorg: misspell: open-src/app/gfx-utils/sun-src/fbconf_xorg/README:35:25: "varient" is a misspelling of "variant"
+	checking oracle/terraform-ceph-installer (88/110, made 918 requests so far) ...
+terraform-ceph-installer: misspell: README.md:38:92: "redundency" is a misspelling of "redundancy"
+terraform-ceph-installer: misspell: README.md:115:155: "availble" is a misspelling of "available"
+terraform-ceph-installer: misspell: README.md:116:132: "differnt" is a misspelling of "different"
+	checking oracle/terraform-examples (89/110, made 921 requests so far) ...
+terraform-examples: misspell: examples/opc/instance-with-ssh/README.md:29:12: "configuraiton" is a misspelling of "configuration"
+terraform-examples: misspell: examples/opc/instance-with-ssh/README.md:35:14: "configuraiton" is a misspelling of "configuration"
+terraform-examples: misspell: examples/opc/instance-with-ssh/README.md:37:20: "configuraiton" is a misspelling of "configuration"
+terraform-examples: misspell: examples/opc/ipnetworks/README.md:69:170: "accessable" is a misspelling of "accessible"
+terraform-examples: misspell: examples/opc/windows-instance-with-rdp/README.md:29:7: "adminstrator" is a misspelling of "administrator"
+terraform-examples: misspell: examples/opc/windows-instance-with-rdp/README.md:29:169: "ommited" is a misspelling of "omitted"
+	checking oracle/terraform-kubernetes-installer (90/110, made 958 requests so far) ...
+	checking oracle/terraform-oci-cf-install (91/110, made 963 requests so far) ...
+	checking oracle/truffleruby (92/110, made 967 requests so far) ...
+truffleruby: broken link: bench/classic/README.md: http://benchmarksgame.alioth.debian.org: Lookup benchmarksgame.alioth.debian.org on 127.0.1.1:53: no such host
+truffleruby: broken link: test/mri/tests/lib/minitest/README.txt: http://docs.seattlerb.org/minitest: Lookup docs.seattlerb.org on 127.0.1.1:53: read udp 127.0.0.1:41860->127.0.1.1:53: i/o timeout
+truffleruby: broken link: lib/ruby/gems/2.4.0/gems/test-unit-3.2.3/README.md: http://cocooooooon.com/kinotan/: Lookup cocooooooon.com on 127.0.1.1:53: read udp 127.0.0.1:39849->127.0.1.1:53: i/o timeout
+truffleruby: broken link: lib/ruby/gems/2.4.0/gems/test-unit-3.2.3/README.md: http://test-unit.github.io/: Lookup test-unit.github.io on 127.0.1.1:53: read udp 127.0.0.1:57415->127.0.1.1:53: i/o timeout
+truffleruby: broken link: spec/ruby/README.md: http://eregon.github.io/rubyspec/2015/07/29/rubyspec-is-reborn.html: Lookup eregon.github.io on 127.0.1.1:53: read udp 127.0.0.1:52694->127.0.1.1:53: i/o timeout
+truffleruby: broken link: spec/ruby/README.md: http://rubyci.org/: Lookup rubyci.org on 127.0.1.1:53: read udp 127.0.0.1:46533->127.0.1.1:53: i/o timeout
+truffleruby: broken link: spec/ruby/README.md: https://badges.gitter.im/ruby/spec.svg: Lookup badges.gitter.im on 127.0.1.1:53: read udp 127.0.0.1:43803->127.0.1.1:53: i/o timeout
+truffleruby: broken link: spec/ruby/README.md: https://rubyci.org/: Lookup rubyci.org on 127.0.1.1:53: read udp 127.0.0.1:46533->127.0.1.1:53: i/o timeout
+truffleruby: broken link: lib/ruby/gems/2.4.0/gems/minitest-5.10.1/README.rdoc: http://docs.seattlerb.org/minitest: Lookup docs.seattlerb.org on 127.0.1.1:53: read udp 127.0.0.1:41860->127.0.1.1:53: i/o timeout
+truffleruby: broken link: lib/ruby/gems/2.4.0/gems/rake-12.0.0/README.rdoc: http://directory.fsf.org/wiki/Bras: Couldn't find DNS entries for the given domain. Try using DialDualStack
+truffleruby: broken link: lib/json/README-json-jruby.md: http://json.rubyforge.org/: Dialing to the given TCP address timed out
+truffleruby: broken link: lib/json/README.md: http://json.rubyforge.org: Dialing to the given TCP address timed out
+truffleruby: misspell: lib/ruby/gems/2.4.0/gems/test-unit-3.2.3/README.md:27:2: "compatiblity" is a misspelling of "compatibility"
+truffleruby: misspell: lib/ruby/gems/2.4.0/gems/minitest-5.10.1/README.rdoc:575:50: "managment" is a misspelling of "management"
+	checking oracle/vagrant-boxes (93/110, made 1003 requests so far) ...
+	checking oracle/vbcs-samples (94/110, made 1019 requests so far) ...
+	checking oracle/visualvm (95/110, made 1032 requests so far) ...
+	checking oracle/weblogic-deploy-tooling (96/110, made 1036 requests so far) ...
+	checking oracle/weblogic-kubernetes-operator (97/110, made 1041 requests so far) ...
+weblogic-kubernetes-operator: broken link: integration-tests/README.md: http://wls-jenkins.us.oracle.com/view/weblogic-operator/job/weblogic-kubernetes-operator-javatest/: Lookup wls-jenkins.us.oracle.com on 127.0.1.1:53: no such host
+	checking oracle/weblogic-monitoring-exporter (98/110, made 1047 requests so far) ...
+	checking oracle/wookiee (99/110, made 1052 requests so far) ...
+wookiee: misspell: README.md:205:61: "begining" is a misspelling of "beginning"
+	checking oracle/wookiee-akka-http (100/110, made 1057 requests so far) ...
+	checking oracle/wookiee-cache (101/110, made 1059 requests so far) ...
+	checking oracle/wookiee-cache-memcache (102/110, made 1062 requests so far) ...
+	checking oracle/wookiee-cluster (103/110, made 1065 requests so far) ...
+wookiee-cluster: broken link: README.md: https://webtrends.jiveon.com/servlet/JiveServlet/showImage/102-29731-8-12519/temp.png: Lookup webtrends.jiveon.com on 127.0.1.1:53: no such host
+	checking oracle/wookiee-etcd (104/110, made 1069 requests so far) ...
+	checking oracle/wookiee-kafka (105/110, made 1071 requests so far) ...
+	checking oracle/wookiee-metrics (106/110, made 1074 requests so far) ...
+	checking oracle/wookiee-netty (107/110, made 1077 requests so far) ...
+wookiee-netty: broken link: README.md: http://io.netty/wiki: Lookup io.netty on 127.0.1.1:53: no such host
+	checking oracle/wookiee-spray (108/110, made 1080 requests so far) ...
+wookiee-spray: broken link: README.md: http://spray.io/documentation/1.2.2/: The server closed connection before returning the first response byte. Make sure the server returns 'Connection: close' response header before closing the connection
+	checking oracle/wookiee-zookeeper (109/110, made 1083 requests so far) ...
+wookiee-zookeeper: misspell: README.md:114:43: "occured" is a misspelling of "occurred"
+wookiee-zookeeper: misspell: README.md:118:37: "occured" is a misspelling of "occurred"
+	checking oracle/xml-sample-demo (110/110, made 1086 requests so far) ...
+xml-sample-demo: misspell: README.md:7:117: "demonstraiton" is a misspelling of "demonstrations"
+xml-sample-demo: misspell: README.md:7:149: "independantly" is a misspelling of "independently"
+xml-sample-demo: misspell: README.md:19:39: "mechansim" is a misspelling of "mechanism"
