@@ -138,6 +138,10 @@ func (l *linter) getReposList() error {
 		repos, resp, err := l.client.Repositories.List(l.ctx, l.user, opts)
 		l.requests++
 		if err != nil {
+			if resp.NextPage == 0 && opts.Page > 1 {
+				// Ignore last page list error.
+				return nil
+			}
 			return fmt.Errorf("list repos (page=%d): %v", opts.Page, err)
 		}
 
