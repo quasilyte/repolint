@@ -1,0 +1,247 @@
+	checking apple/ccs-calendarserver (1/42, made 1 requests so far) ...
+	checking apple/ccs-pycalendar (2/42, made 8 requests so far) ...
+	checking apple/ccs-pykerberos (3/42, made 12 requests so far) ...
+	checking apple/coremltools (4/42, made 16 requests so far) ...
+coremltools: acronym: deps/protobuf/src/README.md:163: replace ansi with ANSI
+	checking apple/cups (5/42, made 47 requests so far) ...
+	checking apple/darwin-xnu (6/42, made 54 requests so far) ...
+darwin-xnu: broken link: tools/tests/libMicro/README: http://www.opensolaris.org/os/licensing: Lookup www.opensolaris.org on 127.0.1.1:53: no such host
+darwin-xnu: broken link: libkern/zlib/README: http://www.oche.de/~akupries/soft/trf/trf_zip.html: Lookup www.oche.de on 127.0.1.1:53: no such host
+darwin-xnu: misspell: bsd/miscfs/devfs/README:23:59: "refered" is a misspelling of "referred"
+darwin-xnu: misspell: bsd/miscfs/devfs/README:30:33: "layed" is a misspelling of "laid"
+darwin-xnu: misspell: tools/lldbmacros/README.md:134:40: "registed" is a misspelling of "registered"
+darwin-xnu: misspell: tools/lldbmacros/README.md:293:32: "withing" is a misspelling of "within"
+darwin-xnu: misspell: tools/lldbmacros/README.md:370:21: "requried" is a misspelling of "required"
+darwin-xnu: misspell: tools/lldbmacros/README.md:433:226: "documentaiton" is a misspelling of "documentation"
+	checking apple/example-package-dealer (7/42, made 66 requests so far) ...
+	checking apple/example-package-deckofplayingcards (8/42, made 69 requests so far) ...
+	checking apple/example-package-fisheryates (9/42, made 72 requests so far) ...
+	checking apple/example-package-playingcard (10/42, made 75 requests so far) ...
+	checking apple/foundationdb (11/42, made 78 requests so far) ...
+	checking apple/ml-all-pairs (12/42, made 84 requests so far) ...
+	checking apple/swift (13/42, made 86 requests so far) ...
+	checking apple/swift-clang (14/42, made 110 requests so far) ...
+	checking apple/swift-community-hosted-continuous-integration (15/42, made 124 requests so far) ...
+	checking apple/swift-compiler-rt (16/42, made 127 requests so far) ...
+	error: get swift-compiler-rt tree: GET https://api.github.com/repos/apple/swift-compiler-rt/git/trees/master?recursive=1: 404 Not Found []
+	checking apple/swift-corelibs-foundation (17/42, made 128 requests so far) ...
+	checking apple/swift-corelibs-libdispatch (18/42, made 132 requests so far) ...
+	checking apple/swift-corelibs-xctest (19/42, made 136 requests so far) ...
+	checking apple/swift-evolution (20/42, made 141 requests so far) ...
+	checking apple/swift-integration-tests (21/42, made 145 requests so far) ...
+	checking apple/swift-internals (22/42, made 148 requests so far) ...
+	error: get swift-internals tree: GET https://api.github.com/repos/apple/swift-internals/git/trees/master?recursive=1: 404 Not Found []
+	checking apple/swift-llbuild (23/42, made 149 requests so far) ...
+	checking apple/swift-lldb (24/42, made 167 requests so far) ...
+	checking apple/swift-llvm (25/42, made 187 requests so far) ...
+	error: get swift-llvm tree: GET https://api.github.com/repos/apple/swift-llvm/git/trees/master?recursive=1: 404 Not Found []
+	checking apple/swift-nio (26/42, made 188 requests so far) ...
+swift-nio: misspell: README.md:108:559: "futher" is a misspelling of "further"
+	checking apple/swift-nio-examples (27/42, made 198 requests so far) ...
+	checking apple/swift-nio-extras (28/42, made 203 requests so far) ...
+	checking apple/swift-nio-http2 (29/42, made 207 requests so far) ...
+	checking apple/swift-nio-nghttp2-support (30/42, made 211 requests so far) ...
+	checking apple/swift-nio-ssl (31/42, made 214 requests so far) ...
+	checking apple/swift-nio-ssl-support (32/42, made 218 requests so far) ...
+	checking apple/swift-nio-transport-services (33/42, made 221 requests so far) ...
+	checking apple/swift-nio-zlib-support (34/42, made 225 requests so far) ...
+	checking apple/swift-package-manager (35/42, made 228 requests so far) ...
+	checking apple/swift-protobuf (36/42, made 245 requests so far) ...
+	checking apple/swift-source-compat-suite (37/42, made 249 requests so far) ...
+	checking apple/swift-stress-tester (38/42, made 252 requests so far) ...
+	checking apple/swift-syntax (39/42, made 256 requests so far) ...
+	checking apple/swift-tools-support-core (40/42, made 259 requests so far) ...
+	checking apple/swift-xcode-playground-support (41/42, made 262 requests so far) ...
+swift-xcode-playground-support: misspell: README.md:77:60: "overriden" is a misspelling of "overridden"
+	checking apple/turicreate (42/42, made 266 requests so far) ...
+turicreate: broken link: deps/src/openssl-1.0.2/crypto/threads/README: http://www.mit.edu:8001/people/proven/pthreads.html: Dialing to the given TCP address timed out
+turicreate: broken link: deps/src/boost_1_65_1/tools/build/src/engine/boehm_gc/README.QUICK: http://www.hpl.hp.com/personal/Hans_Boehm/gc/gcinterface.html: Dialing to the given TCP address timed out
+turicreate: broken link: deps/src/boost_1_65_1/libs/compute/CONTRIBUTING.md: https://github.com/boostorg/compute/issues?state=open: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: src/external/xgboost/doc/README: https://github.com/tqchen/recommonmark: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: userguide/README.md: https://github.com/apple/turicreate: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/test/README.md: https://github.com/boostorg/test: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/tools/build/CONTRIBUTING.rst: http://lists.boost.org/boost-build/: Lookup lists.boost.org on 127.0.1.1:53: read udp 127.0.0.1:45921->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/assert/README.md: http://github.com/boostorg: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: userguide/object_detection/README.md: https://github.com/apple/turicreate/blob/master/LinuxGPU.md: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: src/external/xgboost/wrapper/README.md: https://github.com/antinucleon/XGBoost.jl: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: src/external/xgboost/java/xgboost4j/README.md: https://github.com/dmlc/xgboost: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: src/external/xgboost/java/xgboost4j/README.md: https://github.com/yanqingmen/xgboost-java: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/cmake-3.9.3/Utilities/cmexpat/README.md: https://github.com/libexpat/libexpat/: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/cmake-3.9.3/Utilities/cmexpat/README.md: https://github.com/libexpat/libexpat/blob/master/expat/COPYING: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/cmake-3.9.3/Utilities/cmexpat/README.md: https://www.gnu.org/philosophy/free-sw.en.html: Couldn't find DNS entries for the given domain. Try using DialDualStack
+turicreate: broken link: src/external/xgboost/subtree/README.md: https://github.com/tqchen/rabit: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: src/external/xgboost/demo/README.md: https://github.com/antinucleon/XGBoost.jl/blob/master/demo/basic_walkthrough.jl: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: src/external/xgboost/demo/README.md: https://github.com/antinucleon/XGBoost.jl/blob/master/demo/boost_from_prediction.jl: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: src/external/xgboost/demo/README.md: https://github.com/antinucleon/XGBoost.jl/blob/master/demo/cross_validation.jl: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: src/external/xgboost/demo/README.md: https://github.com/antinucleon/XGBoost.jl/blob/master/demo/custom_objective.jl: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: src/external/xgboost/demo/README.md: https://github.com/antinucleon/XGBoost.jl/blob/master/demo/generalized_linear_model.jl: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: src/external/xgboost/demo/README.md: https://github.com/daxiongshu/kaggle-tradeshift-winning-solution: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: src/external/xgboost/R-package/README.md: https://github.com/dmlc/xgboost/issues/347: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/numeric/ublas/README.md: http://lists.boost.org/ublas/: Lookup lists.boost.org on 127.0.1.1:53: read udp 127.0.0.1:45921->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/numeric/ublas/README.md: https://github.com/uBLAS/ublas: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/numeric/ublas/README.md: https://github.com/uBLAS/ublas/wiki: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: src/external/xgboost/multi-node/README.md: https://github.com/dmlc/rabit: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: src/external/xgboost/multi-node/README.md: https://github.com/dmlc/rabit/tree/master/guide: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: src/external/xgboost/multi-node/README.md: https://github.com/dmlc/wormhole: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: src/external/xgboost/multi-node/README.md: https://github.com/dmlc/wormhole/tree/master/learn/xgboost: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/python/README.md: https://travis-ci.org/boostorg/python.svg?branch=develop: Lookup travis-ci.org on 127.0.1.1:53: read udp 127.0.0.1:56587->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/compute/README.md: https://github.com/boostorg/compute/issues?state=open: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/compute/README.md: https://github.com/boostorg/compute/tree/master/example: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/compute/README.md: https://travis-ci.org/boostorg/compute: Lookup travis-ci.org on 127.0.1.1:53: read udp 127.0.0.1:56587->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/compute/README.md: https://travis-ci.org/boostorg/compute.svg?branch=master: Lookup travis-ci.org on 127.0.1.1:53: read udp 127.0.0.1:56587->127.0.1.1:53: i/o timeout
+turicreate: broken link: src/external/xgboost/subtree/rabit/README.md: https://github.com/dmlc/wormhole: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: src/external/xgboost/subtree/rabit/README.md: https://travis-ci.org/dmlc/rabit: Lookup travis-ci.org on 127.0.1.1:53: read udp 127.0.0.1:56587->127.0.1.1:53: i/o timeout
+turicreate: broken link: src/external/xgboost/subtree/rabit/README.md: https://travis-ci.org/dmlc/rabit.svg?branch=master: Lookup travis-ci.org on 127.0.1.1:53: read udp 127.0.0.1:56587->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/nanomsg-1.0.0/README: http://asciidoctor.org/: Lookup asciidoctor.org on 127.0.1.1:53: read udp 127.0.0.1:47448->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/nanomsg-1.0.0/README: http://github.com/nanomsg/nanomsg: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/nanomsg-1.0.0/README: http://github.com/nanomsg/nanomsg/issues: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/nanomsg-1.0.0/README: http://nanomsg.org: Lookup nanomsg.org on 127.0.1.1:53: read udp 127.0.0.1:38424->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/nanomsg-1.0.0/README: http://nanomsg.org/documentation: Lookup nanomsg.org on 127.0.1.1:53: read udp 127.0.0.1:38424->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/nanomsg-1.0.0/README: http://nanomsg.org/documentation.html: Lookup nanomsg.org on 127.0.1.1:53: read udp 127.0.0.1:38424->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/nanomsg-1.0.0/README: http://webchat.freenode.net?channels=%23nanomsg: Lookup webchat.freenode.net on 127.0.1.1:53: read udp 127.0.0.1:54989->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/nanomsg-1.0.0/README: http://www.freelists.org/list/nanomsg: Couldn't find DNS entries for the given domain. Try using DialDualStack
+turicreate: broken link: deps/src/nanomsg-1.0.0/README: https://github.com/nanomsg/nanomsg/blob/master/COPYING: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/nanomsg-1.0.0/README: https://travis-ci.org/nanomsg/nanomsg: Lookup travis-ci.org on 127.0.1.1:53: read udp 127.0.0.1:56587->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/bind/README.md: https://travis-ci.org/boostorg/bind: Lookup travis-ci.org on 127.0.1.1:53: read udp 127.0.0.1:56587->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/bind/README.md: https://travis-ci.org/boostorg/bind.svg?branch=develop: Lookup travis-ci.org on 127.0.1.1:53: read udp 127.0.0.1:56587->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/bind/README.md: https://travis-ci.org/boostorg/bind.svg?branch=master: Lookup travis-ci.org on 127.0.1.1:53: read udp 127.0.0.1:56587->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/libsodium-0.7.1/README.markdown: https://travis-ci.org/jedisct1/libsodium.png?branch=master: Lookup travis-ci.org on 127.0.1.1:53: read udp 127.0.0.1:56587->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/libsodium-0.7.1/README.markdown: https://travis-ci.org/jedisct1/libsodium?branch=master: Lookup travis-ci.org on 127.0.1.1:53: read udp 127.0.0.1:56587->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/numeric/odeint/README.md: https://travis-ci.org/headmyshoulder/odeint-v2: Lookup travis-ci.org on 127.0.1.1:53: read udp 127.0.0.1:56587->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/numeric/odeint/README.md: https://travis-ci.org/headmyshoulder/odeint-v2.svg?branch=master: Lookup travis-ci.org on 127.0.1.1:53: read udp 127.0.0.1:56587->127.0.1.1:53: i/o timeout
+turicreate: broken link: src/external/xgboost/README.md: https://github.com/ChenglongChen/Kaggle_CrowdFlower: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: src/external/xgboost/README.md: https://github.com/antinucleon/XGBoost.jl/blob/master/demo/basic_walkthrough.jl: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: src/external/xgboost/README.md: https://github.com/dmlc/xgboost/blob/master/LICENSE: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: src/external/xgboost/README.md: https://github.com/dmlc/xgboost/blob/master/R-package/demo/basic_walkthrough.R: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: src/external/xgboost/README.md: https://github.com/dmlc/xgboost/blob/master/demo/guide-python/basic_walkthrough.py: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: src/external/xgboost/README.md: https://github.com/dmlc/xgboost/blob/master/doc/: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: src/external/xgboost/README.md: https://github.com/dmlc/xgboost/blob/master/doc/README.md#highlight-links: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: src/external/xgboost/README.md: https://github.com/dmlc/xgboost/issues: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: src/external/xgboost/README.md: https://github.com/dmlc/xgboost/labels/Wish-List: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: src/external/xgboost/README.md: https://github.com/szilard/benchm-ml: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: src/external/xgboost/README.md: https://travis-ci.org/dmlc/xgboost: Lookup travis-ci.org on 127.0.1.1:53: read udp 127.0.0.1:56587->127.0.1.1:53: i/o timeout
+turicreate: broken link: src/external/xgboost/README.md: https://travis-ci.org/dmlc/xgboost.svg?branch=master: Lookup travis-ci.org on 127.0.1.1:53: read udp 127.0.0.1:56587->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/smart_ptr/README.md: https://travis-ci.org/boostorg/smart_ptr: Lookup travis-ci.org on 127.0.1.1:53: read udp 127.0.0.1:56587->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/smart_ptr/README.md: https://travis-ci.org/boostorg/smart_ptr.svg?branch=develop: Lookup travis-ci.org on 127.0.1.1:53: read udp 127.0.0.1:56587->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/smart_ptr/README.md: https://travis-ci.org/boostorg/smart_ptr.svg?branch=master: Lookup travis-ci.org on 127.0.1.1:53: read udp 127.0.0.1:56587->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/nanomsg-1.0.0/README.md: http://asciidoctor.org/: Lookup asciidoctor.org on 127.0.1.1:53: read udp 127.0.0.1:47448->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/nanomsg-1.0.0/README.md: http://github.com/nanomsg/nanomsg: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/nanomsg-1.0.0/README.md: http://github.com/nanomsg/nanomsg/issues: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/nanomsg-1.0.0/README.md: http://nanomsg.org: Lookup nanomsg.org on 127.0.1.1:53: read udp 127.0.0.1:38424->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/nanomsg-1.0.0/README.md: http://nanomsg.org/documentation: Lookup nanomsg.org on 127.0.1.1:53: read udp 127.0.0.1:38424->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/nanomsg-1.0.0/README.md: http://nanomsg.org/documentation.html: Lookup nanomsg.org on 127.0.1.1:53: read udp 127.0.0.1:38424->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/nanomsg-1.0.0/README.md: http://webchat.freenode.net?channels=%23nanomsg: Lookup webchat.freenode.net on 127.0.1.1:53: read udp 127.0.0.1:54989->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/nanomsg-1.0.0/README.md: http://www.freelists.org/list/nanomsg: Couldn't find DNS entries for the given domain. Try using DialDualStack
+turicreate: broken link: deps/src/nanomsg-1.0.0/README.md: https://github.com/nanomsg/nanomsg/blob/master/COPYING: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/nanomsg-1.0.0/README.md: https://travis-ci.org/nanomsg/nanomsg: Lookup travis-ci.org on 127.0.1.1:53: read udp 127.0.0.1:56587->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/metaparse/README.md: http://travis-ci.org/boostorg/metaparse: Lookup travis-ci.org on 127.0.1.1:53: read udp 127.0.0.1:56587->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/metaparse/README.md: https://secure.travis-ci.org/boostorg/metaparse.svg?branch=master: Lookup travis-ci.org on 127.0.1.1:53: read udp 127.0.0.1:56587->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/process/README.md: http://github.com/boostorg: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/process/README.md: https://github.com/boostorg/winapi: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/process/README.md: https://github.com/klemens-morgenstern/boost-process: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/process/README.md: https://github.com/klemens-morgenstern/boost-process/issues: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/process/README.md: https://travis-ci.org/klemens-morgenstern/boost-process: Lookup travis-ci.org on 127.0.1.1:53: read udp 127.0.0.1:56587->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/process/README.md: https://travis-ci.org/klemens-morgenstern/boost-process.svg?branch=develop: Lookup travis-ci.org on 127.0.1.1:53: read udp 127.0.0.1:56587->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/process/README.md: https://travis-ci.org/klemens-morgenstern/boost-process.svg?branch=master: Lookup travis-ci.org on 127.0.1.1:53: read udp 127.0.0.1:56587->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/cmake-3.9.3/Utilities/cmzlib/README: http://www.cpan.org/modules/by-module/Compress/: Couldn't find DNS entries for the given domain. Try using DialDualStack
+turicreate: broken link: deps/src/cmake-3.9.3/Utilities/cmzlib/README: http://www.gzip.org/zlib/: Lookup www.gzip.org on 127.0.1.1:53: read udp 127.0.0.1:47696->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/cmake-3.9.3/Utilities/cmzlib/README: http://www.gzip.org/zlib/zlib_faq.html: Lookup www.gzip.org on 127.0.1.1:53: read udp 127.0.0.1:47696->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/cmake-3.9.3/Utilities/cmzlib/README: http://www.oche.de/~akupries/soft/trf/trf_zip.html: Lookup www.oche.de on 127.0.1.1:53: no such host
+turicreate: broken link: userguide/image_similarity/README.md: http://www.vision.caltech.edu/Image_Datasets/Caltech101/: Lookup www.vision.caltech.edu on 127.0.1.1:53: read udp 127.0.0.1:58881->127.0.1.1:53: i/o timeout
+turicreate: broken link: userguide/image_similarity/README.md: https://github.com/apple/turicreate/blob/master/LinuxGPU.md: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: src/external/armadillo/README.txt: http://www.cmake.org: Lookup www.cmake.org on 127.0.1.1:53: read udp 127.0.0.1:59909->127.0.1.1:53: i/o timeout
+turicreate: broken link: src/external/armadillo/README.txt: https://github.com/jonathf/matlab2cpp: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/hana/README.md: http://melpon.org/wandbox/permlink/g4ozIK33ITDtyGa3: Lookup melpon.org on 127.0.1.1:53: read udp 127.0.0.1:48056->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/hana/README.md: http://www.cmake.org: Lookup www.cmake.org on 127.0.1.1:53: read udp 127.0.0.1:59909->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/hana/README.md: http://www.doxygen.org: Lookup www.doxygen.org on 127.0.1.1:53: read udp 127.0.0.1:35943->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/hana/README.md: https://github.com/Homebrew/homebrew-core/blob/master/Formula/hana.rb: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/hana/README.md: https://github.com/boostorg/hana/wiki: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/hana/README.md: https://travis-ci.org/boostorg/hana: Lookup travis-ci.org on 127.0.1.1:53: read udp 127.0.0.1:56587->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/hana/README.md: https://travis-ci.org/boostorg/hana.svg?branch=master: Lookup travis-ci.org on 127.0.1.1:53: read udp 127.0.0.1:56587->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/libxml2-2.9.1/TODO: http://wap.trondheim.com/vaer/index.phtml: Lookup wap.trondheim.com on 127.0.1.1:53: no such host
+turicreate: broken link: deps/src/openssl-1.0.2/README: http://w3.access.gpo.gov/bis/ear/pdf/740.pdf: Lookup w3.access.gpo.gov on 127.0.1.1:53: no such host
+turicreate: broken link: deps/src/openssl-1.0.2/README: http://www.bis.doc.gov/Encryption/PubAvailEncSourceCodeNofify.html: Lookup www.bis.doc.gov on 127.0.1.1:53: read udp 127.0.0.1:54534->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/stacktrace/README.md: https://travis-ci.org/boostorg/stacktrace: Lookup travis-ci.org on 127.0.1.1:53: read udp 127.0.0.1:56587->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/stacktrace/README.md: https://travis-ci.org/boostorg/stacktrace.svg?branch=develop: Lookup travis-ci.org on 127.0.1.1:53: read udp 127.0.0.1:56587->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/stacktrace/README.md: https://travis-ci.org/boostorg/stacktrace.svg?branch=master: Lookup travis-ci.org on 127.0.1.1:53: read udp 127.0.0.1:56587->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/graph/README.md: http://lists.boost.org/Archives/boost/2015/04/221780.php: Lookup lists.boost.org on 127.0.1.1:53: read udp 127.0.0.1:45921->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/graph/README.md: http://lists.boost.org/mailman/listinfo.cgi/boost-users: Lookup lists.boost.org on 127.0.1.1:53: read udp 127.0.0.1:45921->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/graph/README.md: https://github.com/boostorg/boost/wiki/Getting-Started: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/graph/README.md: https://github.com/boostorg/graph/pulls: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/curl-7.33.0/docs/TODO: https://github.com/tatsuhiro-t/spdylay: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/core/README.md: http://github.com/boostorg: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/core/README.md: https://travis-ci.org/boostorg/core: Lookup travis-ci.org on 127.0.1.1:53: read udp 127.0.0.1:56587->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/core/README.md: https://travis-ci.org/boostorg/core.svg?branch=develop: Lookup travis-ci.org on 127.0.1.1:53: read udp 127.0.0.1:56587->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/core/README.md: https://travis-ci.org/boostorg/core.svg?branch=master: Lookup travis-ci.org on 127.0.1.1:53: read udp 127.0.0.1:56587->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/type_index/README.md: http://github.com/boostorg: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/type_index/README.md: https://travis-ci.org/apolukhin/type_index: Lookup travis-ci.org on 127.0.1.1:53: read udp 127.0.0.1:56587->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/type_index/README.md: https://travis-ci.org/apolukhin/type_index.svg?branch=develop: Lookup travis-ci.org on 127.0.1.1:53: read udp 127.0.0.1:56587->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/type_index/README.md: https://travis-ci.org/apolukhin/type_index.svg?branch=master: Lookup travis-ci.org on 127.0.1.1:53: read udp 127.0.0.1:56587->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/atomic/README.md: http://github.com/boostorg: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/any/README.md: http://github.com/boostorg: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/any/README.md: https://travis-ci.org/apolukhin/any: Lookup travis-ci.org on 127.0.1.1:53: read udp 127.0.0.1:56587->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/any/README.md: https://travis-ci.org/apolukhin/any.svg?branch=develop: Lookup travis-ci.org on 127.0.1.1:53: read udp 127.0.0.1:56587->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/any/README.md: https://travis-ci.org/apolukhin/any.svg?branch=master: Lookup travis-ci.org on 127.0.1.1:53: read udp 127.0.0.1:56587->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/conversion/README.md: http://github.com/boostorg: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/conversion/README.md: https://travis-ci.org/apolukhin/conversion: Lookup travis-ci.org on 127.0.1.1:53: read udp 127.0.0.1:56587->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/conversion/README.md: https://travis-ci.org/apolukhin/conversion.svg?branch=develop: Lookup travis-ci.org on 127.0.1.1:53: read udp 127.0.0.1:56587->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/conversion/README.md: https://travis-ci.org/apolukhin/conversion.svg?branch=master: Lookup travis-ci.org on 127.0.1.1:53: read udp 127.0.0.1:56587->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/variant/README.md: http://github.com/boostorg: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/variant/README.md: https://travis-ci.org/apolukhin/variant: Lookup travis-ci.org on 127.0.1.1:53: read udp 127.0.0.1:56587->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/variant/README.md: https://travis-ci.org/apolukhin/variant.svg?branch=develop: Lookup travis-ci.org on 127.0.1.1:53: read udp 127.0.0.1:56587->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/variant/README.md: https://travis-ci.org/apolukhin/variant.svg?branch=master: Lookup travis-ci.org on 127.0.1.1:53: read udp 127.0.0.1:56587->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/tokenizer/README.md: http://github.com/boostorg: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/tokenizer/README.md: http://melpon.org/wandbox/permlink/kZeKmQAtqDlpn8if: Lookup melpon.org on 127.0.1.1:53: read udp 127.0.0.1:48056->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/tokenizer/README.md: http://melpon.org/wandbox/permlink/z94YLs8PdYSh7rXz: Lookup melpon.org on 127.0.1.1:53: read udp 127.0.0.1:48056->127.0.1.1:53: i/o timeout
+turicreate: broken link: src/external/xgboost/demo/kaggle-higgs/README.md: https://github.com/hetong007/higgsml: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/log/README.md: http://github.com/boostorg: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/dll/README.md: http://github.com/boostorg: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/dll/README.md: https://github.com/retf/Boost.Application: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/dll/README.md: https://travis-ci.org/apolukhin/Boost.DLL: Lookup travis-ci.org on 127.0.1.1:53: read udp 127.0.0.1:56587->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/dll/README.md: https://travis-ci.org/apolukhin/Boost.DLL.svg?branch=develop: Lookup travis-ci.org on 127.0.1.1:53: read udp 127.0.0.1:56587->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/dll/README.md: https://travis-ci.org/apolukhin/Boost.DLL.svg?branch=master: Lookup travis-ci.org on 127.0.1.1:53: read udp 127.0.0.1:56587->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/lexical_cast/README.md: http://github.com/boostorg: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/lexical_cast/README.md: https://travis-ci.org/apolukhin/lexical_cast: Lookup travis-ci.org on 127.0.1.1:53: read udp 127.0.0.1:56587->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/lexical_cast/README.md: https://travis-ci.org/apolukhin/lexical_cast.svg?branch=develop: Lookup travis-ci.org on 127.0.1.1:53: read udp 127.0.0.1:56587->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/lexical_cast/README.md: https://travis-ci.org/apolukhin/lexical_cast.svg?branch=master: Lookup travis-ci.org on 127.0.1.1:53: read udp 127.0.0.1:56587->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/units/README.md: http://github.com/boostorg: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/poly_collection/README.md: https://travis-ci.org/boostorg/poly_collection: Lookup travis-ci.org on 127.0.1.1:53: read udp 127.0.0.1:56587->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/poly_collection/README.md: https://travis-ci.org/boostorg/poly_collection.svg?branch=develop: Lookup travis-ci.org on 127.0.1.1:53: read udp 127.0.0.1:56587->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/poly_collection/README.md: https://travis-ci.org/boostorg/poly_collection.svg?branch=master: Lookup travis-ci.org on 127.0.1.1:53: read udp 127.0.0.1:56587->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/geometry/README.md: http://github.com/boostorg: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/geometry/README.md: http://lists.boost.org/geometry/: Lookup lists.boost.org on 127.0.1.1:53: read udp 127.0.0.1:45921->127.0.1.1:53: i/o timeout
+turicreate: broken link: deps/src/boost_1_65_1/libs/geometry/README.md: https://github.com/boostorg/geometry/wiki: Lookup github.com on 127.0.1.1:53: read udp 127.0.0.1:59185->127.0.1.1:53: i/o timeout
+turicreate: misspell: deps/src/boost_1_65_1/libs/fiber/README.md:5:72: "similiar" is a misspelling of "similar"
+turicreate: misspell: deps/src/boost_1_65_1/libs/fiber/README.md:13:39: "usally" is a misspelling of "usually"
+turicreate: misspell: deps/src/boost_1_65_1/libs/numeric/ublas/test/README:12:29: "directorys" is a misspelling of "directors"
+turicreate: misspell: deps/src/boost_1_65_1/tools/build/CONTRIBUTING.rst:70:5: "happend" is a misspelling of "happened"
+turicreate: misspell: deps/src/curl-7.33.0/docs/README.netware:13:49: "continously" is a misspelling of "continuously"
+turicreate: misspell: deps/src/curl-7.33.0/lib/README.pipelining:13:0: "Bascially" is a misspelling of "Basically"
+turicreate: misspell: deps/src/curl-7.33.0/packages/Win32/README:23:6: "implicitely" is a misspelling of "implicitly"
+turicreate: misspell: deps/src/cmake-3.9.3/Tests/RunCMake/CPack/README.txt:147:8: "prefered" is a misspelling of "preferred"
+turicreate: misspell: deps/src/cmake-3.9.3/Tests/RunCMake/CPack/README.txt:207:43: "pacakge" is a misspelling of "package"
+turicreate: misspell: deps/src/curl-7.33.0/packages/OS400/README.OS400:165:27: "sould" is a misspelling of "could"
+turicreate: misspell: deps/src/libpng-1.6.14/projects/visualc71/README.txt:15:12: "intergrated" is a misspelling of "integrated"
+turicreate: misspell: deps/src/libpng-1.6.14/contrib/pngminus/README:20:31: "Independantly" is a misspelling of "Independently"
+turicreate: misspell: deps/src/libxml2-2.9.1/README:21:18: "functionning" is a misspelling of "functioning"
+turicreate: misspell: deps/src/libxml2-2.9.1/doc/README.docs:19:58: "explicitely" is a misspelling of "explicitly"
+turicreate: misspell: deps/src/curl-7.33.0/docs/TODO:385:42: "specifing" is a misspelling of "specifying"
+turicreate: misspell: deps/src/curl-7.33.0/docs/TODO:695:1: "specifing" is a misspelling of "specifying"
+turicreate: misspell: deps/src/openssl-1.0.2/crypto/bn/asm/README:22:17: "origional" is a misspelling of "original"
+turicreate: misspell: deps/src/libxml2-2.9.1/TODO:205:16: "convertion" is a misspelling of "conversion"
+turicreate: misspell: deps/src/libxml2-2.9.1/TODO:228:45: "occasionnal" is a misspelling of "occasional"
+turicreate: misspell: deps/src/libxml2-2.9.1/TODO:249:62: "everyting" is a misspelling of "everything"
+turicreate: misspell: deps/src/openssl-1.0.2/crypto/dso/README:15:4: "overriden" is a misspelling of "overridden"
+turicreate: misspell: deps/src/openssl-1.0.2/crypto/ripemd/README:11:60: "origional" is a misspelling of "original"
+turicreate: misspell: deps/src/zlib-1.2.11/os400/README400:46:56: "explicitely" is a misspelling of "explicitly"
+turicreate: misspell: deps/src/openssl-1.0.2/crypto/engine/README:125:20: "independant" is a misspelling of "independent"
+turicreate: misspell: deps/src/openssl-1.0.2/crypto/engine/README:191:10: "gracefull" is a misspelling of "graceful"
+turicreate: misspell: deps/src/openssl-1.0.2/engines/ccgost/README.gost:27:17: "algoritm" is a misspelling of "algorithm"
+turicreate: misspell: deps/src/openssl-1.0.2/engines/ccgost/README.gost:148:52: "explicitely" is a misspelling of "explicitly"
+turicreate: misspell: deps/src/openssl-1.0.2/engines/ccgost/README.gost:196:6: "absense" is a misspelling of "absence"
+turicreate: misspell: deps/src/openssl-1.0.2/engines/ccgost/README.gost:285:21: "indepentent" is a misspelling of "independent"
+turicreate: misspell: src/external/xgboost/subtree/rabit/tracker/README.md:4:41: "themselfs" is a misspelling of "themselves"
+turicreate: misspell: src/unity/python/turicreate/toolkits/_feature_engineering/README.md:3:53: "existance" is a misspelling of "existence"
+turicreate: misspell: deps/src/openssl-1.0.2/demos/tunala/README:99:74: "futher" is a misspelling of "further"
+turicreate: misspell: userguide/image_similarity/README.md:80:20: "differnt" is a misspelling of "different"
+turicreate: misspell: userguide/text/README.md:115:22: "includ" is a misspelling of "include"
