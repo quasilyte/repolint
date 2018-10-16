@@ -2,6 +2,54 @@
 
 Tool to check github user/organization repositories for some simple and common issues.
 
+## Using the collected results
+
+[./issues/](/issues) directory contains a list of issues found in multiple Github organizations.
+Every file contains a whole organization analysis.
+
+Here is a list of analyzed organizations (in alphabetical order):
+
+[adobe](/issues/adobe.txt)
+[apache](/issues/apache.txt)
+[apple](/issues/apple.txt)
+[autodesk](/issues/autodesk.txt)
+[CanonicalLtd](/issues/CanonicalLtd.txt)
+[Debian](/issues/Debian.txt)
+[dell](/issues/dell.txt)
+[docker](/issues/docker.txt)
+[eclipse](/issues/eclipse.txt)
+[esri](/issues/esri.txt)
+[freedesktop](/issues/freedesktop.txt)
+[gentoo](/issues/gentoo.txt)
+[github](/issues/github.txt)
+[google](/issues/google.txt)
+[hewlettpackard](/issues/hewlettpackard.txt)
+[IBM](/issues/IBM.txt)
+[intel](/issues/intel.txt)
+[JetBrains](/issues/JetBrains.txt)
+[microsoft](/issues/microsoft.txt)
+[Netflix](/issues/Netflix.txt)
+[nvidia](/issues/nvidia.txt)
+[openshift](/issues/openshift.txt)
+[oracle](/issues/oracle.txt)
+[sap](/issues/sap.txt)
+[siemens](/issues/siemens.txt)
+[spotify](/issues/spotify.txt)
+[tdf](/issues/tdf.txt)
+[twitter](/issues/twitter.txt)
+[vmware](/issues/vmware.txt)
+[yandex](/issues/yandex.txt)
+
+Some stats:
+
+| Kind of an issue | Numbers reported |
+| Broken link | 3860 |
+| Misspell (typo) | 3408 |
+| Acronym | 166 |
+| Unwanted file | 137 |
+
+Number of checked repositories: 5891.
+
 ## Overview
 
 `repolint` makes contributions during events like hacktoberfest simpler
