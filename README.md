@@ -99,7 +99,7 @@ Most issues are very simple and are agnostic to the repository programming langu
 
 * Typos in some common files like readme and contributing guidelines.
 * Broken links.
-* Commited files that should be removed (like Emacs autosave and backup files).
+* Committed files that should be removed (like Emacs autosave and backup files).
 * Issues in special files like `.travis.ci`.
 
 ## Dependencies
