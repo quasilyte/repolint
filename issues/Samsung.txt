@@ -1,0 +1,166 @@
+	checking Samsung/appium-sdb (1/40, made 1 requests so far) ...
+	checking Samsung/appium-tizen-driver (2/40, made 4 requests so far) ...
+	checking Samsung/async-request-serial-processor- (3/40, made 7 requests so far) ...
+async-request-serial-processor-: misspell: README.md:3:30: "asyncronous" is a misspelling of "asynchronous"
+async-request-serial-processor-: misspell: README.md:5:97: "parallely" is a misspelling of "parallelly"
+async-request-serial-processor-: misspell: README.md:7:38: "parrallely" is a misspelling of "parallelly"
+	checking Samsung/build-task-tizen (4/40, made 10 requests so far) ...
+	checking Samsung/Castanets (5/40, made 13 requests so far) ...
+	checking Samsung/Chromium (6/40, made 15 requests so far) ...
+	error: get Chromium tree: GET https://api.github.com/repos/Samsung/Chromium/git/trees/master?recursive=1: 404 Not Found []
+	checking Samsung/ColorPatternTracker (7/40, made 16 requests so far) ...
+	checking Samsung/combirepo (8/40, made 23 requests so far) ...
+	checking Samsung/CONBOL (9/40, made 26 requests so far) ...
+	checking Samsung/cordova-tv-webos (10/40, made 29 requests so far) ...
+	checking Samsung/cynara (11/40, made 32 requests so far) ...
+cynara: unwanted file: remove Emacs backup file: test/db/db10_postchs_bcp/_~
+cynara: unwanted file: remove Emacs backup file: test/db/db10_postchs_bcp/buckets~
+cynara: unwanted file: remove Emacs backup file: test/db/db10_postchs_bcp/checksum~
+cynara: unwanted file: remove Emacs backup file: test/db/db13/_additional~
+cynara: unwanted file: remove Emacs backup file: test/db/db13/_~
+cynara: unwanted file: remove Emacs backup file: test/db/db13/buckets~
+cynara: unwanted file: remove Emacs backup file: test/db/db13/checksum~
+cynara: unwanted file: remove Emacs backup file: test/db/db6/_additional~
+cynara: unwanted file: remove Emacs backup file: test/db/db6/_~
+cynara: unwanted file: remove Emacs backup file: test/db/db6/buckets~
+cynara: unwanted file: remove Emacs backup file: test/db/db6/checksum~
+cynara: unwanted file: remove Emacs backup file: test/db/db9_prechs_bcp/_~
+cynara: unwanted file: remove Emacs backup file: test/db/db9_prechs_bcp/buckets~
+	checking Samsung/Dexter (12/40, made 36 requests so far) ...
+Dexter: broken link: project/dexter-monitor/README.md: http://yourUserInfoUrl?userId=": Lookup youruserinfourl on 127.0.1.1:53: no such host
+Dexter: broken link: project/dexter-monitor/README.md: http://yourUserInfoUrl?userId=sangwoo7.lee: Lookup youruserinfourl on 127.0.1.1:53: no such host
+Dexter: broken link: project/dexter-server/public/gq/tools/closure-compiler/README: https://args4j.dev.java.net/: Lookup args4j.dev.java.net on 127.0.1.1:53: no such host
+	checking Samsung/GearVRf (13/40, made 45 requests so far) ...
+	checking Samsung/grunt-cordova-sectv (14/40, made 49 requests so far) ...
+	checking Samsung/HbbPlayer (15/40, made 52 requests so far) ...
+	checking Samsung/http-parser (16/40, made 55 requests so far) ...
+	checking Samsung/iotjs (17/40, made 57 requests so far) ...
+	checking Samsung/iotjs-modules (18/40, made 64 requests so far) ...
+	checking Samsung/iotjs-samples (19/40, made 67 requests so far) ...
+iotjs-samples: broken link: demo-robot/iotjs_modules/punycode/README.md: http://npmjs.org/: Couldn't find DNS entries for the given domain. Try using DialDualStack
+iotjs-samples: broken link: demo-robot/source-control/iotjs_modules/punycode/README.md: http://npmjs.org/: Couldn't find DNS entries for the given domain. Try using DialDualStack
+iotjs-samples: unwanted file: remove Emacs backup file: demo-robot/iotjs_modules/querystring/.History.md.un~
+iotjs-samples: unwanted file: remove Emacs backup file: demo-robot/iotjs_modules/querystring/.Readme.md.un~
+iotjs-samples: unwanted file: remove Emacs backup file: demo-robot/iotjs_modules/querystring/.package.json.un~
+iotjs-samples: unwanted file: remove Emacs backup file: demo-robot/iotjs_modules/querystring/test/.index.js.un~
+iotjs-samples: unwanted file: remove Emacs backup file: demo-robot/source-control/iotjs_modules/querystring/.History.md.un~
+iotjs-samples: unwanted file: remove Emacs backup file: demo-robot/source-control/iotjs_modules/querystring/.Readme.md.un~
+iotjs-samples: unwanted file: remove Emacs backup file: demo-robot/source-control/iotjs_modules/querystring/.package.json.un~
+iotjs-samples: unwanted file: remove Emacs backup file: demo-robot/source-control/iotjs_modules/querystring/test/.index.js.un~
+	checking Samsung/iotjs-test-results (20/40, made 78 requests so far) ...
+	checking Samsung/iotjs-vscode-extension (21/40, made 80 requests so far) ...
+iotjs-vscode-extension: misspell: README.md:77:37: "directoy" is a misspelling of "directory"
+iotjs-vscode-extension: misspell: README.md:105:14: "diferent" is a misspelling of "different"
+iotjs-vscode-extension: misspell: README.md:132:14: "diferent" is a misspelling of "different"
+iotjs-vscode-extension: misspell: README.md:168:37: "directoy" is a misspelling of "directory"
+	checking Samsung/iotjscode (22/40, made 83 requests so far) ...
+iotjscode: misspell: README.md:125:14: "diferent" is a misspelling of "different"
+iotjscode: misspell: README.md:155:14: "diferent" is a misspelling of "different"
+iotjscode: broken link: README.md: https://app.fossa.io/api/projects/git%2Bgithub.com%2FSamsung%2Fiotjscode.svg?type=large: Too many redirects detected when doing the request
+iotjscode: broken link: README.md: https://app.fossa.io/api/projects/git%2Bgithub.com%2FSamsung%2Fiotjscode.svg?type=shield: Too many redirects detected when doing the request
+iotjscode: broken link: README.md: https://app.fossa.io/projects/git%2Bgithub.com%2FSamsung%2Fiotjscode?ref=badge_large: Too many redirects detected when doing the request
+iotjscode: broken link: README.md: https://app.fossa.io/projects/git%2Bgithub.com%2FSamsung%2Fiotjscode?ref=badge_shield: Too many redirects detected when doing the request
+	checking Samsung/js-remote-test (23/40, made 86 requests so far) ...
+	checking Samsung/libtuv (24/40, made 88 requests so far) ...
+	checking Samsung/netcoredbg (25/40, made 91 requests so far) ...
+netcoredbg: misspell: tests/README.md:111:207: "responce" is a misspelling of "response"
+netcoredbg: misspell: tests/README.md:111:274: "responce" is a misspelling of "response"
+netcoredbg: misspell: tests/README.md:112:23: "responce" is a misspelling of "response"
+	checking Samsung/prime-count (26/40, made 95 requests so far) ...
+prime-count: misspell: README.md:32:41: "transfered" is a misspelling of "transferred"
+	checking Samsung/react-native-tizen-dotnet (27/40, made 98 requests so far) ...
+	checking Samsung/RT-OCF (28/40, made 107 requests so far) ...
+	checking Samsung/SmartThings (29/40, made 112 requests so far) ...
+	checking Samsung/Tizen-CSharp-Samples (30/40, made 118 requests so far) ...
+Tizen-CSharp-Samples: misspell: Mobile/UI/ApplicationStoreUI/README.md:3:73: "complext" is a misspelling of "complexity"
+Tizen-CSharp-Samples: misspell: Wearable/NFCSampleApp/README.md:2:8: "applicaiton" is a misspelling of "application"
+	checking Samsung/tizen-docs (31/40, made 223 requests so far) ...
+tizen-docs: broken link: CONTRIBUTING.md: https://docs.stage.tizen.org/staging/{PR: Dialing to the given TCP address timed out
+tizen-docs: broken link: CONTRIBUTING.md: https://docs.tizen.org/: Dialing to the given TCP address timed out
+tizen-docs: broken link: README.md: https://docs.tizen.org: Dialing to the given TCP address timed out
+tizen-docs: unwanted file: remove Emacs backup file: docs/application/vscode-ext/media/howtoinstall-emulatormanager.png~
+tizen-docs: unwanted file: remove Windows sys file file: docs/application/web/api/2.4/images/Thumbs.db
+tizen-docs: unwanted file: remove Windows sys file file: docs/application/web/api/3.0/images/Thumbs.db
+tizen-docs: unwanted file: remove Windows sys file file: docs/application/web/api/4.0/images/Thumbs.db
+	checking Samsung/tizen-extension-sample (32/40, made 226 requests so far) ...
+tizen-extension-sample: unwanted file: remove Vim swap file: Web/OAuth_using_AppControls/HelloFacebookOauth/.app.js.swp
+	checking Samsung/Tizen.Appium (33/40, made 232 requests so far) ...
+	checking Samsung/Tizen.CircularUI (34/40, made 235 requests so far) ...
+	checking Samsung/Tizen.TV.UIControls (35/40, made 242 requests so far) ...
+	checking Samsung/TizenFX (36/40, made 247 requests so far) ...
+	checking Samsung/TizenRT (37/40, made 250 requests so far) ...
+TizenRT: broken link: external/iotjs/deps/jerry/targets/particle/README.md: https://www.particle.io/: Dial tcp4 167.99.129.42:443: connect: connection refused
+TizenRT: broken link: external/iotivity/iotivity_1.2-rel/service/easy-setup/sampleapp/enrollee/tizen-sdb/README.txt: http://www.apache.org/licenses/LICENSE-2.0: Couldn't find DNS entries for the given domain. Try using DialDualStack
+TizenRT: broken link: external/iotjs/deps/jerry/targets/nuttx-stm32f4/README.md: http://nuttx.org/: Lookup nuttx.org on 127.0.1.1:53: read udp 127.0.0.1:56558->127.0.1.1:53: i/o timeout
+TizenRT: broken link: external/iotjs/deps/jerry/CONTRIBUTING.md: http://js.foundation": Lookup js.foundation": no such host
+TizenRT: broken link: external/iotjs/deps/jerry/README.md: http://www.apache.org/licenses/LICENSE-2.0: Couldn't find DNS entries for the given domain. Try using DialDualStack
+TizenRT: broken link: external/iotivity/iotivity_1.2-rel/extlibs/gtest/gtest-1.7.0/README: http://gcc.gnu.org/wiki/Visibility: Dialing to the given TCP address timed out
+TizenRT: broken link: external/wpa_supplicant/wpa_supplicant/README: http://hostap.epitest.fi/wpa_supplicant/devel/: Lookup hostap.epitest.fi on 127.0.1.1:53: read udp 127.0.0.1:45486->127.0.1.1:53: i/o timeout
+TizenRT: broken link: external/wpa_supplicant/wpa_supplicant/README: http://tcpdump.org/): Lookup tcpdump.org on 127.0.1.1:53: no such host
+TizenRT: broken link: external/wpa_supplicant/wpa_supplicant/README: http://www.ieee802.org/11/: Lookup www.ieee802.org on 127.0.1.1:53: read udp 127.0.0.1:41329->127.0.1.1:53: i/o timeout
+TizenRT: broken link: external/wpa_supplicant/wpa_supplicant/README: http://www.linuxnet.com/: Lookup www.linuxnet.com on 127.0.1.1:53: read udp 127.0.0.1:45676->127.0.1.1:53: i/o timeout
+TizenRT: broken link: external/wpa_supplicant/wpa_supplicant/README: http://www.openssl.org/): Lookup www.openssl.org on 127.0.1.1:53: read udp 127.0.0.1:50319->127.0.1.1:53: i/o timeout
+TizenRT: broken link: external/protobuf/php/README.md: https://pecl.php.net/: Lookup pecl.php.net on 127.0.1.1:53: read udp 127.0.0.1:43028->127.0.1.1:53: i/o timeout
+TizenRT: broken link: external/iotivity/iotivity_1.2-rel/README.md: https://jira.iotivity.org: Lookup jira.iotivity.org on 127.0.1.1:53: read udp 127.0.0.1:46681->127.0.1.1:53: i/o timeout
+TizenRT: broken link: external/protobuf/src/README.md: http://www.gnu.org/software/autoconf/manual/autoconf.html#Running-configure-Scripts: Lookup www.gnu.org on 127.0.1.1:53: read udp 127.0.0.1:47120->127.0.1.1:53: i/o timeout
+TizenRT: broken link: external/protobuf/src/README.md: https://www.macports.org: Lookup www.macports.org on 127.0.1.1:53: read udp 127.0.0.1:51285->127.0.1.1:53: i/o timeout
+TizenRT: broken link: external/iotjs/README.md: http://www.apache.org/licenses/LICENSE-2.0: Couldn't find DNS entries for the given domain. Try using DialDualStack
+TizenRT: broken link: external/iotjs/README.md: https://www.apache.org/licenses/LICENSE-2.0: Couldn't find DNS entries for the given domain. Try using DialDualStack
+TizenRT: broken link: external/avs-device-sdk/README.md: https://developer.amazon.com/alexa-voice-service: Lookup developer.amazon.com on 127.0.1.1:53: read udp 127.0.0.1:58406->127.0.1.1:53: i/o timeout
+TizenRT: broken link: external/avs-device-sdk/README.md: https://developer.amazon.com/public/solutions/alexa/alexa-voice-service/content/alexa-voice-service-ux-design-guidelines: Lookup developer.amazon.com on 127.0.1.1:53: read udp 127.0.0.1:58406->127.0.1.1:53: i/o timeout
+TizenRT: broken link: external/avs-device-sdk/README.md: https://developer.amazon.com/public/solutions/alexa/alexa-voice-service/content/designing-for-the-alexa-voice-service: Lookup developer.amazon.com on 127.0.1.1:53: read udp 127.0.0.1:58406->127.0.1.1:53: i/o timeout
+TizenRT: broken link: external/avs-device-sdk/README.md: https://developer.amazon.com/public/solutions/alexa/alexa-voice-service/docs/avs-http2-requests: Lookup developer.amazon.com on 127.0.1.1:53: read udp 127.0.0.1:58406->127.0.1.1:53: i/o timeout
+TizenRT: broken link: external/avs-device-sdk/README.md: https://developer.amazon.com/public/solutions/alexa/alexa-voice-service/docs/managing-an-http-2-connection: Lookup developer.amazon.com on 127.0.1.1:53: read udp 127.0.0.1:58406->127.0.1.1:53: i/o timeout
+TizenRT: broken link: external/avs-device-sdk/README.md: https://developer.amazon.com/public/solutions/alexa/alexa-voice-service/reference/alerts: Lookup developer.amazon.com on 127.0.1.1:53: read udp 127.0.0.1:58406->127.0.1.1:53: i/o timeout
+TizenRT: broken link: external/avs-device-sdk/README.md: https://developer.amazon.com/public/solutions/alexa/alexa-voice-service/reference/audioplayer: Lookup developer.amazon.com on 127.0.1.1:53: read udp 127.0.0.1:58406->127.0.1.1:53: i/o timeout
+TizenRT: broken link: external/avs-device-sdk/README.md: https://developer.amazon.com/public/solutions/alexa/alexa-voice-service/reference/interaction-model#channels: Lookup developer.amazon.com on 127.0.1.1:53: read udp 127.0.0.1:58406->127.0.1.1:53: i/o timeout
+TizenRT: broken link: external/avs-device-sdk/README.md: https://developer.amazon.com/public/solutions/alexa/alexa-voice-service/reference/notifications: Lookup developer.amazon.com on 127.0.1.1:53: read udp 127.0.0.1:58406->127.0.1.1:53: i/o timeout
+TizenRT: broken link: external/avs-device-sdk/README.md: https://developer.amazon.com/public/solutions/alexa/alexa-voice-service/reference/playbackcontroller: Lookup developer.amazon.com on 127.0.1.1:53: read udp 127.0.0.1:58406->127.0.1.1:53: i/o timeout
+TizenRT: broken link: external/avs-device-sdk/README.md: https://developer.amazon.com/public/solutions/alexa/alexa-voice-service/reference/speaker: Lookup developer.amazon.com on 127.0.1.1:53: read udp 127.0.0.1:58406->127.0.1.1:53: i/o timeout
+TizenRT: broken link: external/avs-device-sdk/README.md: https://developer.amazon.com/public/solutions/alexa/alexa-voice-service/reference/speechrecognizer: Lookup developer.amazon.com on 127.0.1.1:53: read udp 127.0.0.1:58406->127.0.1.1:53: i/o timeout
+TizenRT: broken link: external/avs-device-sdk/README.md: https://developer.amazon.com/public/solutions/alexa/alexa-voice-service/reference/speechsynthesizer: Lookup developer.amazon.com on 127.0.1.1:53: read udp 127.0.0.1:58406->127.0.1.1:53: i/o timeout
+TizenRT: broken link: external/avs-device-sdk/README.md: https://developer.amazon.com/public/solutions/alexa/alexa-voice-service/reference/system: Lookup developer.amazon.com on 127.0.1.1:53: read udp 127.0.0.1:58406->127.0.1.1:53: i/o timeout
+TizenRT: broken link: external/avs-device-sdk/README.md: https://developer.amazon.com/public/solutions/alexa/alexa-voice-service/reference/templateruntime: Lookup developer.amazon.com on 127.0.1.1:53: read udp 127.0.0.1:58406->127.0.1.1:53: i/o timeout
+TizenRT: broken link: external/avs-device-sdk/README.md: https://developer.amazon.com/public/solutions/alexa/alexa-voice-service/support/terms-and-agreements: Lookup developer.amazon.com on 127.0.1.1:53: read udp 127.0.0.1:58406->127.0.1.1:53: i/o timeout
+TizenRT: broken link: external/avs-device-sdk/README.md: https://youtu.be/F5DixCPJYo8: Lookup youtu.be on 127.0.1.1:53: read udp 127.0.0.1:47777->127.0.1.1:53: i/o timeout
+TizenRT: misspell: apps/examples/artik_demo/README.txt:5:11: "infomation" is a misspelling of "information"
+TizenRT: misspell: apps/examples/README.txt:23:30: "exmaple" is a misspelling of "example"
+TizenRT: misspell: apps/examples/proc_test/README.txt:5:6: "sytem" is a misspelling of "system"
+TizenRT: misspell: build/configs/README.txt:105:5: "overriden" is a misspelling of "overridden"
+TizenRT: misspell: apps/system/utils/README.md:82:5: "Dependancy" is a misspelling of "Dependency"
+TizenRT: misspell: apps/system/utils/README.md:118:5: "Dependancy" is a misspelling of "Dependency"
+TizenRT: misspell: apps/system/utils/README.md:181:5: "Dependancy" is a misspelling of "Dependency"
+TizenRT: misspell: apps/system/utils/README.md:249:5: "Dependancy" is a misspelling of "Dependency"
+TizenRT: misspell: apps/system/utils/README.md:508:5: "Dependancy" is a misspelling of "Dependency"
+TizenRT: misspell: apps/system/utils/README.md:538:5: "Dependancy" is a misspelling of "Dependency"
+TizenRT: misspell: apps/system/utils/README.md:560:5: "Dependancy" is a misspelling of "Dependency"
+TizenRT: misspell: apps/system/utils/README.md:586:5: "Dependancy" is a misspelling of "Dependency"
+TizenRT: misspell: apps/system/utils/README.md:612:5: "Dependancy" is a misspelling of "Dependency"
+TizenRT: misspell: apps/system/utils/README.md:662:5: "Dependancy" is a misspelling of "Dependency"
+TizenRT: misspell: apps/system/utils/README.md:725:5: "Dependancy" is a misspelling of "Dependency"
+TizenRT: misspell: apps/system/utils/README.md:755:5: "Dependancy" is a misspelling of "Dependency"
+TizenRT: misspell: apps/system/utils/README.md:866:5: "Dependancy" is a misspelling of "Dependency"
+TizenRT: misspell: external/README_PROTOCOL.md:51:20: "controled" is a misspelling of "controlled"
+TizenRT: misspell: external/gmock/gtest/README:75:59: "repositary" is a misspelling of "repository"
+TizenRT: misspell: external/iotivity/iotivity_1.2-rel/service/resource-encapsulation/examples/linux/secureResourceExample/README:32:4: "Varification" is a misspelling of "Verification"
+TizenRT: misspell: external/iotjs/deps/jerry/targets/curie_bsp/README.md:120:118: "sucessfully" is a misspelling of "successfully"
+TizenRT: misspell: external/iotjs/deps/jerry/targets/zephyr/README.md:41:69: "documenation" is a misspelling of "documentation"
+TizenRT: misspell: external/iotivity/iotivity_1.2-rel/extlibs/gtest/gtest-1.7.0/README:75:59: "repositary" is a misspelling of "repository"
+TizenRT: misspell: external/protobuf/README.md:19:59: "complier" is a misspelling of "compiler"
+TizenRT: misspell: os/tools/README.txt:193:52: "additonal" is a misspelling of "additional"
+TizenRT: misspell: os/tools/README.txt:279:16: "verison" is a misspelling of "version"
+TizenRT: misspell: external/wpa_supplicant/wpa_supplicant/README-P2P:201:14: "paramters" is a misspelling of "parameters"
+TizenRT: misspell: external/wpa_supplicant/wpa_supplicant/README:311:41: "functionaly" is a misspelling of "functionally"
+TizenRT: misspell: external/wpa_supplicant/wpa_supplicant/README:1011:61: "owrk" is a misspelling of "work"
+TizenRT: misspell: os/fs/smartfs/README.txt:35:37: "algorithym" is a misspelling of "algorithm"
+TizenRT: misspell: os/fs/smartfs/README.txt:71:34: "COMMITED" is a misspelling of "COMMITTED"
+TizenRT: acronym: external/protobuf/src/README.md:163: replace ansi with ANSI
+	checking Samsung/vs-tools-cps (38/40, made 484 requests so far) ...
+	checking Samsung/vscode-extension-tizentv (39/40, made 487 requests so far) ...
+vscode-extension-tizentv: misspell: README.md:55:44: "pallete" is a misspelling of "palette"
+	checking Samsung/WATT (40/40, made 490 requests so far) ...
+WATT: broken link: libs/brackets-server/embedded-ext/icons/README.md: http://opensource.org/licenses/MIT: Dial tcp4 159.65.34.8:80: connect: connection refused
+WATT: misspell: tools/WebIDLBinder/third_party/ply/example/yply/README:14:21: "grammer" is a misspelling of "grammar"
+WATT: misspell: libs/brackets-server/README.md:64:37: "availble" is a misspelling of "available"
+WATT: misspell: tools/pepper.js/README.rst:38:48: "prefered" is a misspelling of "preferred"
+WATT: misspell: tools/pepper.js/README.rst:68:0: "accidently" is a misspelling of "accidentally"
