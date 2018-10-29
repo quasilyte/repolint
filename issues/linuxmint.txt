@@ -54,12 +54,6 @@ cinnamon-spices-desklets: misspell: README.md:55:30: "satifies" is a misspelling
 cinnamon-spices-extensions: misspell: rnbdsh@negateWindow/README.md:6:35: "extention" is a misspelling of "extension"
 cinnamon-spices-extensions: misspell: README.md:55:30: "satifies" is a misspelling of "satisfies"
 	checking linuxmint/cinnamon-spices-themes (13/82, made 212 requests so far) ...
-cinnamon-spices-themes: unwanted file: remove Emacs backup file: BelaLugosi/files/BelaLugosi/gtk-3.0/gtk-main.css~
-cinnamon-spices-themes: unwanted file: remove Windows sys file file: Vivaldi-ZorinOS/files/Vivaldi-ZorinOS/gtk-2.0/apps/Handles/Thumbs.db
-cinnamon-spices-themes: unwanted file: remove Windows sys file file: Vivaldi-ZorinOS/files/Vivaldi-ZorinOS/gtk-2.0/apps/Null/Thumbs.db
-cinnamon-spices-themes: unwanted file: remove Windows sys file file: Vivaldi-ZorinOS/files/Vivaldi-ZorinOS/gtk-2.0/apps/Others/Thumbs.db
-cinnamon-spices-themes: unwanted file: remove Windows sys file file: Vivaldi-ZorinOS/files/Vivaldi-ZorinOS/gtk-2.0/widgets/Null/Thumbs.db
-cinnamon-spices-themes: unwanted file: remove Windows sys file file: Vivaldi-ZorinOS/files/Vivaldi-ZorinOS/gtk-2.0/widgets/Panel/Thumbs.db
 cinnamon-spices-themes: broken link: Jade-1/README.md: https://github.com/madmaxms/iconpack-jade/: Dialing to the given TCP address timed out
 cinnamon-spices-themes: broken link: Facebook/README.md: http://www.opensans.com/: Dialing to the given TCP address timed out
 cinnamon-spices-themes: broken link: Adara/README.md: https://github.com/germanfr/adara-theme: Dialing to the given TCP address timed out
