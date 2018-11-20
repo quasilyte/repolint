@@ -51,6 +51,41 @@ func isDocumentationFile(filename string) bool {
 	return docFileRE.MatchString(filename)
 }
 
+type missingFileChecker struct {
+	checkerBase
+
+	readmeRE  *regexp.Regexp
+	licenseRE *regexp.Regexp
+
+	seenReadme  bool
+	seenLicense bool
+}
+
+func (c *missingFileChecker) Reset() {
+	c.files = c.files[:0]
+	c.seenReadme = false
+	c.seenLicense = false
+}
+
+func (c *missingFileChecker) PushFile(f *repoFile) {
+	switch {
+	case strings.HasPrefix(f.origName, "README"):
+		c.seenReadme = true
+	case strings.HasPrefix(f.origName, "LICENSE"):
+		c.seenLicense = true
+	}
+}
+
+func (c *missingFileChecker) CheckFiles() (warnings []string) {
+	if !c.seenReadme {
+		warnings = append(warnings, "missing root README file")
+	}
+	if !c.seenLicense {
+		warnings = append(warnings, "missing root LICENSE file")
+	}
+	return warnings
+}
+
 type misspellChecker struct{ checkerBase }
 
 func (c *misspellChecker) PushFile(f *repoFile) {

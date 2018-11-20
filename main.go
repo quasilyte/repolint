@@ -23,6 +23,7 @@ func main() {
 
 	l := linter{
 		checkers: map[string]fileChecker{
+			"missing file":     &missingFileChecker{},
 			"broken link":      &brokenLinkChecker{},
 			"misspell":         &misspellChecker{},
 			"var name typo":    newVarTypoChecker(),
