@@ -206,9 +206,9 @@ type sloppyCopyrightChecker struct {
 
 func newSloppyCopyrightChecker() *sloppyCopyrightChecker {
 	alternatives := []string{
-		`copyright year,?\s*fullname`,
-		`copyright \(c\)\s*year,?\s*fullname`,
-		`copyright ©\s*year,?\s*fullname`,
+		`copyright (?:year|\d{4}),?\s*full? name`,
+		`copyright \(c\)\s*(?:year|\d{4}),?\s*full ?name`,
+		`copyright ©\s*(?:year|\d{4}),?\s*full? name`,
 	}
 
 	pattern := `(?i)` + strings.Join(alternatives, "|")
