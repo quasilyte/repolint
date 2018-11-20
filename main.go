@@ -222,7 +222,7 @@ func (l *linter) lintRepo(repo string) {
 	}
 	for name, c := range l.checkers {
 		for _, warning := range c.CheckFiles() {
-			log.Printf("%s: %s: %s", repo, name, warning)
+			log.Printf("%s/%s: %s: %s", l.user, repo, name, warning)
 		}
 	}
 }

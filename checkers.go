@@ -45,7 +45,11 @@ func (c *checkerBase) filenameReplacer() *strings.Replacer {
 	return strings.NewReplacer(oldnew...)
 }
 
-var docFileRE = regexp.MustCompile(`^(?:README|CONTRIBUTING|TODO).*`)
+var (
+	docFileRE         = regexp.MustCompile(`^(?:README|CONTRIBUTING|TODO).*`)
+	rootLicenseFileRE = regexp.MustCompile(`(?i)^(?:licen[sc]e|copying)(?:[.-].+)?$`)
+	rootReadmeFileRE  = regexp.MustCompile(`(?i)^readme(?:\..+)?$`)
+)
 
 func isDocumentationFile(filename string) bool {
 	return docFileRE.MatchString(filename)
@@ -69,9 +73,9 @@ func (c *missingFileChecker) Reset() {
 
 func (c *missingFileChecker) PushFile(f *repoFile) {
 	switch {
-	case strings.HasPrefix(f.origName, "README"):
+	case rootReadmeFileRE.MatchString(f.origName):
 		c.seenReadme = true
-	case strings.HasPrefix(f.origName, "LICENSE"):
+	case rootLicenseFileRE.MatchString(f.origName):
 		c.seenLicense = true
 	}
 }
@@ -217,9 +221,7 @@ func newSloppyCopyrightChecker() *sloppyCopyrightChecker {
 }
 
 func (c *sloppyCopyrightChecker) PushFile(f *repoFile) {
-	// Only check root files.
-	switch f.origName {
-	case "LICENSE", "LICENSE.md", "LICENSE.txt":
+	if rootLicenseFileRE.MatchString(f.origName) {
 		f.require.contents = true
 		c.acceptFile(f)
 	}
