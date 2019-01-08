@@ -392,6 +392,8 @@ func (c *codeSnippetChecker) CheckFiles() (warnings []string) {
 func (c *codeSnippetChecker) checkCodeBlock(id int, warnings []string, b *ast.CodeBlock) []string {
 	if len(b.Info) != 0 {
 		// Suggest changing an alias to a real name.
+		// TODO(Quasilyte): handle more aliases.
+		//	See https://github.com/github/linguist/blob/master/lib/linguist/languages.yml.
 		if bytes.Equal(b.Info, []byte("golang")) {
 			w := fmt.Sprintf(`block #%d: use "go" marker instead of "golang"`, id)
 			warnings = append(warnings, w)
