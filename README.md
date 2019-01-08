@@ -104,8 +104,15 @@ Most issues are very simple and are agnostic to the repository programming langu
 
 ## Dependencies
 
-* [liche](https://github.com/raviqqe/liche) - link checker.
-* [misspell](https://github.com/client9/misspell/) - spelling checker.
+### CLI / commands
+
+* [raviqqe/liche](https://github.com/raviqqe/liche) - link checker.
+* [client9/misspell](https://github.com/client9/misspell/) - spelling checker.
+
+### Libs
+
+* [src-d/enry](https://github.com/src-d/enry) - programming language detection.
+* [gomarkdown/markdown](https://github.com/gomarkdown/markdown) - markdown parser.
 
 ## Example
 
