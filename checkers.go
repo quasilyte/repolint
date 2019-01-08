@@ -1,11 +1,14 @@
 package main
 
 import (
+	"bytes"
 	"fmt"
 	"os/exec"
 	"regexp"
 	"strings"
 
+	"github.com/gomarkdown/markdown/ast"
+	"github.com/gomarkdown/markdown/parser"
 	"github.com/google/go-github/github"
 )
 
@@ -355,5 +358,53 @@ func (c *varTypoChecker) CheckFiles() (warnings []string) {
 			}
 		}
 	}
+	return warnings
+}
+
+type codeSnippetChecker struct {
+	checkerBase
+}
+
+func (c *codeSnippetChecker) PushFile(f *repoFile) {
+	if rootReadmeFileRE.MatchString(f.origName) {
+		f.require.contents = true
+		c.acceptFile(f)
+	}
+}
+
+func (c *codeSnippetChecker) CheckFiles() (warnings []string) {
+	for _, f := range c.files {
+		p := parser.New()
+		id := 1
+		rootNode := p.Parse([]byte(f.contents))
+		for _, n := range rootNode.GetChildren() {
+			b, ok := n.(*ast.CodeBlock)
+			if !ok {
+				continue
+			}
+			warnings = c.checkCodeBlock(id, warnings, b)
+			id++
+		}
+	}
+	return warnings
+}
+
+func (c *codeSnippetChecker) checkCodeBlock(id int, warnings []string, b *ast.CodeBlock) []string {
+	if len(b.Info) != 0 {
+		// Suggest changing an alias to a real name.
+		if bytes.Equal(b.Info, []byte("golang")) {
+			w := fmt.Sprintf(`block #%d: use "go" marker instead of "golang"`, id)
+			warnings = append(warnings, w)
+		}
+		return warnings
+	}
+
+	// Try to suggest language marker, since it's missing.
+
+	if lang := progLangBySources(c.repo.GetLanguage(), b.Literal); lang != "" {
+		w := fmt.Sprintf("block #%d: add %q language marker", id, lang)
+		warnings = append(warnings, w)
+	}
+
 	return warnings
 }

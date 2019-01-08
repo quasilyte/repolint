@@ -30,6 +30,7 @@ func main() {
 			"unwanted file":    newUnwantedFileChecker(),
 			"sloppy copyright": newSloppyCopyrightChecker(),
 			"acronym":          newAcronymChecker(),
+			"code snippet":     &codeSnippetChecker{},
 		},
 	}
 
