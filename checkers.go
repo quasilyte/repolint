@@ -5,20 +5,24 @@ import (
 	"os/exec"
 	"regexp"
 	"strings"
+
+	"github.com/google/go-github/github"
 )
 
 type fileChecker interface {
-	Reset()
+	Reset(*github.Repository)
 	PushFile(*repoFile)
 	CheckFiles() []string
 }
 
 type checkerBase struct {
 	files []*repoFile
+	repo  *github.Repository
 }
 
-func (c *checkerBase) Reset() {
+func (c *checkerBase) Reset(repo *github.Repository) {
 	c.files = c.files[:0]
+	c.repo = repo
 }
 
 func (c *checkerBase) PushFile(f *repoFile) {
@@ -65,8 +69,9 @@ type missingFileChecker struct {
 	seenLicense bool
 }
 
-func (c *missingFileChecker) Reset() {
+func (c *missingFileChecker) Reset(repo *github.Repository) {
 	c.files = c.files[:0]
+	c.repo = repo
 	c.seenReadme = false
 	c.seenLicense = false
 }

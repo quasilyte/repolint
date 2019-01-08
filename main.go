@@ -55,7 +55,7 @@ func main() {
 type linter struct {
 	user  string
 	token string
-	repos []string
+	repos []*github.Repository
 
 	ctx    context.Context
 	client *github.Client
@@ -166,7 +166,7 @@ func (l *linter) getReposList() error {
 				continue
 			}
 
-			l.repos = append(l.repos, *repo.Name)
+			l.repos = append(l.repos, repo)
 		}
 
 		if resp.NextPage == 0 {
@@ -182,7 +182,7 @@ func (l *linter) lintRepos() error {
 	for i := l.offset; i < len(l.repos); i++ {
 		repo := l.repos[i]
 		log.Printf("\tchecking %s/%s (%d/%d, made %d requests so far) ...",
-			l.user, repo, i+1, len(l.repos), l.requests)
+			l.user, *repo.Name, i+1, len(l.repos), l.requests)
 		l.lintRepo(repo)
 	}
 	return nil
@@ -208,21 +208,21 @@ type repoFile struct {
 	}
 }
 
-func (l *linter) lintRepo(repo string) {
-	files := l.collectRepoFiles(repo)
+func (l *linter) lintRepo(repo *github.Repository) {
+	files := l.collectRepoFiles(*repo.Name)
 
 	for _, c := range l.checkers {
-		c.Reset()
+		c.Reset(repo)
 		for _, f := range files {
 			c.PushFile(f)
 		}
 	}
 	for _, f := range files {
-		l.resolveRequirements(repo, f)
+		l.resolveRequirements(*repo.Name, f)
 	}
 	for name, c := range l.checkers {
 		for _, warning := range c.CheckFiles() {
-			log.Printf("%s/%s: %s: %s", l.user, repo, name, warning)
+			log.Printf("%s/%s: %s: %s", l.user, *repo.Name, name, warning)
 		}
 	}
 }
