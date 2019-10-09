@@ -60,7 +60,7 @@ molecular-design-toolkit: broken link: README.md: https://forum.bionano.autodesk
 molecular-simulation-tools: broken link: interactive-sim/README.md: http://git.autodesk.com/t-leeday/lammps-browser: Lookup git.autodesk.com on 127.0.1.1:53: no such host
 molecular-simulation-tools: broken link: interactive-sim/README.md: https://git.autodesk.com/t-leeday/lammps-browser: Lookup git.autodesk.com on 127.0.1.1:53: no such host
 molecular-simulation-tools: broken link: README.md: https://molviewer.com/molviewer/docs/Pre-Release_Product_Testing_Agreement.pdf: Dialing to the given TCP address timed out
-molecular-simulation-tools: misspell: client/README.md:19:0: "Enviroment" is a misspelling of "Environment"
+molecular-simulation-tools: misspell: client/README.md:19:0: "Environment" is a misspelling of "Environment"
 molecular-simulation-tools: misspell: interactive-sim/README.md:82:91: "developemnt" is a misspelling of "developments"
 molecular-simulation-tools: misspell: interactive-sim/README.md:92:53: "maintaing" is a misspelling of "maintaining"
 	checking autodesk/nanodesign (23/34, made 180 requests so far) ...
