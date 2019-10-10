@@ -54,9 +54,10 @@ func main() {
 }
 
 type linter struct {
-	user  string
-	token string
-	repos []*github.Repository
+	user      string
+	token     string
+	tokenPath string
+	repos     []*github.Repository
 
 	ctx    context.Context
 	client *github.Client
@@ -100,6 +101,8 @@ func (l *linter) parseFlags() error {
 		`whether to skip vendor folders and their contents`)
 	flag.IntVar(&l.offset, "offset", 0,
 		`how many repositories to skip`)
+	flag.StringVar(&l.tokenPath, "tokenPath", "",
+		"the path to the token file")
 
 	flag.Parse()
 
@@ -116,7 +119,13 @@ func (l *linter) readToken() error {
 		l.token = token
 		return nil
 	}
-	data, err := ioutil.ReadFile("./token")
+
+	tokenPath := "./token"
+	if l.tokenPath != "" {
+		tokenPath = l.tokenPath
+	}
+
+	data, err := ioutil.ReadFile(tokenPath)
 	if err != nil {
 		return fmt.Errorf("no TOKEN env var and can't read token file: %v", err)
 	}
