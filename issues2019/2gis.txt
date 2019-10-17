@@ -1,0 +1,6 @@
+github.com/2gis/MapGL-Android: misspell: README.md:44:185: "postion" is a misspelling of "position"
+github.com/2gis/nuclear-river: misspell: docs/README.md:10:15: "appication" is a misspelling of "application"
+github.com/2gis/nuclear-river: misspell: docs/README.md:26:116: "independenly" is a misspelling of "independently"
+github.com/2gis/nuclear-river: misspell: docs/design-overview/README.md:5:89: "throught" is a misspelling of "thought"
+github.com/2gis/nuclear-river: misspell: docs/design-overview/README.md:136:88: "behaivour" is a misspelling of "behaviour"
+github.com/2gis/qtandroidextensions: misspell: Samples/AndroidWebView_Qt4_Grym/README.txt:12:16: "currenlty" is a misspelling of "currently"

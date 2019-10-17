@@ -1,0 +1,6 @@
+github.com/jupyter/accessibility: misspell: README.md:23:11: "accessibilty" is a misspelling of "accessibility"
+github.com/jupyter/docker-stacks: misspell: examples/make-deploy/README.md:49:125: "wtih" is a misspelling of "with"
+github.com/jupyter/enhancement-proposals: misspell: 29-jep-process/README.md:49:82: "faciliate" is a misspelling of "facilitate"
+github.com/jupyter/enterprise_gateway: misspell: etc/docker/nb2kg/README.md:17:99: "mulitple" is a misspelling of "multiple"
+github.com/jupyter/nbgrader: misspell: nbgrader/server_extensions/formgrader/static/components/backbone/README.md:17:66: "specifiy" is a misspelling of "specify"
+github.com/jupyter/surveys: misspell: surveys/2015-12-notebook-ux/README.md:49:114: "unconfortable" is a misspelling of "uncomfortable"

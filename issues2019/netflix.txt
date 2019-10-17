@@ -1,0 +1,5 @@
+github.com/netflix/aegisthus: misspell: scripts/README.md:5:45: "futher" is a misspelling of "further"
+github.com/netflix/Hystrix: misspell: README.md:152:0: "Futher" is a misspelling of "Further"
+github.com/netflix/pollyjs: misspell: examples/dummy-app/README.md:1537:47: "overriden" is a misspelling of "overridden"
+github.com/netflix/rend-lmdb: misspell: README.md:13:29: "libary" is a misspelling of "library"
+github.com/netflix/yetch: misspell: README.md:61:57: "neccesary" is a misspelling of "necessary"

@@ -1,0 +1,7 @@
+github.com/amzn/amazon-payments-magento-plugin: misspell: README.md:306:86: "thrid" is a misspelling of "third"
+github.com/amzn/ion-schema-kotlin: misspell: data/test/README.md:23:95: "preceeding" is a misspelling of "preceding"
+github.com/amzn/ion-schema-kotlin: misspell: data/test/README.md:96:22: "mutliple" is a misspelling of "multiple"
+github.com/amzn/sample-fire-tv-app-video-skill: misspell: ComponentTestFramework/README.md:120:36: "Andriod" is a misspelling of "Android"
+github.com/amzn/smoke-dynamodb: misspell: README.md:354:224: "captialize" is a misspelling of "capitalize"
+github.com/amzn/smoke-framework-application-generate: misspell: README.md:84:92: "fullfill" is a misspelling of "fulfill"
+github.com/amzn/zeek-plugin-enip: misspell: README.md:3:404: "addtional" is a misspelling of "additional"

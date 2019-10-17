@@ -1,0 +1,5 @@
+github.com/minio/c2goasm: misspell: README.md:14:220: "intented" is a misspelling of "intended"
+github.com/minio/c2goasm: code snippet: block #6: add "go" language marker
+github.com/minio/minio-hs: misspell: README.md:80:36: "libary" is a misspelling of "library"
+github.com/minio/minio-service: misspell: linux-systemd/distributed/README.md:48:43: "appropirate" is a misspelling of "appropriate"
+github.com/minio/minio-service: misspell: linux-systemd/README.md:54:43: "appropirate" is a misspelling of "appropriate"

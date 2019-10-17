@@ -1,0 +1,11 @@
+github.com/wikimedia/AhoCorasick: misspell: README.md:31:40: "occurences" is a misspelling of "occurrences"
+github.com/wikimedia/analytics-dashiki: misspell: README.md:56:183: "compatiblity" is a misspelling of "compatibility"
+github.com/wikimedia/analytics-refinery: misspell: oozie/cassandra/README.md:16:27: "fianlly" is a misspelling of "finally"
+github.com/wikimedia/analytics-refinery: misspell: oozie/mediawiki/history/dumps/README.md:60:46: "overriden" is a misspelling of "overridden"
+github.com/wikimedia/analytics-wmde-WD-WD_identifierLandscape: misspell: README.txt:7:85: "occurence" is a misspelling of "occurrence"
+github.com/wikimedia/eslint-plugin-no-jquery: misspell: README.md:36:178: "targetting" is a misspelling of "targeting"
+github.com/wikimedia/labs-tools-heritage: unwanted file: remove Windows sys file file: common/skins/monobook/Thumbs.db
+github.com/wikimedia/labs-tools-stewardbots: misspell: SULWatcher/README:20:40: "occurences" is a misspelling of "occurrences"
+github.com/wikimedia/labs-tools-stewardbots: misspell: SULWatcher/README:25:38: "occurences" is a misspelling of "occurrences"
+github.com/wikimedia/mediawiki: misspell: includes/libs/Message/README.md:185:28: "paramter" is a misspelling of "parameter"
+github.com/wikimedia/mediawiki-api-demos: misspell: mediawikijs/README.md:5:24: "usefull" is a misspelling of "useful"

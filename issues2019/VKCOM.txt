@@ -1,0 +1,7 @@
+github.com/VKCOM/node-vk-call: misspell: README.md:66:40: "successfull" is a misspelling of "successful"
+github.com/VKCOM/node-vk-call: misspell: README.md:80:0: "Exmaple" is a misspelling of "Example"
+github.com/VKCOM/node-vk-call: misspell: README.md:113:43: "wich" is a misspelling of "which"
+github.com/VKCOM/noverify: misspell: README.md:137:100: "uncommited" is a misspelling of "uncommitted"
+github.com/VKCOM/noverify: misspell: README.md:217:16: "intergration" is a misspelling of "integration"
+github.com/VKCOM/vk-android-sdk: misspell: README.md:42:26: "Andriod" is a misspelling of "Android"
+github.com/VKCOM/vk-ios-sdk: misspell: README.md:157:22: "happend" is a misspelling of "happened"

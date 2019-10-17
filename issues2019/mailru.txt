@@ -1,0 +1,6 @@
+github.com/mailru/FileAPI: misspell: README.md:1486:45: "settigns" is a misspelling of "settings"
+github.com/mailru/graphite-nginx-module: misspell: README.md:13:18: "Grahpite" is a misspelling of "Graphite"
+github.com/mailru/graphite-nginx-module: misspell: README.md:40:105: "perfomance" is a misspelling of "performance"
+github.com/mailru/graphite-nginx-module: misspell: README.md:193:42: "devided" is a misspelling of "divided"
+github.com/mailru/surgemq: code snippet: block #1: add "go" language marker
+github.com/mailru/surgemq: code snippet: block #2: add "go" language marker
