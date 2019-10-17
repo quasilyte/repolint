@@ -194,6 +194,8 @@ func newUnwantedFileChecker() *unwantedFileChecker {
 			"Mac OS sys file": regexp.MustCompile(`^\.DS_STORE$`),
 			// -> Thumbs.db
 			"Windows sys file": regexp.MustCompile(`^Thumbs\.db$`),
+			// -> foo.txt.save
+			"Nano emergency file": regexp.MustCompile(`^.*\.save(?:\.\d)?$`),
 		},
 	}
 }
