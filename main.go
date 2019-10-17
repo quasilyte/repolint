@@ -67,6 +67,7 @@ type linter struct {
 	verbose      bool
 	minStars     int
 	skipForks    bool
+	skipArchived bool
 	skipInactive bool
 	skipVendor   bool
 	offset       int
@@ -100,8 +101,10 @@ func (l *linter) parseFlags() error {
 		`skip repositories with less than minStars stars`)
 	flag.BoolVar(&l.skipForks, "skipForks", true,
 		`whether to skip repositories that are forks`)
+	flag.BoolVar(&l.skipArchived, "skipArchived", true,
+		`whether to skip repositories that are archived`)
 	flag.BoolVar(&l.skipInactive, "skipInactive", true,
-		`whether to skip repositories with latest push dated more than 1 year ago`)
+		`whether to skip repositories with latest push dated more than 6 months ago`)
 	flag.BoolVar(&l.skipVendor, "skipVendor", true,
 		`whether to skip vendor folders and their contents`)
 	flag.IntVar(&l.offset, "offset", 0,
@@ -170,6 +173,12 @@ func (l *linter) getReposList() error {
 			if l.skipForks && *repo.Fork {
 				if l.verbose {
 					log.Printf("\t\tdebug: skip %s repo (fork)", *repo.Name)
+				}
+				continue
+			}
+			if l.skipArchived && *repo.Archived {
+				if l.verbose {
+					log.Printf("\t\tdebug: skip %s repo (archived)", *repo.Name)
 				}
 				continue
 			}
