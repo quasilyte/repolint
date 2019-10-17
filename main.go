@@ -273,6 +273,7 @@ func (l *linter) collectRepoFiles(repo string) []*repoFile {
 		`/?vendor/`,
 		`/?node_modules/`,
 		`/?cargo-vendor/`,
+		`/?third[-_]party/`,
 	}
 	vendorRE := regexp.MustCompile(strings.Join(vendorDirs, "|"))
 	tree, _, err := l.client.Git.GetTree(l.ctx, l.user, repo, "master", true)
