@@ -263,7 +263,7 @@ func (l *linter) lintRepo(repo *github.Repository) {
 	}
 	for name, c := range l.checkers {
 		for _, warning := range c.CheckFiles() {
-			log.Printf("%s/%s: %s: %s", l.user, *repo.Name, name, warning)
+			fmt.Printf("github.com/%s/%s: %s: %s\n", l.user, *repo.Name, name, warning)
 		}
 	}
 }
