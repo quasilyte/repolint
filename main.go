@@ -224,7 +224,9 @@ func (l *linter) lintRepos() error {
 		repo := l.repos[i]
 		log.Printf("\tchecking %s/%s (%d/%d, made %d requests so far) ...",
 			l.user, *repo.Name, i+1, len(l.repos), l.requests)
-		l.lintRepo(repo)
+		if err := l.lintRepo(repo); err != nil {
+			return err
+		}
 	}
 	return nil
 }
@@ -249,8 +251,11 @@ type repoFile struct {
 	}
 }
 
-func (l *linter) lintRepo(repo *github.Repository) {
-	files := l.collectRepoFiles(*repo.Name)
+func (l *linter) lintRepo(repo *github.Repository) error {
+	files, err := l.collectRepoFiles(*repo.Name)
+	if err != nil {
+		return err
+	}
 
 	for _, c := range l.checkers {
 		c.Reset(repo)
@@ -266,9 +271,10 @@ func (l *linter) lintRepo(repo *github.Repository) {
 			fmt.Printf("github.com/%s/%s: %s: %s\n", l.user, *repo.Name, name, warning)
 		}
 	}
+	return nil
 }
 
-func (l *linter) collectRepoFiles(repo string) []*repoFile {
+func (l *linter) collectRepoFiles(repo string) ([]*repoFile, error) {
 	vendorDirs := []string{
 		`/?vendor/`,
 		`/?node_modules/`,
@@ -279,8 +285,11 @@ func (l *linter) collectRepoFiles(repo string) []*repoFile {
 	tree, _, err := l.client.Git.GetTree(l.ctx, l.user, repo, "master", true)
 	l.requests++
 	if err != nil {
+		if strings.Contains(err.Error(), "API rate limit") {
+			return nil, err
+		}
 		log.Printf("\terror: get %s tree: %v", repo, err)
-		return nil
+		return nil, nil
 	}
 	if l.verbose && *tree.Truncated {
 		log.Printf("\t\tdebug: %s tree is truncated", repo)
@@ -300,7 +309,7 @@ func (l *linter) collectRepoFiles(repo string) []*repoFile {
 		})
 	}
 
-	return files
+	return files, nil
 }
 
 func (l *linter) resolveRequirements(repo string, f *repoFile) {
