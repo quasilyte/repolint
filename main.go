@@ -63,6 +63,7 @@ type linter struct {
 	client *github.Client
 
 	verbose      bool
+	minStars     int
 	skipForks    bool
 	skipInactive bool
 	skipVendor   bool
@@ -93,6 +94,8 @@ func (l *linter) parseFlags() error {
 		`github user/organization name`)
 	flag.BoolVar(&l.verbose, "v", false,
 		`verbose mode that turns on additional debug output`)
+	flag.IntVar(&l.minStars, "minStars", 1,
+		`skip repositories with less than minStars stars`)
 	flag.BoolVar(&l.skipForks, "skipForks", true,
 		`whether to skip repositories that are forks`)
 	flag.BoolVar(&l.skipInactive, "skipInactive", true,
@@ -162,16 +165,23 @@ func (l *linter) getReposList() error {
 		for _, repo := range repos {
 			if l.skipForks && *repo.Fork {
 				if l.verbose {
-					log.Printf("\t\tdebug: skip %s fork repo", *repo.Name)
+					log.Printf("\t\tdebug: skip %s repo (fork)", *repo.Name)
+				}
+				continue
+			}
+			if *repo.StargazersCount < l.minStars {
+				if l.verbose {
+					log.Printf("\t\tdebug: skip %s repo (not enough stars)", *repo.Name)
 				}
 				continue
 			}
 
-			const hoursToExpire = 365 * 24
+			const montsToExpire = 6
+			const hoursToExpire = montsToExpire * 32 * 24
 			inactive := time.Since(repo.GetPushedAt().Time).Hours() > hoursToExpire
 			if l.skipInactive && inactive {
 				if l.verbose {
-					log.Printf("\t\tdebug: skip %s inactive repo", *repo.Name)
+					log.Printf("\t\tdebug: skip %s repo (inactive)", *repo.Name)
 				}
 				continue
 			}
