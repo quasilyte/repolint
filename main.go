@@ -44,6 +44,7 @@ func main() {
 		{"read token", l.readToken},
 		{"init client", l.initClient},
 		{"get repos list", l.getReposList},
+		{"disable checkers", l.disableCheckers},
 		{"lint repos", l.lintRepos},
 	}
 	for _, step := range steps {
@@ -57,6 +58,7 @@ type linter struct {
 	user      string
 	token     string
 	tokenPath string
+	disable   string
 	repos     []*github.Repository
 
 	ctx    context.Context
@@ -105,7 +107,9 @@ func (l *linter) parseFlags() error {
 	flag.IntVar(&l.offset, "offset", 0,
 		`how many repositories to skip`)
 	flag.StringVar(&l.tokenPath, "tokenPath", "",
-		"the path to the token file")
+		`the path to the token file`)
+	flag.StringVar(&l.disable, "disable", "missing file, acronym, broken link",
+		`comma-separated list of check names to be disabled`)
 
 	flag.Parse()
 
@@ -195,6 +199,14 @@ func (l *linter) getReposList() error {
 		opts.Page = resp.NextPage
 	}
 
+	return nil
+}
+
+func (l *linter) disableCheckers() error {
+	for _, name := range strings.Split(l.disable, ",") {
+		name = strings.TrimSpace(name)
+		delete(l.checkers, name)
+	}
 	return nil
 }
 
