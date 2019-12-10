@@ -368,8 +368,12 @@ type travisChecker struct {
 
 func (c *travisChecker) PushFile(f *repoFile) {
 	if f.origName == ".travis.yml" {
-		f.require.contents = true
-		c.acceptFile(f)
+		// Since we only check Go things for now, don't require
+		// a file if it's not a Go repository.
+		if c.repo.GetLanguage() == "Go" {
+			f.require.contents = true
+			c.acceptFile(f)
+		}
 	}
 }
 
@@ -412,9 +416,11 @@ func (c *badgeChecker) CheckFiles() (warnings []string) {
 		return warnings
 	}
 	readme := c.files[0]
-	badgeURL := "travis-ci.org/" + c.user + "/" + *c.repo.Name + ".svg?branch="
+	badgeURL := "https://travis-ci.org/" + c.user + "/" + *c.repo.Name + ".svg?branch=master"
 	if !strings.Contains(readme.contents, badgeURL) {
-		warnings = append(warnings, "could add travis-ci build status badge")
+		if urlReachable(badgeURL) {
+			warnings = append(warnings, "could add travis-ci build status badge")
+		}
 	}
 	return warnings
 }
