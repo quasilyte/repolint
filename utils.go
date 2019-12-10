@@ -1,8 +1,12 @@
 package main
 
 import (
+	"io"
+	"io/ioutil"
+	"net/http"
 	"regexp"
 	"strings"
+	"time"
 
 	"gopkg.in/src-d/enry.v1/data"
 )
@@ -46,4 +50,18 @@ func progLangBySources(majorLang string, src []byte) string {
 	}
 
 	return ""
+}
+
+var httpClient = http.Client{
+	Timeout: time.Duration(3 * time.Second),
+}
+
+func urlReachable(addr string) bool {
+	resp, err := httpClient.Get(addr)
+	if err != nil {
+		return false
+	}
+	defer resp.Body.Close()
+	io.Copy(ioutil.Discard, resp.Body)
+	return true
 }
