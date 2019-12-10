@@ -362,6 +362,28 @@ func (c *varTypoChecker) CheckFiles() (warnings []string) {
 	return warnings
 }
 
+type travisChecker struct {
+	checkerBase
+}
+
+func (c *travisChecker) PushFile(f *repoFile) {
+	if f.origName == ".travis.yml" {
+		f.require.contents = true
+		c.acceptFile(f)
+	}
+}
+
+func (c *travisChecker) CheckFiles() (warnings []string) {
+	if len(c.files) == 0 {
+		return warnings
+	}
+	contents := c.files[0].contents
+	if strings.Contains(contents, "go tool vet") {
+		warnings = append(warnings, "use `go vet` instead of `go tool vet`")
+	}
+	return warnings
+}
+
 type badgeChecker struct {
 	checkerBase
 

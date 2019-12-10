@@ -147,6 +147,7 @@ func (l *linter) initCheckers() error {
 		"acronym":          newAcronymChecker(),
 		"code snippet":     &codeSnippetChecker{},
 		"readme badge":     &badgeChecker{user: l.user},
+		"travis lint":      &travisChecker{},
 	}
 	return nil
 }
