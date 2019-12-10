@@ -419,7 +419,7 @@ func (c *badgeChecker) CheckFiles() (warnings []string) {
 	badgeURL := "https://travis-ci.org/" + c.user + "/" + *c.repo.Name + ".svg?branch=master"
 	if !strings.Contains(readme.contents, badgeURL) {
 		if urlReachable(badgeURL) {
-			warnings = append(warnings, "could add travis-ci build status badge")
+			warnings = append(warnings, "could add travis-ci build status badge "+badgeURL)
 		}
 	}
 	return warnings
