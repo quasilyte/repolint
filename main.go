@@ -47,6 +47,7 @@ func main() {
 type linter struct {
 	singleRepo string
 	user       string
+	lang       string
 	token      string
 	tokenPath  string
 	disable    string
@@ -84,6 +85,8 @@ func (l *linter) initTempDir() error {
 }
 
 func (l *linter) parseFlags() error {
+	flag.StringVar(&l.lang, "lang", "",
+		`if non-empty, acts as a repository major language filter; example: "Go"`)
 	flag.StringVar(&l.user, "user", "",
 		`GitHub user/organization name`)
 	flag.StringVar(&l.singleRepo, "repo", "",
@@ -214,6 +217,13 @@ func (l *linter) getReposList() error {
 			if l.skipInactive && inactive {
 				if l.verbose {
 					log.Printf("\t\tdebug: skip %s repo (inactive)", *repo.Name)
+				}
+				continue
+			}
+
+			if l.lang != "" && repo.GetLanguage() != l.lang {
+				if l.verbose {
+					log.Printf("\t\tdebug: skip %s repo (lang filter)", *repo.Name)
 				}
 				continue
 			}
