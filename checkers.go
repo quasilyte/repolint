@@ -73,8 +73,7 @@ type missingFileChecker struct {
 }
 
 func (c *missingFileChecker) Reset(repo *github.Repository) {
-	c.files = c.files[:0]
-	c.repo = repo
+	c.checkerBase.Reset(repo)
 	c.seenReadme = false
 	c.seenLicense = false
 }
@@ -359,6 +358,41 @@ func (c *varTypoChecker) CheckFiles() (warnings []string) {
 				warnings = append(warnings, w)
 			}
 		}
+	}
+	return warnings
+}
+
+type badgeChecker struct {
+	checkerBase
+
+	user string
+
+	seenTravisYML bool
+}
+
+func (c *badgeChecker) Reset(repo *github.Repository) {
+	c.checkerBase.Reset(repo)
+	c.seenTravisYML = false
+}
+
+func (c *badgeChecker) PushFile(f *repoFile) {
+	if f.origName == "README.md" {
+		f.require.contents = true
+		c.acceptFile(f)
+	}
+	if f.origName == ".travis.yml" {
+		c.seenTravisYML = true
+	}
+}
+
+func (c *badgeChecker) CheckFiles() (warnings []string) {
+	if len(c.files) == 0 || !c.seenTravisYML {
+		return warnings
+	}
+	readme := c.files[0]
+	badgeURL := "travis-ci.org/" + c.user + "/" + *c.repo.Name + ".svg?branch="
+	if !strings.Contains(readme.contents, badgeURL) {
+		warnings = append(warnings, "could add travis-ci build status badge")
 	}
 	return warnings
 }

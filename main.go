@@ -21,18 +21,7 @@ import (
 func main() {
 	log.SetFlags(0)
 
-	l := linter{
-		checkers: map[string]fileChecker{
-			"missing file":     &missingFileChecker{},
-			"broken link":      &brokenLinkChecker{},
-			"misspell":         &misspellChecker{},
-			"var name typo":    newVarTypoChecker(),
-			"unwanted file":    newUnwantedFileChecker(),
-			"sloppy copyright": newSloppyCopyrightChecker(),
-			"acronym":          newAcronymChecker(),
-			"code snippet":     &codeSnippetChecker{},
-		},
-	}
+	l := linter{}
 
 	defer l.cleanup()
 	steps := []struct {
@@ -41,6 +30,7 @@ func main() {
 	}{
 		{"init temp dir", l.initTempDir},
 		{"parse flags", l.parseFlags},
+		{"init checkers", l.initCheckers},
 		{"read token", l.readToken},
 		{"init client", l.initClient},
 		{"get repos list", l.getReposList},
@@ -55,11 +45,12 @@ func main() {
 }
 
 type linter struct {
-	user      string
-	token     string
-	tokenPath string
-	disable   string
-	repos     []*github.Repository
+	singleRepo string
+	user       string
+	token      string
+	tokenPath  string
+	disable    string
+	repos      []*github.Repository
 
 	ctx    context.Context
 	client *github.Client
@@ -94,7 +85,9 @@ func (l *linter) initTempDir() error {
 
 func (l *linter) parseFlags() error {
 	flag.StringVar(&l.user, "user", "",
-		`github user/organization name`)
+		`GitHub user/organization name`)
+	flag.StringVar(&l.singleRepo, "repo", "",
+		`GitHub repository name for a single-repo mode`)
 	flag.BoolVar(&l.verbose, "v", false,
 		`verbose mode that turns on additional debug output`)
 	flag.IntVar(&l.minStars, "minStars", 1,
@@ -143,6 +136,21 @@ func (l *linter) readToken() error {
 	return nil
 }
 
+func (l *linter) initCheckers() error {
+	l.checkers = map[string]fileChecker{
+		"missing file":     &missingFileChecker{},
+		"broken link":      &brokenLinkChecker{},
+		"misspell":         &misspellChecker{},
+		"var name typo":    newVarTypoChecker(),
+		"unwanted file":    newUnwantedFileChecker(),
+		"sloppy copyright": newSloppyCopyrightChecker(),
+		"acronym":          newAcronymChecker(),
+		"code snippet":     &codeSnippetChecker{},
+		"readme badge":     &badgeChecker{user: l.user},
+	}
+	return nil
+}
+
 func (l *linter) initClient() error {
 	l.ctx = context.Background()
 
@@ -154,6 +162,16 @@ func (l *linter) initClient() error {
 }
 
 func (l *linter) getReposList() error {
+	if l.singleRepo != "" {
+		repo, _, err := l.client.Repositories.Get(l.ctx, l.user, l.singleRepo)
+		l.requests++
+		if err != nil {
+			return fmt.Errorf("get repo %s: %v", l.singleRepo, err)
+		}
+		l.repos = append(l.repos, repo)
+		return nil
+	}
+
 	opts := newRepositoryListOptions()
 	for {
 		repos, resp, err := l.client.Repositories.List(l.ctx, l.user, opts)
